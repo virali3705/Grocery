@@ -7,6 +7,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(40.0),
@@ -31,7 +32,11 @@ class SplashScreen extends StatelessWidget {
               const Text("solutions for your daily need!"),
               Align(
                 alignment: Alignment.bottomLeft,
-                child: Image.asset("assets/Elips.png"),
+                child: Column(
+                  children: [
+                    Image.asset("assets/Elips.png"),
+                  ],
+                ),
               ),
             ],
           ),
