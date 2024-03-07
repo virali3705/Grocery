@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/widget/mytimeline.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class ShippingDetails extends StatelessWidget {
@@ -10,34 +11,37 @@ class ShippingDetails extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: SafeArea(
-          child: ListView(
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
-                child: Row(
-                  children: [
-                    Text(
-                      "Shipping detail",
-                      style: GoogleFonts.montserrat(
-                        textStyle: const TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 20,
-                          color: Color.fromARGB(255, 1, 1, 1),
-                        ),
-                      ),
-                    ),
-                  ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: ListView(
+              children: [
+                SizedBox(
+                  height: 400,
+                  child: TimelineTile(
+                    isFirst: true,
+                    beforeLineStyle: LineStyle(color: Colors.green),
+                    indicatorStyle: IndicatorStyle(
+                        width: 30, color: Colors.green, height: 5),
+                  ),
                 ),
-              ),
-              TimelineTile(
-                isFirst: true,
-              ),
-              TimelineTile(),
-              TimelineTile(),
-              TimelineTile(
-                isLast: true,
-              ),
-            ],
+                SizedBox(
+                  height: 300,
+                  child: TimelineTile(
+                    isFirst: true,
+                    beforeLineStyle: LineStyle(color: Colors.green),
+                    indicatorStyle: IndicatorStyle(
+                        width: 30, color: Colors.green, height: 2),
+                  ),
+                ),
+                TimelineTile(
+                  isFirst: true,
+                  isLast: false,
+                  beforeLineStyle: LineStyle(color: Colors.green),
+                  indicatorStyle:
+                      IndicatorStyle(width: 30, color: Colors.green),
+                ),
+              ],
+            ),
           ),
         ),
       ),
