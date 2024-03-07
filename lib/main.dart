@@ -7,6 +7,7 @@ import 'package:grocery_app/Loginscreen.dart';
 import 'package:grocery_app/Profile.dart';
 import 'package:grocery_app/Register%20screen.dart';
 import 'package:grocery_app/Savedaddresses.dart';
+import 'package:grocery_app/Shipping%20details.dart';
 import 'package:grocery_app/productdetailsscreen.dart';
 
 void main() {
@@ -23,12 +24,10 @@ class FlutterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: false,
-        textTheme: GoogleFonts.montserratTextTheme()
-      ),
-
-      home:  CategoryScreen(),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: false,
+          textTheme: GoogleFonts.montserratTextTheme()),
+      home: ShippingDetails(),
     );
   }
 }
