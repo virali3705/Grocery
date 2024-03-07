@@ -7,8 +7,14 @@ import 'package:readmore/readmore.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   ProductDetailsScreen({super.key});
+<<<<<<< HEAD
+  String content =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to ";
+
+=======
   String content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to ";
   
+>>>>>>> d7b44efae6c4887b7b98318196e2665f2e7e9812
   @override
   Widget build(BuildContext context) {
     return Scaffold(

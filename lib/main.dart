@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app/Addaddresse.dart';
+import 'package:grocery_app/Addaddresses.dart';
+import 'package:grocery_app/Categoryscreen.dart';
 import 'package:grocery_app/Homescreen.dart';
 import 'package:grocery_app/Loginscreen.dart';
 import 'package:grocery_app/Profile.dart';
@@ -26,7 +27,8 @@ class FlutterApp extends StatelessWidget {
         useMaterial3: false,
         textTheme: GoogleFonts.montserratTextTheme()
       ),
-      home:  AddAddresses(),
+
+      home:  CategoryScreen(),
     );
   }
 }
