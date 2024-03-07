@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app/widget/mytimeline.dart';
+import 'package:grocery_app/widget/Pages/mytimeline.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class ShippingDetails extends StatelessWidget {
