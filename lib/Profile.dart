@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfileScreen extends StatelessWidget {
   List sourceIcon = [
@@ -31,7 +32,7 @@ class ProfileScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const Row(
+               Row(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: 20,left: 20
@@ -43,7 +44,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 19,),
-                    child: Text("Profile",style: TextStyle(fontSize: 20),),
+                    child: Text("Profile",style: GoogleFonts.montserrat(fontSize: 20),),
                   ),
                 ],
               ),

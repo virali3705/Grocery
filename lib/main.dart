@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Homescreen.dart';
 import 'package:grocery_app/Loginscreen.dart';
 import 'package:grocery_app/Profile.dart';
 import 'package:grocery_app/Register%20screen.dart';
+import 'package:grocery_app/Savedaddresses.dart';
 import 'package:grocery_app/productdetailsscreen.dart';
 
 void main() {
@@ -21,8 +23,9 @@ class FlutterApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
+        textTheme: GoogleFonts.montserratTextTheme()
       ),
-      home:  ProfileScreen(),
+      home:  SavedAddresses(),
     );
   }
 }
