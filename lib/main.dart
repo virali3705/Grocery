@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/Homescreen.dart';
 import 'package:grocery_app/Loginscreen.dart';
+import 'package:grocery_app/Profile.dart';
 import 'package:grocery_app/Register%20screen.dart';
 import 'package:grocery_app/productdetailsscreen.dart';
 
@@ -21,7 +22,7 @@ class FlutterApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: Homescreen(),
+      home: const ProfileScreen(),
     );
   }
 }
