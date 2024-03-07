@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app/Card.dart';
+import 'package:grocery_app/widget/Pages/Card.dart';
 
 class Homescreen extends StatelessWidget {
   Homescreen({Key? key}) : super(key: key);

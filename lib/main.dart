@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app/Addaddresses.dart';
-import 'package:grocery_app/Categoryscreen.dart';
-import 'package:grocery_app/Homescreen.dart';
-import 'package:grocery_app/Loginscreen.dart';
-import 'package:grocery_app/Profile.dart';
-import 'package:grocery_app/Register%20screen.dart';
-import 'package:grocery_app/Savedaddresses.dart';
-import 'package:grocery_app/Shipping%20details.dart';
-import 'package:grocery_app/productdetailsscreen.dart';
+import 'package:grocery_app/widget/Pages/Addaddresses.dart';
+import 'package:grocery_app/widget/Pages/Categoryscreen.dart';
+import 'package:grocery_app/widget/Pages/Homescreen.dart';
+import 'package:grocery_app/widget/Pages/Loginscreen.dart';
+import 'package:grocery_app/widget/Pages/Profile.dart';
+import 'package:grocery_app/widget/Pages/Register%20screen.dart';
+import 'package:grocery_app/widget/Pages/Savedaddresses.dart';
+import 'package:grocery_app/widget/Pages/Shipping%20details.dart';
+import 'package:grocery_app/widget/Pages/productdetailsscreen.dart';
 
 void main() {
   runApp(const FlutterApp());
@@ -27,7 +27,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-      home: ShippingDetails(),
+      home: CategoryScreen(),
     );
   }
 }
