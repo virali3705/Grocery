@@ -9,36 +9,41 @@ class ShippingDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+      body: SingleChildScrollView(
+        child: Center(
+          child: SafeArea(
             child: ListView(
               children: [
                 SizedBox(
-                  height: 400,
+                  height: 200,
                   child: TimelineTile(
                     isFirst: true,
                     beforeLineStyle: LineStyle(color: Colors.green),
                     indicatorStyle: IndicatorStyle(
-                        width: 30, color: Colors.green, height: 5),
+                      width: 20,
+                      color: Colors.green,
+                    ),
+                    afterLineStyle: LineStyle(color: Colors.green),
+                  ),
+                ),
+                SizedBox(
+                  height: 100,
+                  child: TimelineTile(
+                    beforeLineStyle: LineStyle(color: Colors.green),
+                    indicatorStyle: IndicatorStyle(color: Colors.green),
                   ),
                 ),
                 SizedBox(
                   height: 300,
                   child: TimelineTile(
-                    isFirst: true,
                     beforeLineStyle: LineStyle(color: Colors.green),
-                    indicatorStyle: IndicatorStyle(
-                        width: 30, color: Colors.green, height: 2),
+                    indicatorStyle: IndicatorStyle(color: Colors.green),
                   ),
                 ),
-                TimelineTile(
-                  isFirst: true,
-                  isLast: false,
-                  beforeLineStyle: LineStyle(color: Colors.green),
-                  indicatorStyle:
-                      IndicatorStyle(width: 30, color: Colors.green),
+                SizedBox(
+                  child: TimelineTile(
+                    indicatorStyle: IndicatorStyle(color: Colors.green),
+                  ),
                 ),
               ],
             ),
