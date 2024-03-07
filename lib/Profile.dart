@@ -1,20 +1,37 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen
+  List sourceIcon = [
+       "assets/Box.png",
+       "assets/Favourite.png",
+       "assets/Address.png",
+       "assets/Review.png",
+  ];
+
+  List titles = [
+    "My Orders",
+    "Favourites",
+    "Addresses",
+    "My Reviews",
+  ];  
+
+ ProfileScreen
 ({super.key});
+
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color.fromARGB(255, 213, 204,204),
+    return  Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: [
-              Row(
+              const Row(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: 20,left: 20
@@ -30,10 +47,10 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 35,
               ),
-              Stack(
+              const Stack(
                 children: [
                   CircleAvatar(
                 maxRadius: 80,
@@ -46,7 +63,7 @@ class ProfileScreen extends StatelessWidget {
               )
                 ],
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 25,right: 25),
                 child: TextField(
                         obscureText: true,
@@ -55,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 25,right: 25),
                 child: TextField(
                         obscureText: true,
@@ -64,7 +81,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 25,right: 25),
                 child: TextField(
                         obscureText: true,
@@ -73,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 25,right: 25),
                 child: TextField(
                         obscureText: true,
@@ -82,8 +99,54 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
               ),
-              SizedBox(
-                height: 40,
+              const SizedBox(
+                height: 25,
+              ),
+               SizedBox(
+                height: 280,
+                width: 280,
+                child: GridView.builder(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 1.2,
+                    mainAxisSpacing: 8,
+                  ),
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: sourceIcon.length,
+                  itemBuilder: (context, index) {
+                    return InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin:const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color.fromARGB(255, 229, 229, 229),
+                              spreadRadius: 0.2,
+                              blurRadius: 10
+                            )
+                            ],
+                          color: Colors.white,
+
+                        ),
+                        child:  Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [  
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Image.asset(sourceIcon[index].toString() ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 15),
+                              child: Text(titles[index]),
+                            )
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
               ),
             ],
           ),
