@@ -77,7 +77,7 @@ class ProductList extends StatelessWidget {
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.only(right: 120),
+                            padding: EdgeInsets.only(right: 130),
                             child: Text(
                               "Apples",
                               style: TextStyle(fontWeight: FontWeight.w600),
@@ -114,15 +114,15 @@ class ProductList extends StatelessWidget {
                                 ),
                                 Container(
                                     alignment: Alignment.center,
-                                    height: 13,
-                                    width: 48,
+                                    height: 15,
+                                    width: 53,
                                     decoration: const BoxDecoration(
                                       color: Color.fromARGB(255, 177, 255, 181),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(5)),
                                     ),
                                     child: const Padding(
-                                      padding: EdgeInsets.only(),
+                                      padding: EdgeInsets.only(bottom :3),
                                       child: Text(
                                         "50 % off",
                                         style: TextStyle(
@@ -227,7 +227,7 @@ class ProductList extends StatelessWidget {
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.only(right: 120),
+                            padding: EdgeInsets.only(right: 130),
                             child: Text(
                               "Apples",
                               style: TextStyle(fontWeight: FontWeight.w600),
@@ -264,15 +264,15 @@ class ProductList extends StatelessWidget {
                                 ),
                                 Container(
                                     alignment: Alignment.center,
-                                    height: 13,
-                                    width: 48,
+                                    height: 15,
+                                    width: 53,
                                     decoration: const BoxDecoration(
                                       color: Color.fromARGB(255, 177, 255, 181),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(5)),
                                     ),
                                     child: const Padding(
-                                      padding: EdgeInsets.only(),
+                                      padding: EdgeInsets.only(bottom :3),
                                       child: Text(
                                         "50 % off",
                                         style: TextStyle(
@@ -377,7 +377,7 @@ class ProductList extends StatelessWidget {
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.only(right: 120),
+                            padding: EdgeInsets.only(right: 130),
                             child: Text(
                               "Apples",
                               style: TextStyle(fontWeight: FontWeight.w600),
@@ -414,15 +414,15 @@ class ProductList extends StatelessWidget {
                                 ),
                                 Container(
                                     alignment: Alignment.center,
-                                    height: 13,
-                                    width: 48,
+                                    height: 15,
+                                    width: 53,
                                     decoration: const BoxDecoration(
                                       color: Color.fromARGB(255, 177, 255, 181),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(5)),
                                     ),
                                     child: const Padding(
-                                      padding: EdgeInsets.only(),
+                                      padding: EdgeInsets.only(bottom :3),
                                       child: Text(
                                         "50 % off",
                                         style: TextStyle(
@@ -527,7 +527,7 @@ class ProductList extends StatelessWidget {
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.only(right: 120),
+                            padding: EdgeInsets.only(right: 130),
                             child: Text(
                               "Apples",
                               style: TextStyle(fontWeight: FontWeight.w600),
@@ -564,15 +564,15 @@ class ProductList extends StatelessWidget {
                                 ),
                                 Container(
                                     alignment: Alignment.center,
-                                    height: 13,
-                                    width: 48,
+                                    height: 15,
+                                    width: 53,
                                     decoration: const BoxDecoration(
                                       color: Color.fromARGB(255, 177, 255, 181),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(5)),
                                     ),
                                     child: const Padding(
-                                      padding: EdgeInsets.only(),
+                                      padding: EdgeInsets.only(bottom :3),
                                       child: Text(
                                         "50 % off",
                                         style: TextStyle(
@@ -677,7 +677,7 @@ class ProductList extends StatelessWidget {
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Padding(
-                            padding: EdgeInsets.only(right: 120),
+                            padding: EdgeInsets.only(right: 130),
                             child: Text(
                               "Apples",
                               style: TextStyle(fontWeight: FontWeight.w600),
@@ -714,15 +714,15 @@ class ProductList extends StatelessWidget {
                                 ),
                                 Container(
                                     alignment: Alignment.center,
-                                    height: 13,
-                                    width: 48,
+                                    height: 15,
+                                    width: 53,
                                     decoration: const BoxDecoration(
                                       color: Color.fromARGB(255, 177, 255, 181),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(5)),
                                     ),
                                     child: const Padding(
-                                      padding: EdgeInsets.only(),
+                                      padding: EdgeInsets.only(bottom :3),
                                       child: Text(
                                         "50 % off",
                                         style: TextStyle(
@@ -827,7 +827,7 @@ class ProductList extends StatelessWidget {
                     child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Padding(
-                          padding: EdgeInsets.only(right: 120),
+                          padding: EdgeInsets.only(right: 130),
                           child: Text(
                             "Apples",
                             style: TextStyle(fontWeight: FontWeight.w600),
@@ -861,18 +861,18 @@ class ProductList extends StatelessWidget {
                               ),
                               const SizedBox(
                                 width: 5,
-                              ),
-                              Container(
+                              ), 
+                              Container( 
                                   alignment: Alignment.center,
-                                  height: 13,
-                                  width: 48,
+                                  height: 15 ,
+                                  width: 53 ,
                                   decoration: const BoxDecoration(
                                     color: Color.fromARGB(255, 177, 255, 181),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(5)),
                                   ),
                                   child: const Padding(
-                                    padding: EdgeInsets.only(),
+                                    padding: EdgeInsets.only(bottom :3),
                                     child: Text(
                                       "50 % off",
                                       style: TextStyle(
