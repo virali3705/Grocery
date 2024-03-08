@@ -26,7 +26,7 @@ class Homescreen extends StatelessWidget {
                       height: 120,
                       width: 120,
                     ),
-                    const SizedBox(width: 80),
+                    const SizedBox(width: 10),
                     Image.asset(
                       "assets/shopping_cart.png",
                       height: 150,
@@ -209,9 +209,9 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                 ),
-             
-             //list view is not working....
-             
+
+                //list view is not working....
+
                 Column(
                   children: [
                     Row(
