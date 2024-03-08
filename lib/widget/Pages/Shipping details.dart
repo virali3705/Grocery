@@ -17,12 +17,12 @@ class ShippingDetails extends StatelessWidget {
                   height: 200,
                   child: TimelineTile(
                     isFirst: true,
-                    endChild: Column(
+                    endChild: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 90), // Adjusted height
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          padding: EdgeInsets.symmetric(horizontal: 20),
                           child: Text(
                             "Packed",
                             style: TextStyle(
@@ -33,7 +33,7 @@ class ShippingDetails extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          padding: EdgeInsets.symmetric(horizontal: 20),
                           child: Text(
                             "July 08/2023",
                             style: TextStyle(
@@ -45,7 +45,7 @@ class ShippingDetails extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          padding: EdgeInsets.symmetric(horizontal: 20),
                           child: Text(
                             "Your order has been packed on July 08 at",
                             style: TextStyle(
@@ -56,7 +56,7 @@ class ShippingDetails extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          padding: EdgeInsets.symmetric(horizontal: 20),
                           child: Text(
                             "8.47 PM",
                             style: TextStyle(
@@ -79,7 +79,7 @@ class ShippingDetails extends StatelessWidget {
                 SizedBox(
                   height: 100,
                   child: TimelineTile(
-                    endChild: Column(
+                    endChild: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
