@@ -79,7 +79,7 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
@@ -89,42 +89,42 @@ class Homescreen extends StatelessWidget {
                       height: 100,
                       width: 100,
                       child: Card(
+                        elevation: 20,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
                         child: Align(
                             alignment: Alignment.center,
                             child: Image.asset("assets/colddrinks.png")),
-                        elevation: 20,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
                       ),
                     ),
                     SizedBox(
                       height: 100,
                       width: 100,
                       child: Card(
+                        elevation: 20,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
                         child: Align(
                             alignment: Alignment.center,
                             child: Image.asset("assets/fruits.png")),
-                        elevation: 20,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
                       ),
                     ),
                     SizedBox(
                       height: 100,
                       width: 100,
                       child: Card(
-                        child: Align(
-                            alignment: Alignment.center,
-                            child: Image.asset("assets/grocery1.png")),
                         elevation: 20,
                         color: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15.0),
                         ),
+                        child: Align(
+                            alignment: Alignment.center,
+                            child: Image.asset("assets/grocery1.png")),
                       ),
                     ),
                   ],
@@ -136,42 +136,42 @@ class Homescreen extends StatelessWidget {
                       height: 100,
                       width: 100,
                       child: Card(
+                        elevation: 20,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
                         child: Align(
                             alignment: Alignment.center,
                             child: Image.asset("assets/colddrinks.png")),
-                        elevation: 20,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
                       ),
                     ),
                     SizedBox(
                       height: 100,
                       width: 100,
                       child: Card(
+                        elevation: 20,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
                         child: Align(
                             alignment: Alignment.center,
                             child: Image.asset("assets/fruits.png")),
-                        elevation: 20,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
                       ),
                     ),
                     SizedBox(
                       height: 100,
                       width: 100,
                       child: Card(
-                        child: Align(
-                            alignment: Alignment.center,
-                            child: Image.asset("assets/grocery1.png")),
                         elevation: 20,
                         color: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15.0),
                         ),
+                        child: Align(
+                            alignment: Alignment.center,
+                            child: Image.asset("assets/grocery1.png")),
                       ),
                     ),
                   ],
@@ -179,7 +179,7 @@ class Homescreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 70, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
                     child: Text(
                       "view all>>",
                       style: GoogleFonts.montserrat(
@@ -215,14 +215,14 @@ class Homescreen extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                           height: 200,
                           child: ListView.builder(
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
                             itemCount: 3,
                             itemBuilder: (context, index) {
-                              return ProductHomeCard();
+                              return const ProductHomeCard();
                             },
                           ),
                         ),
