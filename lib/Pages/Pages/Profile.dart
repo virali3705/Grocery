@@ -34,17 +34,17 @@ class ProfileScreen extends StatelessWidget {
             children: [
                Row(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 20,left: 20
                     ),
                     child: Icon(Icons.arrow_back_ios_new_outlined),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 19,),
-                    child: Text("Profile",style: GoogleFonts.montserrat(fontSize: 20),),
+                    padding: const EdgeInsets.only(top: 19,),
+                    child: Text("Profile",style: GoogleFonts.montserrat(fontSize: 18),),
                   ),
                 ],
               ),
@@ -122,9 +122,9 @@ class ProfileScreen extends StatelessWidget {
                         margin:const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
-                              color: const Color.fromARGB(255, 229, 229, 229),
+                              color: Color.fromARGB(255, 229, 229, 229),
                               spreadRadius: 0.2,
                               blurRadius: 10
                             )
