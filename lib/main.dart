@@ -28,11 +28,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-<<<<<<< HEAD
       home: ShippingDetails(),
-=======
-      home:const FavouriteProduct(),
->>>>>>> 9313b0eaac3d3e16a7052c16974b89744a24e6fb
     );
   }
 }

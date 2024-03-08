@@ -3,22 +3,22 @@ import 'package:google_fonts/google_fonts.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-     // resizeToAvoidBottomInset: true,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Stack(
-                children: [
-                  Image(image: AssetImage("assets/Ellipse2.png")),
-                  Image(image: AssetImage("assets/Ellipse3.png")),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal:20.0 ,vertical:80.0 ),
-                    child:  Text(
+    return Scaffold(
+        // resizeToAvoidBottomInset: true,
+        body: SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Image(image: AssetImage("assets/Ellipse2.png")),
+                Image(image: AssetImage("assets/Ellipse3.png")),
+                Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 80.0),
+                  child: Text(
                     "Sign up",
                     style: GoogleFonts.montserrat(
                       textStyle: const TextStyle(
@@ -28,10 +28,11 @@ class RegisterScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal:20.0 ,vertical:130.0 ),
-                    child:  Text(
+                ),
+                Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 130.0),
+                  child: Text(
                     "Welcome,Good to see you here",
                     style: GoogleFonts.montserrat(
                       textStyle: const TextStyle(
@@ -41,12 +42,14 @@ class RegisterScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ),
-                  Spacer(),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal:20.0 ,vertical:180.0 ),
-                    child:  Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                ),
+                Spacer(),
+                Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 180.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
                     elevation: 6,
                     color: const Color.fromARGB(223, 255, 255, 255),
                     child: Padding(
@@ -162,14 +165,12 @@ class RegisterScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ),
-          
-                ],
-              )
-            ],
-          ),
+                ),
+              ],
+            )
+          ],
         ),
-        )
-    );
+      ),
+    ));
   }
 }
