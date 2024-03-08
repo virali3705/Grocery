@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CategoryScreen extends StatelessWidget {
    CategoryScreen({super.key});
@@ -25,16 +26,16 @@ class CategoryScreen extends StatelessWidget {
       body: SafeArea(
         child:SingleChildScrollView(
           child: Column(
-            children: [ const Padding(
-                padding: EdgeInsets.only(top: 20,left: 20),
+            children: [  Padding(
+                padding: const EdgeInsets.only(top: 20,left: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.arrow_back_ios_sharp),
-                      SizedBox(
+                    const Icon(Icons.arrow_back_ios_sharp),
+                      const SizedBox(
                         width: 20,
                       ),
-                      Text("Categories",style: TextStyle(fontSize: 18),),
-                      SizedBox(
+                      Text("Categories",style: GoogleFonts.inter(fontSize: 18),),
+                      const SizedBox(
                         width: 40,
                       ),
                   ],

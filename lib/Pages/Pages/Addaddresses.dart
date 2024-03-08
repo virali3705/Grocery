@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AddAddresses extends StatelessWidget {
   const AddAddresses({super.key});
@@ -12,16 +13,16 @@ class AddAddresses extends StatelessWidget {
         child:SingleChildScrollView(
           child: Column(
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 20,left: 20),
+               Padding(
+                padding: const EdgeInsets.only(top: 20,left: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.arrow_back_ios_sharp),
-                      SizedBox(
+                    const Icon(Icons.arrow_back_ios_sharp),
+                      const SizedBox(
                         width: 20,
                       ),
-                      Text("Add Addresses",style: TextStyle(fontSize: 18),),
-                      SizedBox(
+                      Text("Add Addresses",style: GoogleFonts.inter(fontSize: 18),),
+                      const SizedBox(
                         width: 40,
                       ),
                   ],
@@ -224,7 +225,7 @@ class AddAddresses extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Padding(

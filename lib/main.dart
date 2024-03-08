@@ -5,6 +5,7 @@ import 'package:grocery_app/Pages/Pages/Categoryscreen.dart';
 import 'package:grocery_app/Pages/Pages/Favouriteproduct.dart';
 import 'package:grocery_app/Pages/Pages/Homescreen.dart';
 import 'package:grocery_app/Pages/Pages/Loginscreen.dart';
+import 'package:grocery_app/Pages/Pages/MyOrder.dart';
 import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Register%20screen.dart';
@@ -28,7 +29,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-      home: ShippingDetails(),
+      home: MyOrders(),
     );
   }
 }

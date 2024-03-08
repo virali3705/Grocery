@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FavouriteProduct extends StatelessWidget {
   const FavouriteProduct({super.key});
@@ -12,19 +13,19 @@ class FavouriteProduct extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-               const Row(
+               Row(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 20,left: 20
                     ),
                     child: Icon(Icons.arrow_back_ios_new_outlined),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 19,),
-                    child: Text("Favourite products",style: TextStyle(fontSize: 18),),
+                    padding: const EdgeInsets.only(top: 19,),
+                    child: Text("Favourite products",style: GoogleFonts.inter(fontSize: 18),),
                   ),
                 ],
               ),

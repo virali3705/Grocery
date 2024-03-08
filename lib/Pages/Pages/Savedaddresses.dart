@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SavedAddresses extends StatelessWidget {
   const SavedAddresses({super.key});
@@ -18,7 +19,7 @@ class SavedAddresses extends StatelessWidget {
                   const SizedBox(
                     width: 20,
                   ),
-                  const Text("Saved Addresses",style: TextStyle(fontSize: 18),),
+                  Text("Saved Addresses",style: GoogleFonts.inter(fontSize: 18),),
                   const SizedBox(
                     width: 40,
                   ),
@@ -61,11 +62,11 @@ class SavedAddresses extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10,right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10,right: 10),
               child: Divider(color: Colors.black,
               thickness: 1,),
             ),
@@ -101,15 +102,15 @@ class SavedAddresses extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10,right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10,right: 10),
               child: Divider(color: Colors.black,
               thickness: 1,),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),       
             const Padding(
@@ -147,11 +148,11 @@ class SavedAddresses extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10,right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10,right: 10),
               child: Divider(color: Colors.black,
               thickness: 1,),
             )

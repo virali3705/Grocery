@@ -49,7 +49,7 @@ class ShippingDetails extends StatelessWidget {
                           child: Text(
                             "Your order has been packed on July 08 at",
                             style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: Colors.grey,
                             ),
@@ -78,29 +78,40 @@ class ShippingDetails extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 100,
-                  child: TimelineTile(
-                    endChild: const Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Shipped",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.w600),
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          "July 09/2023",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        ),
-                        Text(
-                          "Your order has been shipped on July 09 at \n 3.20 PM From Ahemdabad",
-                          style: TextStyle(fontSize: 14, color: Colors.grey),
-                        ),
-                        Text(
-                            "Your order has been dispatched from july o9 at \n 3:20 PM Ahemdabad HUB")
-                      ],
+                  child: TimelineTile(                      
+                    endChild: const Padding(
+                      padding: EdgeInsets.only(top: 40,left: 18),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Shipped",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.w600),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "July 09/2023",
+                            style: TextStyle(fontSize: 14, color: Colors.grey),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            "Your order has been shipped on July 09 at \n 3.20 PM From Ahemdabad",
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                              "Your order has been dispatched from july 09 at \n 3:20 PM Ahemdabad HUB",
+                              style: TextStyle(fontSize: 12,color: Colors.grey),
+                              )
+                        ],
+                      ),
                     ),
                     beforeLineStyle: const LineStyle(color: Colors.green),
                     indicatorStyle: const IndicatorStyle(
