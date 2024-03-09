@@ -44,7 +44,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 19,),
-                    child: Text("Profile",style: GoogleFonts.montserrat(fontSize: 18),),
+                    child: Text("Profile",style:  GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                   ),
                 ],
               ),

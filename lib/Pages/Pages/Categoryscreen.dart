@@ -34,7 +34,7 @@ class CategoryScreen extends StatelessWidget {
                       const SizedBox(
                         width: 20,
                       ),
-                      Text("Categories",style: GoogleFonts.inter(fontSize: 18),),
+                      Text("Categories",style:  GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                       const SizedBox(
                         width: 40,
                       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class ShippingDetails extends StatelessWidget {
@@ -14,19 +15,19 @@ class ShippingDetails extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
             child: ListView(
               children: [
-                const Row(
+                 Row(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 20,left: 20
                     ),
                     child: Icon(Icons.arrow_back_ios_new_outlined),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 19,),
-                    child: Text("Profile",style: const TextStyle(fontSize: 18),),
+                    padding: const EdgeInsets.only(top: 19,),
+                    child: Text("Profile",style: GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                   ),
                 ],
               ),
@@ -148,7 +149,7 @@ class ShippingDetails extends StatelessWidget {
                       color: Colors.green,
                       width: 15,
                     ),
-                    endChild: Column(
+                    endChild: const Column(
                       children: [
                         Text("Raj"),
                         Text("Raj"),

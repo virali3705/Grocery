@@ -21,7 +21,7 @@ class AddAddresses extends StatelessWidget {
                       const SizedBox(
                         width: 20,
                       ),
-                      Text("Add Addresses",style: GoogleFonts.inter(fontSize: 18),),
+                      Text("Add Addresses",style:  GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                       const SizedBox(
                         width: 40,
                       ),

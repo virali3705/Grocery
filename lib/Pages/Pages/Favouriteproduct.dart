@@ -25,7 +25,7 @@ class FavouriteProduct extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 19,),
-                    child: Text("Favourite products",style: GoogleFonts.inter(fontSize: 18),),
+                    child: Text("Favourite products",style: GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                   ),
                 ],
               ),
