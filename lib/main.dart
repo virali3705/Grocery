@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Iphone13&14.dart';
 import 'package:grocery_app/Pages/Pages/Addaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Categoryscreen.dart';
 import 'package:grocery_app/Pages/Pages/Favouriteproduct.dart';
@@ -32,7 +33,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-      home: const SupportPage(),
+      home: const Iphone13(),
     );
   }
 }
