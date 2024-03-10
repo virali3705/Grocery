@@ -14,6 +14,7 @@ import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 //import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
 import 'package:grocery_app/Payment%20page.dart';
+import 'package:grocery_app/Support%20page.dart';
 
 void main() {
   runApp(const FlutterApp());
@@ -31,7 +32,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-      home: const Payment(),
+      home: const SupportPage(),
     );
   }
 }
