@@ -13,6 +13,7 @@ import 'package:grocery_app/Pages/Pages/Register%20screen.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
+import 'package:grocery_app/Pages/Pages/splashscreen.dart';
 
 void main() {
   runApp(const FlutterApp());
@@ -30,7 +31,7 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
-      home: MyReviews(),
+      home: SplashScreen(),
     );
   }
 }
