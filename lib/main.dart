@@ -14,7 +14,6 @@ import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Register%20screen.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
-import 'package:grocery_app/Pages/Pages/blur.dart';
 //import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
 import 'package:grocery_app/Payment%20page.dart';
