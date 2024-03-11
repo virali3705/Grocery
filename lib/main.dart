@@ -35,7 +35,11 @@ class FlutterApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: false,
           textTheme: GoogleFonts.montserratTextTheme()),
+<<<<<<< HEAD
       home: const CartPage(),
+=======
+      home: const SupportPage(),
+>>>>>>> f953740e0ddf6ec17e159b79abb93c96425f63ba
     );
   }
 }
