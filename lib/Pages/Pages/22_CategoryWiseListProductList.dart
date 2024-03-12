@@ -60,13 +60,16 @@ class CategoryWiseList extends StatelessWidget {
                         color: Color.fromARGB(255, 50, 227, 56),
                       ),
                       TextButton(
-                          onPressed: () {},
-                          child: const Text("Search Here",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 17,
-                                color: Colors.black,
-                              )))
+                        onPressed: () {},
+                        child: const Text(
+                          "Search Here",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 17,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -93,6 +96,7 @@ class CategoryWiseList extends StatelessWidget {
                         const SizedBox(
                           height: 15,
                         ),
+                        //from here...
                         Row(
                           children: [
                             const SizedBox(
@@ -250,6 +254,7 @@ class CategoryWiseList extends StatelessWidget {
                             ),
                           ],
                         ),
+                        //to here..
                       ],
                     ),
                   ],
