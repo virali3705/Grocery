@@ -47,8 +47,15 @@ class Iphone13 extends StatelessWidget {
               SizedBox(
                 width: 320,
                 child: TextFormField(
-                  decoration:
-                      const InputDecoration(hintText: "sachin brahmbhatt"),
+                  cursorColor: Color.fromARGB(255, 50, 227, 56),
+                  decoration: const InputDecoration(
+                    hintText: "sachin brahmbhatt",
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 50, 227, 56),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -67,8 +74,15 @@ class Iphone13 extends StatelessWidget {
               SizedBox(
                 width: 320,
                 child: TextFormField(
+                  cursorColor: Color.fromARGB(255, 50, 227, 56),
                   decoration: const InputDecoration(
-                      hintText: "barotsachin123@gmail.com"),
+                    hintText: "barotsachin123@gmail.com",
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 50, 227, 56),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -87,7 +101,15 @@ class Iphone13 extends StatelessWidget {
               SizedBox(
                 width: 320,
                 child: TextFormField(
-                  decoration: const InputDecoration(hintText: "+919876543210"),
+                  cursorColor: Color.fromARGB(255, 50, 227, 56),
+                  decoration: const InputDecoration(
+                    hintText: "+919876543210",
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 50, 227, 56),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -106,7 +128,15 @@ class Iphone13 extends StatelessWidget {
               SizedBox(
                 width: 320,
                 child: TextFormField(
-                  decoration: const InputDecoration(hintText: " Male"),
+                  cursorColor: Color.fromARGB(255, 50, 227, 56),
+                  decoration: const InputDecoration(
+                    hintText: " Male",
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 50, 227, 56),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -123,8 +153,7 @@ class Iphone13 extends StatelessWidget {
                       ),
                     ),
                     backgroundColor: MaterialStateProperty.all(
-                      const Color.fromARGB(255, 11, 216, 8),
-                    ),
+                        const Color.fromARGB(255, 50, 227, 56)),
                   ),
                   onPressed: () {},
                   child: const Text(

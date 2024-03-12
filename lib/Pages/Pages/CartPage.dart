@@ -28,10 +28,24 @@ class CartPage extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 15, left: 10),
-                      child: Image.asset(
-                        "assets/circleicon.png",
-                        height: 30,
-                        width: 30,
+                      child: InkWell(
+                        onTap: () {
+                          showModalBottomSheet(
+                              isDismissible: true,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      topRight: Radius.circular(15))),
+                              context: context,
+                              builder: (context) {
+                                return Container();
+                              });
+                        },
+                        child: Image.asset(
+                          "assets/circleicon.png",
+                          height: 30,
+                          width: 30,
+                        ),
                       ),
                     ),
                   ],
@@ -109,7 +123,8 @@ class CartPage extends StatelessWidget {
                                               Text(
                                                 "₹70.00",
                                                 style: TextStyle(
-                                                  color: Colors.green.shade500,
+                                                  color: Color.fromARGB(
+                                                      255, 50, 227, 56),
                                                   fontWeight: FontWeight.w700,
                                                 ),
                                               ),
@@ -211,7 +226,8 @@ class CartPage extends StatelessWidget {
                                               Text(
                                                 "₹70.00",
                                                 style: TextStyle(
-                                                  color: Colors.green.shade500,
+                                                  color: Color.fromARGB(
+                                                      255, 50, 227, 56),
                                                   fontWeight: FontWeight.w700,
                                                 ),
                                               ),
@@ -340,7 +356,7 @@ class CartPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                           SizedBox(
@@ -512,14 +528,14 @@ class CartPage extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "70.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           )
                         ],
@@ -538,14 +554,14 @@ class CartPage extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "12.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           )
                         ],
@@ -564,14 +580,14 @@ class CartPage extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "27.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -579,7 +595,7 @@ class CartPage extends StatelessWidget {
                       SizedBox(height: 15),
                       Divider(
                         color: Color.fromARGB(
-                            255, 11, 216, 8), // Color shade #28ED24
+                            255, 50, 227, 56), // Color shade #28ED24
                         indent: 200,
                         endIndent: 20,
                         thickness: 1,
@@ -599,7 +615,7 @@ class CartPage extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 20,
                           ),
                           Text(
@@ -607,7 +623,7 @@ class CartPage extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -624,7 +640,7 @@ class CartPage extends StatelessWidget {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: const MaterialStatePropertyAll(
-                        Color.fromARGB(255, 11, 216, 8),
+                        Color.fromARGB(255, 50, 227, 56),
                       ),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
