@@ -3,21 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/Iphone13&14.dart';
 import 'package:grocery_app/Pages/Pages/Addaddresses.dart';
 import 'package:grocery_app/Pages/Pages/CartPage.dart';
-import 'package:grocery_app/Pages/Pages/Category%20wise%20list.dart';
-import 'package:grocery_app/Pages/Pages/Categoryscreen.dart';
-import 'package:grocery_app/Pages/Pages/Favouriteproduct.dart';
 import 'package:grocery_app/Pages/Pages/Homescreen.dart';
 import 'package:grocery_app/Pages/Pages/Loginscreen.dart';
 import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
-import 'package:grocery_app/Pages/Pages/Register%20screen.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/blurtrial.dart';
 //import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
-import 'package:grocery_app/Pages/Pages/Payment%20page.dart';
-import 'package:grocery_app/Pages/Pages/Support%20page.dart';
-
+  
 void main() {
   runApp(const FlutterApp());
 }
