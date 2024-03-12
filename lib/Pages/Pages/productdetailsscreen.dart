@@ -46,7 +46,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           onPressed: () {},
                           icon: const Icon(Icons.favorite_outline_sharp),
                           iconSize: 30,
-                          color: const Color.fromARGB(255, 34, 226, 44),
+                          color: const Color.fromARGB(255, 50, 227, 56),
                         ),
                       ),
                     ],
@@ -103,7 +103,7 @@ class ProductDetailsScreen extends StatelessWidget {
                                           "₹70.00",
                                           style: GoogleFonts.montserrat(
                                               color: const Color.fromARGB(
-                                                  255, 101, 236, 106),
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700,
                                               fontSize: 20),
                                         ),
@@ -156,10 +156,10 @@ class ProductDetailsScreen extends StatelessWidget {
                               trimExpandedText: "Show Less",
                               lessStyle: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 101, 236, 106)),
+                                  color: Color.fromARGB(255, 50, 227, 56)),
                               moreStyle: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 101, 236, 106)),
+                                  color: Color.fromARGB(255, 50, 227, 56)),
                               style: TextStyle(
                                 fontSize: 12,
                                 height: 2,
@@ -177,7 +177,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
                                   backgroundColor:
-                                      const Color.fromARGB(255, 101, 236, 106)),
+                                      const Color.fromARGB(255, 50, 227, 56)),
                               child: Row(
                                 children: [
                                   const SizedBox(
@@ -212,16 +212,15 @@ class ProductDetailsScreen extends StatelessWidget {
                                   Text(
                                     "BUY NOW",
                                     style: GoogleFonts.montserrat(
-                                      color: const Color.fromARGB(
-                                          255, 101, 236, 106),
-                                    ),
+                                        color: const Color.fromARGB(
+                                            255, 50, 227, 56)),
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
                                   const Icon(
                                     Icons.shopping_bag_outlined,
-                                    color: Color.fromARGB(255, 101, 236, 106),
+                                    color: Color.fromARGB(255, 50, 227, 56),
                                   ),
                                   const SizedBox(
                                     width: 25,

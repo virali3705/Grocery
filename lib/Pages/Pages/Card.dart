@@ -53,7 +53,10 @@ class ProductHomeCard extends StatelessWidget {
                   ),
                 ],
               ),
-              Icon(Icons.favorite_outline_sharp, color: Colors.green.shade500),
+              Icon(
+                Icons.favorite_outline_sharp,
+                color: Color.fromARGB(255, 50, 227, 56),
+              ),
             ],
           ),
           Image(
@@ -78,7 +81,7 @@ class ProductHomeCard extends StatelessWidget {
                       Text(
                         "₹70.00",
                         style: TextStyle(
-                            color: Colors.green.shade500,
+                            color: Color.fromARGB(255, 50, 227, 56),
                             fontWeight: FontWeight.w700),
                       ),
                       Text(
@@ -105,7 +108,7 @@ class ProductHomeCard extends StatelessWidget {
                       height: 48,
                       width: 60,
                       decoration: BoxDecoration(
-                          color: Colors.green.shade500,
+                          color: Color.fromARGB(255, 50, 227, 56),
                           borderRadius: BorderRadius.circular(10)),
                     ),
                     Padding(
@@ -125,7 +128,9 @@ class ProductHomeCard extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     "BUY NOW",
-                    style: TextStyle(color: Colors.green.shade500),
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 50, 227, 56),
+                    ),
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,

@@ -135,7 +135,8 @@ class FavouriteProduct extends StatelessWidget {
                                         Text(
                                           "₹70.00",
                                           style: TextStyle(
-                                              color: Colors.green.shade500,
+                                              color: Color.fromARGB(
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700),
                                         ),
                                         const SizedBox(
@@ -195,7 +196,7 @@ class FavouriteProduct extends StatelessWidget {
                                           style: ElevatedButton.styleFrom(
                                               backgroundColor:
                                                   const Color.fromARGB(
-                                                      255, 101, 236, 106)),
+                                                      255, 50, 227, 56)),
                                           child: const Row(
                                             children: [
                                               Text(
@@ -236,7 +237,7 @@ class FavouriteProduct extends StatelessWidget {
                                                   fontWeight: FontWeight.w700,
                                                   fontSize: 8,
                                                   color: Color.fromARGB(
-                                                      255, 101, 236, 106),
+                                                      255, 50, 227, 56),
                                                 )),
                                               ),
                                             ],
@@ -278,7 +279,7 @@ class FavouriteProduct extends StatelessWidget {
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
                               iconSize: 26,
-                              color: const Color.fromARGB(255, 34, 226, 44),
+                              color: const Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -351,7 +352,8 @@ class FavouriteProduct extends StatelessWidget {
                                         Text(
                                           "₹70.00",
                                           style: TextStyle(
-                                              color: Colors.green.shade500,
+                                              color: Color.fromARGB(
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700),
                                         ),
                                         const SizedBox(
@@ -411,7 +413,7 @@ class FavouriteProduct extends StatelessWidget {
                                           style: ElevatedButton.styleFrom(
                                               backgroundColor:
                                                   const Color.fromARGB(
-                                                      255, 101, 236, 106)),
+                                                      255, 50, 227, 56)),
                                           child: const Row(
                                             children: [
                                               Text(
@@ -452,7 +454,7 @@ class FavouriteProduct extends StatelessWidget {
                                                   fontWeight: FontWeight.w700,
                                                   fontSize: 8,
                                                   color: Color.fromARGB(
-                                                      255, 101, 236, 106),
+                                                      255, 50, 227, 56),
                                                 )),
                                               ),
                                             ],
@@ -494,7 +496,7 @@ class FavouriteProduct extends StatelessWidget {
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
                               iconSize: 26,
-                              color: const Color.fromARGB(255, 34, 226, 44),
+                              color: const Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -567,7 +569,8 @@ class FavouriteProduct extends StatelessWidget {
                                         Text(
                                           "₹70.00",
                                           style: TextStyle(
-                                              color: Colors.green.shade500,
+                                              color: Color.fromARGB(
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700),
                                         ),
                                         const SizedBox(
@@ -627,7 +630,7 @@ class FavouriteProduct extends StatelessWidget {
                                           style: ElevatedButton.styleFrom(
                                               backgroundColor:
                                                   const Color.fromARGB(
-                                                      255, 101, 236, 106)),
+                                                      255, 50, 227, 56)),
                                           child: const Row(
                                             children: [
                                               Text(
@@ -668,7 +671,7 @@ class FavouriteProduct extends StatelessWidget {
                                                   fontWeight: FontWeight.w700,
                                                   fontSize: 8,
                                                   color: Color.fromARGB(
-                                                      255, 101, 236, 106),
+                                                      255, 50, 227, 56),
                                                 )),
                                               ),
                                             ],
@@ -710,7 +713,7 @@ class FavouriteProduct extends StatelessWidget {
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
                               iconSize: 26,
-                              color: const Color.fromARGB(255, 34, 226, 44),
+                              color: const Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -783,7 +786,8 @@ class FavouriteProduct extends StatelessWidget {
                                         Text(
                                           "₹70.00",
                                           style: TextStyle(
-                                              color: Colors.green.shade500,
+                                              color: Color.fromARGB(
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700),
                                         ),
                                         const SizedBox(
@@ -843,7 +847,7 @@ class FavouriteProduct extends StatelessWidget {
                                           style: ElevatedButton.styleFrom(
                                               backgroundColor:
                                                   const Color.fromARGB(
-                                                      255, 101, 236, 106)),
+                                                      255, 50, 227, 56)),
                                           child: const Row(
                                             children: [
                                               Text(
@@ -884,7 +888,7 @@ class FavouriteProduct extends StatelessWidget {
                                                   fontWeight: FontWeight.w700,
                                                   fontSize: 8,
                                                   color: Color.fromARGB(
-                                                      255, 101, 236, 106),
+                                                      255, 50, 227, 56),
                                                 )),
                                               ),
                                             ],
@@ -926,7 +930,7 @@ class FavouriteProduct extends StatelessWidget {
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
                               iconSize: 26,
-                              color: const Color.fromARGB(255, 34, 226, 44),
+                              color: const Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -999,7 +1003,8 @@ class FavouriteProduct extends StatelessWidget {
                                         Text(
                                           "₹70.00",
                                           style: TextStyle(
-                                              color: Colors.green.shade500,
+                                              color: Color.fromARGB(
+                                                  255, 50, 227, 56),
                                               fontWeight: FontWeight.w700),
                                         ),
                                         const SizedBox(
@@ -1059,7 +1064,7 @@ class FavouriteProduct extends StatelessWidget {
                                           style: ElevatedButton.styleFrom(
                                               backgroundColor:
                                                   const Color.fromARGB(
-                                                      255, 101, 236, 106)),
+                                                      255, 50, 227, 56)),
                                           child: const Row(
                                             children: [
                                               Text(
@@ -1100,7 +1105,7 @@ class FavouriteProduct extends StatelessWidget {
                                                   fontWeight: FontWeight.w700,
                                                   fontSize: 8,
                                                   color: Color.fromARGB(
-                                                      255, 101, 236, 106),
+                                                      255, 50, 227, 56),
                                                 )),
                                               ),
                                             ],
@@ -1142,7 +1147,7 @@ class FavouriteProduct extends StatelessWidget {
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
                               iconSize: 26,
-                              color: const Color.fromARGB(255, 34, 226, 44),
+                              color: const Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],

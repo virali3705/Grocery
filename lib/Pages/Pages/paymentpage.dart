@@ -73,14 +73,14 @@ class Payment extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "70.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           )
                         ],
@@ -99,14 +99,14 @@ class Payment extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "12.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           )
                         ],
@@ -125,14 +125,14 @@ class Payment extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 17,
                           ),
                           Text(
                             "27.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],
@@ -140,7 +140,7 @@ class Payment extends StatelessWidget {
                       SizedBox(height: 15),
                       Divider(
                         color: Color.fromARGB(
-                            255, 11, 216, 8), // Color shade #28ED24
+                            255, 50, 227, 56), // Color shade #28ED24
                         indent: 200,
                         endIndent: 20,
                         thickness: 1,
@@ -160,7 +160,7 @@ class Payment extends StatelessWidget {
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 11, 216, 8),
+                            color: Color.fromARGB(255, 50, 227, 56),
                             size: 20,
                           ),
                           Text(
@@ -168,7 +168,7 @@ class Payment extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
-                              color: Color.fromARGB(255, 11, 216, 8),
+                              color: Color.fromARGB(255, 50, 227, 56),
                             ),
                           ),
                         ],

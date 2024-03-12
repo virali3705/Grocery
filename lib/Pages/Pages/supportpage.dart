@@ -47,7 +47,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Colors.green, // Change color when selected
+                        activeColor: Color.fromARGB(
+                            255, 50, 227, 56), // Change color when selected
                       ),
                       const Text(
                         "Report a bug",
@@ -69,7 +70,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Colors.green, // Change color when selected
+                        activeColor: Color.fromARGB(
+                            255, 50, 227, 56), // Change color when selected
                       ),
                       const Text(
                         "Submit feedback",
@@ -113,7 +115,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Colors.green, // Change color when selected
+                        activeColor: Color.fromARGB(
+                            255, 50, 227, 56), // Change color when selected
                       ),
                       const Text(
                         "Product or order related issue",
@@ -128,16 +131,16 @@ class _SupportPageState extends State<SupportPage> {
                   child: Row(
                     children: [
                       Radio(
-                        value: 5,
-                        groupValue: _selectedValue,
-                        onChanged: (value) {
-                          setState(() {
-                            _selectedValue = value;
-                          });
-                        },
-                        activeColor: const Color.fromARGB(
-                            255, 11, 216, 8), // Change color when selected
-                      ),
+                          value: 5,
+                          groupValue: _selectedValue,
+                          onChanged: (value) {
+                            setState(() {
+                              _selectedValue = value;
+                            });
+                          },
+                          activeColor: const Color.fromARGB(
+                              255, 50, 227, 56) // Change color when selected
+                          ),
                       const Text(
                         "Payment related problem",
                         style: TextStyle(
@@ -153,7 +156,9 @@ class _SupportPageState extends State<SupportPage> {
                   children: [
                     Stack(children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 18,),
+                        padding: const EdgeInsets.only(
+                          left: 18,
+                        ),
                         child: Container(
                           height: 150,
                           width: 355,
@@ -164,12 +169,11 @@ class _SupportPageState extends State<SupportPage> {
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.only(left: 32,right: 32),
+                        padding: EdgeInsets.only(left: 32, right: 32),
                         child: TextField(
-                          
-                          decoration: InputDecoration(hintText:"Explain in brief......",
-                          border: InputBorder.none)
-                        ),
+                            decoration: InputDecoration(
+                                hintText: "Explain in brief......",
+                                border: InputBorder.none)),
                       ),
                     ]),
                     const SizedBox(
@@ -187,7 +191,7 @@ class _SupportPageState extends State<SupportPage> {
                             ),
                           ),
                           backgroundColor: MaterialStateProperty.all(
-                            const Color.fromARGB(255, 11, 216, 8),
+                            const Color.fromARGB(255, 50, 227, 56),
                           ),
                         ),
                         onPressed: () {},
