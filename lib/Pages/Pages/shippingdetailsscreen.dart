@@ -36,20 +36,20 @@ class ShippingDetails extends StatelessWidget {
                     ),
                   ],
                 ),
-                // SizedBox(
-                //   height: 25,
-                // ),
-                // // Start timeline
-                // MyTimelineTile(isFirst: true, isLast: false, isPast: true),
+                SizedBox(
+                  height: 25,
+                ),
+                // Start timeline
+                MyTimelineTile(isFirst: true, isLast: false, isPast: true),
 
-                // // Middle timeline
-                // MyTimelineTile(isFirst: false, isLast: false, isPast: true),
+                // Middle timeline
+                MyTimelineTile(isFirst: false, isLast: false, isPast: true),
 
-                // // Middle timeline
-                // MyTimelineTile(isFirst: false, isLast: false, isPast: true),
+                // Middle timeline
+                MyTimelineTile(isFirst: false, isLast: false, isPast: true),
 
-                // // Last timeline
-                // MyTimelineTile(isFirst: false, isLast: true, isPast: true),
+                // Last timeline
+                MyTimelineTile(isFirst: false, isLast: true, isPast: true),
               ],
             ),
           ),

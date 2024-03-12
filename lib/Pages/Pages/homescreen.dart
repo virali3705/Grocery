@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/Card.dart';
 
 class Homescreen extends StatelessWidget {
-  Homescreen({Key? key}) : super(key: key);
+   Homescreen({Key? key}) : super(key: key);
 
   final List _cards = ['card_1', 'card_2', 'card_3'];
 

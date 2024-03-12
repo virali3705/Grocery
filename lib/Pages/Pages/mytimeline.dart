@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:grocery_app/Pages/Pages/Shipping_Details.dart';
+import 'package:grocery_app/Pages/Pages/orderdetails.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class MyTimelineTile extends StatelessWidget {
@@ -22,7 +23,7 @@ class MyTimelineTile extends StatelessWidget {
         isLast: isLast,
         beforeLineStyle: LineStyle(color: Colors.green),
         indicatorStyle: IndicatorStyle(width: 28, color: Colors.green),
-        endChild:const ShippingInfo(),
+        endChild:const OrderDetails(),
       ),
     );
   }
