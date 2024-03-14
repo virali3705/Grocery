@@ -9,10 +9,12 @@ import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
-import 'package:grocery_app/Pages/Pages/blurtrial.dart';
+import 'package:grocery_app/Pages/Pages/myorders.dart';
+import 'package:grocery_app/Pages/Pages/paymentpage.dart';
 //import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
-  
+import 'package:grocery_app/Pages/Pages/supportpage.dart';
+
 void main() {
   runApp(const FlutterApp());
 }
@@ -26,10 +28,11 @@ class FlutterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-          useMaterial3: false,
-          textTheme: GoogleFonts.montserratTextTheme()),
-      home: const Iphone13(),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+        useMaterial3: false,
+        textTheme: GoogleFonts.montserratTextTheme(),
+      ),
+      home: Homescreen(),
     );
   }
 }

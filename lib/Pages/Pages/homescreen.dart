@@ -179,7 +179,8 @@ class Homescreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 70, vertical: 10),
                     child: Text(
                       "view all>>",
                       style: GoogleFonts.montserrat(
@@ -210,25 +211,393 @@ class Homescreen extends StatelessWidget {
                 ),
 
                 //list view is not working....
-
-                Column(
-                  children: [
-                    Row(
+                ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Row(
                       children: [
-                        SizedBox(
-                          height: 200,
-                          child: ListView.builder(
-                            shrinkWrap: true,
-                            scrollDirection: Axis.horizontal,
-                            itemCount: 3,
-                            itemBuilder: (context, index) {
-                              return const ProductHomeCard();
-                            },
-                          ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 190),
+                          child: Card(
+                              child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                          alignment: Alignment.center,
+                                          child: const Text(
+                                            "50 % off",
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 30, 75, 32)),
+                                          ),
+                                          height: 30,
+                                          width: 80,
+                                          decoration: const BoxDecoration(
+                                            color: Color.fromARGB(
+                                                255, 177, 255, 181),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(15)),
+                                          )),
+                                      SizedBox(
+                                        width: 5,
+                                      ),
+                                      Image(
+                                          image: AssetImage("assets/Veg.png")),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite_outline_sharp,
+                                    color: Colors.green.shade500,
+                                  )
+                                ],
+                              ),
+                              Image(image: AssetImage("assets/Apple.png")),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 100),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Apples",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                    SizedBox(
+                                      height: 2,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 7),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text(
+                                            "₹70.00",
+                                            style: TextStyle(
+                                                color: Colors.green.shade500,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          Text(
+                                            "140",
+                                            style: TextStyle(
+                                                decoration:
+                                                    TextDecoration.lineThrough),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 60,
+                                          decoration: BoxDecoration(
+                                              color: Colors.green.shade500,
+                                              borderRadius:
+                                                  BorderRadius.circular(10)),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 7),
+                                          child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.shopping_cart,
+                                                color: Colors.white,
+                                              )),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      width: 2.7,
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        "BUY NOW",
+                                        style: TextStyle(
+                                            color: Colors.green.shade500),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          )),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 190),
+                          child: Card(
+                              child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                          alignment: Alignment.center,
+                                          child: const Text(
+                                            "50 % off",
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 30, 75, 32)),
+                                          ),
+                                          height: 30,
+                                          width: 80,
+                                          decoration: const BoxDecoration(
+                                            color: Color.fromARGB(
+                                                255, 177, 255, 181),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(15)),
+                                          )),
+                                      SizedBox(
+                                        width: 5,
+                                      ),
+                                      Image(
+                                          image: AssetImage("assets/Veg.png")),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite_outline_sharp,
+                                    color: Colors.green.shade500,
+                                  )
+                                ],
+                              ),
+                              Image(image: AssetImage("assets/Apple.png")),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 100),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Apples",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                    SizedBox(
+                                      height: 2,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 7),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text(
+                                            "₹70.00",
+                                            style: TextStyle(
+                                                color: Colors.green.shade500,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          Text(
+                                            "140",
+                                            style: TextStyle(
+                                                decoration:
+                                                    TextDecoration.lineThrough),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 60,
+                                          decoration: BoxDecoration(
+                                              color: Colors.green.shade500,
+                                              borderRadius:
+                                                  BorderRadius.circular(10)),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 7),
+                                          child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.shopping_cart,
+                                                color: Colors.white,
+                                              )),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      width: 2.7,
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        "BUY NOW",
+                                        style: TextStyle(
+                                            color: Colors.green.shade500),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          )),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 190),
+                          child: Card(
+                              child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                          alignment: Alignment.center,
+                                          child: const Text(
+                                            "50 % off",
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 30, 75, 32)),
+                                          ),
+                                          height: 30,
+                                          width: 80,
+                                          decoration: const BoxDecoration(
+                                            color: Color.fromARGB(
+                                                255, 177, 255, 181),
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(15)),
+                                          )),
+                                      SizedBox(
+                                        width: 5,
+                                      ),
+                                      Image(
+                                          image: AssetImage("assets/Veg.png")),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite_outline_sharp,
+                                    color: Colors.green.shade500,
+                                  )
+                                ],
+                              ),
+                              Image(image: AssetImage("assets/Apple.png")),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 100),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Apples",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                    SizedBox(
+                                      height: 2,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 7),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text(
+                                            "₹70.00",
+                                            style: TextStyle(
+                                                color: Colors.green.shade500,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          Text(
+                                            "140",
+                                            style: TextStyle(
+                                                decoration:
+                                                    TextDecoration.lineThrough),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Stack(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 60,
+                                          decoration: BoxDecoration(
+                                              color: Colors.green.shade500,
+                                              borderRadius:
+                                                  BorderRadius.circular(10)),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 7),
+                                          child: IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.shopping_cart,
+                                                color: Colors.white,
+                                              )),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      width: 2.7,
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        "BUY NOW",
+                                        style: TextStyle(
+                                            color: Colors.green.shade500),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          )),
                         ),
                       ],
-                    )
-                  ],
+                    );
+                  },
+                  itemCount: 3,
+                  scrollDirection: Axis.horizontal,
                 )
               ],
             ),

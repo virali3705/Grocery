@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Payment extends StatelessWidget {
-  const Payment({super.key});
+  const Payment({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +11,13 @@ class Payment extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                const Row(
+                const SizedBox(height: 20),
+                Row(
                   children: [
+                    Icon(Icons.arrow_back_ios_sharp),
+                    const SizedBox(width: 20),
                     Padding(
-                      padding: EdgeInsets.only(top: 20, left: 60),
+                      padding: EdgeInsets.only(top: 5, left: 40),
                       child: Text(
                         "Payment Page",
                         style: TextStyle(
@@ -23,9 +26,7 @@ class Payment extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 70,
-                ),
+                const SizedBox(height: 70),
                 Container(
                   height: 215,
                   width: 360,
@@ -38,7 +39,7 @@ class Payment extends StatelessWidget {
                             spreadRadius: 0.5,
                             blurRadius: 8),
                       ]),
-                  child: const Column(
+                  child: Column(
                     children: [
                       Row(
                         children: [
@@ -59,18 +60,14 @@ class Payment extends StatelessWidget {
                         endIndent: 25,
                         thickness: 1,
                       ),
-                      SizedBox(
-                        height: 8,
-                      ),
+                      SizedBox(height: 8),
                       Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Subtotal"),
                           ),
-                          SizedBox(
-                            width: 200,
-                          ),
+                          SizedBox(width: 200),
                           Icon(
                             Icons.currency_rupee,
                             color: Color.fromARGB(255, 50, 227, 56),
@@ -85,18 +82,14 @@ class Payment extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
-                        height: 8,
-                      ),
+                      SizedBox(height: 8),
                       Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Tax(GST)"),
                           ),
-                          SizedBox(
-                            width: 200,
-                          ),
+                          SizedBox(width: 200),
                           Icon(
                             Icons.currency_rupee,
                             color: Color.fromARGB(255, 50, 227, 56),
@@ -111,18 +104,14 @@ class Payment extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
-                        height: 8,
-                      ),
+                      SizedBox(height: 8),
                       Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Discount"),
                           ),
-                          SizedBox(
-                            width: 196,
-                          ),
+                          SizedBox(width: 196),
                           Icon(
                             Icons.currency_rupee,
                             color: Color.fromARGB(255, 50, 227, 56),
@@ -139,8 +128,7 @@ class Payment extends StatelessWidget {
                       ),
                       SizedBox(height: 15),
                       Divider(
-                        color: Color.fromARGB(
-                            255, 50, 227, 56), // Color shade #28ED24
+                        color: Color.fromARGB(255, 50, 227, 56),
                         indent: 200,
                         endIndent: 20,
                         thickness: 1,
@@ -155,9 +143,7 @@ class Payment extends StatelessWidget {
                                   fontSize: 20, fontWeight: FontWeight.w300),
                             ),
                           ),
-                          SizedBox(
-                            width: 122,
-                          ),
+                          SizedBox(width: 122),
                           Icon(
                             Icons.currency_rupee,
                             color: Color.fromARGB(255, 50, 227, 56),
@@ -176,9 +162,7 @@ class Payment extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                const SizedBox(height: 20),
                 Container(
                   height: 500,
                   width: 360,
@@ -193,7 +177,7 @@ class Payment extends StatelessWidget {
                       ]),
                   child: Column(
                     children: [
-                      const Row(children: [
+                      Row(children: [
                         Padding(
                           padding: EdgeInsets.only(top: 20, left: 18),
                           child: Text(
@@ -205,170 +189,158 @@ class Payment extends StatelessWidget {
                           ),
                         ),
                       ]),
-                      const Divider(
+                      Divider(
                         indent: 20,
                         endIndent: 80,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      Row(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.only(left: 20),
-                            child: Icon(
-                              Icons.credit_card_rounded,
-                              size: 37,
+                      SizedBox(height: 15),
+                      InkWell(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(left: 20),
+                              child: Icon(
+                                Icons.credit_card_rounded,
+                                size: 37,
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          const Text(
-                            "Credit/Debit card",
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w600),
-                          ),
-                          const SizedBox(
-                            width: 50,
-                          ),
-                          SizedBox(
-                            height: 50,
-                            width: 50,
-                            child: Image.asset(
-                              "assets/arrow.png",
+                            SizedBox(width: 20),
+                            Text(
+                              "Credit/Debit card",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.w600),
                             ),
-                          ),
-                        ],
+                            SizedBox(width: 50),
+                            SizedBox(
+                              height: 50,
+                              width: 50,
+                              child: Image.asset(
+                                "assets/arrow.png",
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      const Divider(
+                      Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 20, left: 24),
-                            child: Container(
-                              height: 32,
-                              width: 32,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(
-                                      color: Colors.black, width: 2)),
-                              child: Image.asset("assets/UPI.png"),
+                      InkWell(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 20, left: 24),
+                              child: Container(
+                                height: 32,
+                                width: 32,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                        color: Colors.black, width: 2)),
+                                child: Image.asset("assets/UPI.png"),
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 15),
-                            child: Text(
-                              "UPI",
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w600),
+                            SizedBox(width: 20),
+                            Padding(
+                              padding: EdgeInsets.only(top: 15),
+                              child: Text(
+                                "UPI",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 200,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10),
-                            child: Image.asset(
-                              "assets/arrow.png",
+                            SizedBox(width: 200),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Image.asset(
+                                "assets/arrow.png",
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const Divider(
+                      SizedBox(height: 10),
+                      Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10, left: 23),
-                            child: Image.asset(
-                              "assets/Bank.png",
-                              height: 40,
-                              width: 40,
+                      InkWell(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 10, left: 23),
+                              child: Image.asset(
+                                "assets/Bank.png",
+                                height: 40,
+                                width: 40,
+                              ),
                             ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 10, left: 14),
-                            child: Text(
-                              "Net Banking",
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w600),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10, left: 14),
+                              child: Text(
+                                "Net Banking",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 108,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10),
-                            child: Image.asset("assets/arrow.png"),
-                          ),
-                        ],
+                            SizedBox(width: 108),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Image.asset("assets/arrow.png"),
+                            ),
+                          ],
+                        ),
                       ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      const Divider(
+                      SizedBox(height: 5),
+                      Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10, left: 30),
-                            child: Image.asset("assets/wallet.png"),
-                          ),
-                          const SizedBox(
-                            width: 9,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(top: 10, left: 14),
-                            child: Text(
-                              "Wallets",
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w600),
+                      SizedBox(height: 5),
+                      InkWell(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 10, left: 30),
+                              child: Image.asset("assets/wallet.png"),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 158,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10),
-                            child: Image.asset("assets/arrow.png"),
-                          ),
-                        ],
+                            SizedBox(width: 9),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10, left: 14),
+                              child: Text(
+                                "Wallets",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                            SizedBox(width: 158),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Image.asset("assets/arrow.png"),
+                            ),
+                          ],
+                        ),
                       ),
-                      const SizedBox(
-                        height: 40,
-                      ),
+                      SizedBox(height: 40),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
@@ -385,7 +357,7 @@ class Payment extends StatelessWidget {
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
@@ -402,7 +374,7 @@ class Payment extends StatelessWidget {
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
