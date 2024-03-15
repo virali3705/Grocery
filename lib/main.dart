@@ -9,29 +9,11 @@ import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
-<<<<<<< HEAD
 import 'package:grocery_app/Pages/Pages/myorders.dart';
 import 'package:grocery_app/Pages/Pages/paymentpage.dart';
-//import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
 import 'package:grocery_app/Pages/Pages/supportpage.dart';
 
-=======
-import 'package:grocery_app/Pages/Pages/blurtrial.dart';
-import 'package:grocery_app/Pages/Pages/categoriesscreen.dart';
-import 'package:grocery_app/Pages/Pages/categorywiselistproductlist.dart';
-import 'package:grocery_app/Pages/Pages/favouriteproducts.dart';
-import 'package:grocery_app/Pages/Pages/myorders.dart';
-import 'package:grocery_app/Pages/Pages/myreviews.dart';
-import 'package:grocery_app/Pages/Pages/orderdetails.dart';
-import 'package:grocery_app/Pages/Pages/paymentpage.dart';
-import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
-import 'package:grocery_app/Pages/Pages/registerscreen.dart';
-import 'package:grocery_app/Pages/Pages/routes.dart';
-import 'package:grocery_app/Pages/Pages/splashscreen.dart';
-import 'package:grocery_app/Pages/Pages/supportpage.dart';
-  
->>>>>>> 3019f4fd86f13984747d07661717c1776edaedc3
 void main() {
   runApp(const FlutterApp());
 }
@@ -45,40 +27,11 @@ class FlutterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-<<<<<<< HEAD
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: false,
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
       home: Homescreen(),
-=======
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-          useMaterial3: false,
-          textTheme: GoogleFonts.montserratTextTheme()),
-      routes: {
-        "/": (context) => const SplashScreen(),
-        Routes.splashscreen: (context) => const SplashScreen(),
-        Routes.registerscreen: (context) => const RegisterScreen(),
-        Routes.loginscreen: (context) => const LoginScreen(),
-        Routes.homescreen: (context) => Homescreen(),
-        Routes.productdetails: (context) => ProductDetailsScreen(),
-        Routes.productlist: (context) => const ProductList(),
-        Routes.profile: (context) => ProfileScreen(),
-        Routes.myorders: (context) => const MyOrders(),
-        Routes.myreviews: (context) => const MyReviews(),
-        Routes.favouriteproducts: (context) => const FavouriteProduct(),
-        Routes.savedaddresses: (context) => const SavedAddresses(),
-        Routes.addaddresses: (context) => const AddAddresses(),
-        Routes.categoriesscreen: (context) => CategoryScreen(),
-        Routes.orderdetails: (context) => const OrderDetails(),
-        Routes.shippingdetails: (context) => const ShippingDetails(),
-        Routes.cartpage: (context) => const CartPage(),
-        Routes.paymentpage: (context) => const Payment(),
-        Routes.supportpage: (context) => const SupportPage(),
-        Routes.categorywiseprductlist: (context) => const CategoryWiseList(),
-        Routes.editprofile: (context) => const Iphone13(),
-      },
->>>>>>> 3019f4fd86f13984747d07661717c1776edaedc3
     );
   }
 }
