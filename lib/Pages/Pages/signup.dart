@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class RegisterScreen extends StatelessWidget {
-  const RegisterScreen({super.key});
+class SignUp extends StatelessWidget {
+  const SignUp ({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

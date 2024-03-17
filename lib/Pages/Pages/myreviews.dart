@@ -34,7 +34,7 @@ class MyReviews extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 83,
+              height: 70,
             ),
             Container(
               height: 215,

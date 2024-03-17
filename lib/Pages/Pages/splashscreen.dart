@@ -28,16 +28,17 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             const Text("solutions for your daily need!"),
-            SizedBox(
+            const SizedBox(
               height: 220,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 170,),
-              child: Stack(children: [Padding(
-                padding: const EdgeInsets.only(right: 18 ,top: 15),
-                child: Image(image: AssetImage("assets/Splash2.png")),
-              ),Image(image: AssetImage("assets/Splash1.png"))]),
-              
+            Spacer(),
+            const Padding(
+              padding: EdgeInsets.only(right: 170,),
+              child: Stack(children: [Image(image: AssetImage("assets/Ellipse 1.png")),
+              Image(image: AssetImage("assets/Ellipse 2.png")
+              )
+              ]
+              ),
             ),
           ],
         ),

@@ -172,6 +172,8 @@ class AddAddresses extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80)),
                       backgroundColor: const Color.fromARGB(255, 50, 227, 56),
                     ),
                     child: const Row(
@@ -198,6 +200,8 @@ class AddAddresses extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80)),
                         backgroundColor:
                             const Color.fromARGB(255, 255, 255, 255)),
                     child: const Row(
@@ -210,7 +214,7 @@ class AddAddresses extends StatelessWidget {
                           width: 10,
                         ),
                         Text(
-                          "Home",
+                          "Work",
                           style: TextStyle(color: Colors.black),
                         ),
                         SizedBox(
@@ -230,6 +234,8 @@ class AddAddresses extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80)),
                     backgroundColor: const Color.fromARGB(255, 255, 255, 255)),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,

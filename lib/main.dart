@@ -4,7 +4,7 @@ import 'package:grocery_app/Pages/Pages/Iphone13&14.dart';
 import 'package:grocery_app/Pages/Pages/Addaddresses.dart';
 import 'package:grocery_app/Pages/Pages/CartPage.dart';
 import 'package:grocery_app/Pages/Pages/Homescreen.dart';
-import 'package:grocery_app/Pages/Pages/Loginscreen.dart';
+// import 'package:grocery_app/Pages/Pages/Loginscreen.dart';
 import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
@@ -14,8 +14,11 @@ import 'package:grocery_app/Pages/Pages/categoriesscreen.dart';
 import 'package:grocery_app/Pages/Pages/categorywiselistproductlist.dart';
 import 'package:grocery_app/Pages/Pages/favouriteproducts.dart';
 import 'package:grocery_app/Pages/Pages/myorders.dart';
+import 'package:grocery_app/Pages/Pages/myreviews.dart';
+import 'package:grocery_app/Pages/Pages/orderdetails.dart';
 import 'package:grocery_app/Pages/Pages/paymentpage.dart';
 import 'package:grocery_app/Pages/Pages/productdetailsscreen.dart';
+import 'package:grocery_app/Pages/Pages/signin.dart';
 import 'package:grocery_app/Pages/Pages/signup.dart';
 import 'package:grocery_app/Pages/Pages/splashscreen.dart';
 import 'package:grocery_app/Pages/Pages/supportpage.dart';
@@ -37,7 +40,7 @@ class FlutterApp extends StatelessWidget {
         useMaterial3: false,
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
-      home: SignUp(),
+      home:Iphone13(),
     );
   }
 }
