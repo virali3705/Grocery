@@ -22,10 +22,14 @@ class _SupportPageState extends State<SupportPage> {
               children: [
                 const Row(
                   children: [
+                    Icon(Icons.arrow_back_ios_sharp),
+                    const SizedBox(
+                      width: 20,
+                    ),
                     Padding(
-                      padding: EdgeInsets.only(top: 20, left: 60),
+                      padding: EdgeInsets.only(top: 5, left: 40),
                       child: Text(
-                        "Payment Page",
+                        "Support page",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w400),
                       ),
