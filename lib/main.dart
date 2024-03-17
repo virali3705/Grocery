@@ -9,7 +9,7 @@ import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
 import 'package:grocery_app/Pages/Pages/Shipping%20details.dart';
-import 'package:grocery_app/Pages/Pages/blurtrial.dart';
+// import 'package:grocery_app/Pages/Pages/blurtrial.dart';
 import 'package:grocery_app/Pages/Pages/categoriesscreen.dart';
 import 'package:grocery_app/Pages/Pages/categorywiselistproductlist.dart';
 import 'package:grocery_app/Pages/Pages/favouriteproducts.dart';
