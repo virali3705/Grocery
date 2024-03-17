@@ -31,7 +31,7 @@ class FlutterApp extends StatelessWidget {
         useMaterial3: false,
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
-      home: Homescreen(),
+      home: ProductDetailsScreen(),
     );
   }
 }
