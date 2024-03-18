@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/Card.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class Homescreen extends StatelessWidget {
   Homescreen({Key? key}) : super(key: key);
@@ -14,6 +15,9 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: Row(
@@ -28,12 +32,15 @@ class Homescreen extends StatelessWidget {
             ),
             Image.asset(
               "assets/shopping_cart.png",
-              height: 70,
-              width: 70,
+              height: 50,
+              width: 50,
             ),
           ],
         ),
       ),
+
+      //from here i have to add drawer...
+
       drawer: Drawer(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +54,8 @@ class Homescreen extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Text("Rajveersinh Chauhan",
+          Text(
+            "Rajveersinh Chauhan",
             style: TextStyle(fontSize: 18, color: Colors.green.shade500),
           ),
           Text(
@@ -57,7 +65,10 @@ class Homescreen extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const ListTile(
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.profile);
+            },
             leading: Icon(
               Icons.person,
               color: Colors.green,
@@ -66,9 +77,15 @@ class Homescreen extends StatelessWidget {
               "Profile",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios),
+            ),
           ),
-          const ListTile(
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.categoriesscreen);
+            },
             leading: Icon(
               Icons.category,
               color: Colors.green,
@@ -77,9 +94,15 @@ class Homescreen extends StatelessWidget {
               "Categories",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios),
+            ),
           ),
-          const ListTile(
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.productlist);
+            },
             leading: Icon(
               Icons.dining_sharp,
               color: Colors.green,
@@ -88,9 +111,12 @@ class Homescreen extends StatelessWidget {
               "Search Product",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios),
+            ),
           ),
-          const ListTile(
+          ListTile(
             leading: Icon(
               Icons.local_grocery_store,
               color: Colors.green,
@@ -99,9 +125,17 @@ class Homescreen extends StatelessWidget {
               "My Cart",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Routes.cartpage);
+              },
+              icon: Icon(Icons.arrow_forward_ios),
+            ),
           ),
-          const ListTile(
+          ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.supportpage);
+            },
             leading: Icon(
               Icons.shopping_bag,
               color: Colors.green,
@@ -110,7 +144,10 @@ class Homescreen extends StatelessWidget {
               "Support",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios),
+            ),
           ),
           const SizedBox(
             height: 55,
@@ -120,12 +157,19 @@ class Homescreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {},
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(80)),
             ),
-            child: const Icon(Icons.logout,color: Colors.white,),
-          ),],)),
+            child: const Icon(
+              Icons.logout,
+              color: Colors.white,
+            ),
+          ),
+        ],
+      )),
+
       backgroundColor: const Color.fromARGB(255, 246, 244, 244),
       body: SingleChildScrollView(
         child: Center(
@@ -322,142 +366,153 @@ class Homescreen extends StatelessWidget {
                           child: Card(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15)),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        children: [
-                                          Container(
-                                              alignment: Alignment.center,
-                                              height: 30,
-                                              width: 80,
-                                              decoration: const BoxDecoration(
-                                                color: Color.fromARGB(
-                                                    255, 177, 255, 181),
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(12)),
-                                              ),
-                                              child: const Text(
-                                                "50 % off",
-                                                style: TextStyle(
-                                                    color: Color.fromARGB(
-                                                        255, 30, 75, 32)),
-                                              )),
-                                          const SizedBox(
-                                            width: 5,
-                                          ),
-                                          const Image(
-                                              image:
-                                                  AssetImage("assets/Veg.png")),
-                                        ],
-                                      ),
-                                      const Padding(
-                                        padding: EdgeInsets.only(
-                                            right: 5, top: 15, left: 28),
-                                        child: Icon(
-                                          Icons.favorite_outline_sharp,
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  const Image(image: AssetImage("assets/Apple.png")),
-                                  const Padding(
-                                    padding: EdgeInsets.only(right: 100),
-                                    child: Column(
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                      context, Routes.productdetails);
+                                },
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text(
-                                          "Apples",
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w700),
-                                        ),
-                                        SizedBox(
-                                          height: 2,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsets.only(left: 7),
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              Text(
-                                                "₹70.00",
-                                                style: TextStyle(
-                                                    color: Color.fromARGB(
-                                                        255, 50, 227, 56),
-                                                    fontWeight:
-                                                        FontWeight.w700),
-                                              ),
-                                              Text(
-                                                "140",
-                                                style: TextStyle(
-                                                    decoration: TextDecoration
-                                                        .lineThrough),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 5,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Row(
-                                      children: [
-                                        Stack(
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
                                           children: [
                                             Container(
-                                              height: 48,
-                                              width: 60,
-                                              decoration: BoxDecoration(
-                                                  color: const Color.fromARGB(
-                                                      255, 50, 227, 56),
+                                                alignment: Alignment.center,
+                                                height: 30,
+                                                width: 80,
+                                                decoration: const BoxDecoration(
+                                                  color: Color.fromARGB(
+                                                      255, 177, 255, 181),
                                                   borderRadius:
-                                                      BorderRadius.circular(
-                                                          10)),
+                                                      BorderRadius.all(
+                                                          Radius.circular(12)),
+                                                ),
+                                                child: const Text(
+                                                  "50 % off",
+                                                  style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 30, 75, 32)),
+                                                )),
+                                            const SizedBox(
+                                              width: 5,
                                             ),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.symmetric(
-                                                      horizontal: 7),
-                                              child: IconButton(
-                                                  onPressed: () {},
-                                                  icon: const Icon(
-                                                    Icons.shopping_cart,
-                                                    color: Colors.white,
-                                                  )),
-                                            ),
+                                            const Image(
+                                                image: AssetImage(
+                                                    "assets/Veg.png")),
                                           ],
                                         ),
-                                        const SizedBox(
-                                          width: 2.7,
-                                        ),
-                                        ElevatedButton(
-                                          onPressed: () {},
-                                          style: ElevatedButton.styleFrom(
-                                              backgroundColor: Colors.white),
-                                          child: const Text(
-                                            "BUY NOW",
-                                            style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 50, 227, 56),
-                                            ),
+                                        const Padding(
+                                          padding: EdgeInsets.only(
+                                              right: 5, top: 15, left: 28),
+                                          child: Icon(
+                                            Icons.favorite_outline_sharp,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
                                           ),
                                         )
                                       ],
                                     ),
-                                  )
-                                ],
+                                    const Image(
+                                        image: AssetImage("assets/Apple.png")),
+                                    const Padding(
+                                      padding: EdgeInsets.only(right: 100),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Apples",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          SizedBox(
+                                            height: 2,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(left: 7),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.spaceAround,
+                                              children: [
+                                                Text(
+                                                  "₹70.00",
+                                                  style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 50, 227, 56),
+                                                      fontWeight:
+                                                          FontWeight.w700),
+                                                ),
+                                                Text(
+                                                  "140",
+                                                  style: TextStyle(
+                                                      decoration: TextDecoration
+                                                          .lineThrough),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 5,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Stack(
+                                            children: [
+                                              Container(
+                                                height: 48,
+                                                width: 60,
+                                                decoration: BoxDecoration(
+                                                    color: const Color.fromARGB(
+                                                        255, 50, 227, 56),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                              ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 7),
+                                                child: IconButton(
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(
+                                                          context,
+                                                          Routes.cartpage);
+                                                    },
+                                                    icon: const Icon(
+                                                      Icons.shopping_cart,
+                                                      color: Colors.white,
+                                                    )),
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            width: 2.7,
+                                          ),
+                                          ElevatedButton(
+                                            onPressed: () {},
+                                            style: ElevatedButton.styleFrom(
+                                                backgroundColor: Colors.white),
+                                            child: const Text(
+                                              "BUY NOW",
+                                              style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 50, 227, 56),
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               )),
                         ),
                       ],
@@ -573,8 +628,7 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding:
-                                    EdgeInsets.only(left: 23, top: 8),
+                                padding: EdgeInsets.only(left: 23, top: 8),
                                 child: Text(
                                   "grocery stuff",
                                   style: TextStyle(
@@ -682,8 +736,7 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding:
-                                    EdgeInsets.only(left: 23, top: 10),
+                                padding: EdgeInsets.only(left: 23, top: 10),
                                 child: Text(
                                   "Edible oils",
                                   style: TextStyle(

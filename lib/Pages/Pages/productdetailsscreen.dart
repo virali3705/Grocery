@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 // import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/MultilineHinttext.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 import 'package:readmore/readmore.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -22,7 +23,9 @@ class ProductDetailsScreen extends StatelessWidget {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.homescreen);
+                    },
                     icon: const Icon(Icons.arrow_back_ios_new),
                     color: Colors.grey.shade700,
                   ),

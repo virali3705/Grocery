@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class ProfileScreen extends StatelessWidget {
   List sourceIcon = [
@@ -32,9 +33,14 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.only(top: 20, left: 20),
-                      child: Icon(Icons.arrow_back_ios_new_outlined),
+                      child: IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.homescreen);
+                        },
+                        icon: Icon(Icons.arrow_back_ios_new_outlined),
+                      ),
                     ),
                     const SizedBox(
                       width: 25,
@@ -121,7 +127,9 @@ class ProfileScreen extends StatelessWidget {
                     itemCount: sourceIcon.length,
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, Routes.myorders);
+                        },
                         child: Container(
                           margin: const EdgeInsets.symmetric(
                               vertical: 8, horizontal: 20),

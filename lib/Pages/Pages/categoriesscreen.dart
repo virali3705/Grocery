@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class CategoryScreen extends StatelessWidget {
   CategoryScreen({super.key});
@@ -28,7 +29,11 @@ class CategoryScreen extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, left: 20),
               child: Row(
                 children: [
-                  const Icon(Icons.arrow_back_ios_sharp),
+                  IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.homescreen);
+                      },
+                      icon: Icon(Icons.arrow_back_ios_new_outlined)),
                   const SizedBox(
                     width: 20,
                   ),

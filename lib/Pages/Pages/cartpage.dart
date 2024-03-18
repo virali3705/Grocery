@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({Key? key});
@@ -1041,7 +1042,9 @@ class CartPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.paymentpage);
+                    },
                     child: Column(
                       children: [
                         Padding(
