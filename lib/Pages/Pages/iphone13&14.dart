@@ -144,7 +144,7 @@ class Iphone13 extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 80,
+                height: 20,
               ),
               SizedBox(
                 height: 60,
@@ -165,6 +165,9 @@ class Iphone13 extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 100,
               ),
             ],
           ),

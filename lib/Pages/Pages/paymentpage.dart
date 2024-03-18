@@ -12,10 +12,10 @@ class Payment extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 20),
-                Row(
+                const Row(
                   children: [
                     Icon(Icons.arrow_back_ios_sharp),
-                    const SizedBox(width: 20),
+                    SizedBox(width: 20),
                     Padding(
                       padding: EdgeInsets.only(top: 5, left: 40),
                       child: Text(
@@ -39,7 +39,7 @@ class Payment extends StatelessWidget {
                             spreadRadius: 0.5,
                             blurRadius: 8),
                       ]),
-                  child: Column(
+                  child: const Column(
                     children: [
                       Row(
                         children: [
@@ -177,7 +177,7 @@ class Payment extends StatelessWidget {
                       ]),
                   child: Column(
                     children: [
-                      Row(children: [
+                      const Row(children: [
                         Padding(
                           padding: EdgeInsets.only(top: 20, left: 18),
                           child: Text(
@@ -189,31 +189,31 @@ class Payment extends StatelessWidget {
                           ),
                         ),
                       ]),
-                      Divider(
+                      const Divider(
                         indent: 20,
                         endIndent: 80,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       InkWell(
                         onTap: () {},
                         child: Row(
                           children: [
-                            Padding(
+                            const Padding(
                               padding: EdgeInsets.only(left: 20),
                               child: Icon(
                                 Icons.credit_card_rounded,
                                 size: 37,
                               ),
                             ),
-                            SizedBox(width: 20),
-                            Text(
+                            const SizedBox(width: 20),
+                            const Text(
                               "Credit/Debit card",
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.w600),
                             ),
-                            SizedBox(width: 50),
+                            const SizedBox(width: 50),
                             SizedBox(
                               height: 50,
                               width: 50,
@@ -224,7 +224,7 @@ class Payment extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Divider(
+                      const Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
@@ -235,7 +235,7 @@ class Payment extends StatelessWidget {
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(top: 20, left: 24),
+                              padding: const EdgeInsets.only(top: 20, left: 24),
                               child: Container(
                                 height: 32,
                                 width: 32,
@@ -246,8 +246,8 @@ class Payment extends StatelessWidget {
                                 child: Image.asset("assets/UPI.png"),
                               ),
                             ),
-                            SizedBox(width: 20),
-                            Padding(
+                            const SizedBox(width: 20),
+                            const Padding(
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 "UPI",
@@ -255,9 +255,9 @@ class Payment extends StatelessWidget {
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
                             ),
-                            SizedBox(width: 200),
+                            const SizedBox(width: 200),
                             Padding(
-                              padding: EdgeInsets.only(top: 10),
+                              padding: const EdgeInsets.only(top: 10),
                               child: Image.asset(
                                 "assets/arrow.png",
                               ),
@@ -265,8 +265,8 @@ class Payment extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
@@ -277,14 +277,14 @@ class Payment extends StatelessWidget {
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(top: 10, left: 23),
+                              padding: const EdgeInsets.only(top: 10, left: 23),
                               child: Image.asset(
                                 "assets/Bank.png",
                                 height: 40,
                                 width: 40,
                               ),
                             ),
-                            Padding(
+                            const Padding(
                               padding: EdgeInsets.only(top: 10, left: 14),
                               child: Text(
                                 "Net Banking",
@@ -292,32 +292,32 @@ class Payment extends StatelessWidget {
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
                             ),
-                            SizedBox(width: 108),
+                            const SizedBox(width: 108),
                             Padding(
-                              padding: EdgeInsets.only(top: 10),
+                              padding: const EdgeInsets.only(top: 10),
                               child: Image.asset("assets/arrow.png"),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(height: 5),
-                      Divider(
+                      const SizedBox(height: 5),
+                      const Divider(
                         indent: 20,
                         endIndent: 30,
                         color: Color.fromARGB(255, 110, 109, 109),
                         thickness: 1,
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       InkWell(
                         onTap: () {},
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(top: 10, left: 30),
+                              padding: const EdgeInsets.only(top: 10, left: 30),
                               child: Image.asset("assets/wallet.png"),
                             ),
-                            SizedBox(width: 9),
-                            Padding(
+                            const SizedBox(width: 9),
+                            const Padding(
                               padding: EdgeInsets.only(top: 10, left: 14),
                               child: Text(
                                 "Wallets",
@@ -325,22 +325,22 @@ class Payment extends StatelessWidget {
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
                             ),
-                            SizedBox(width: 158),
+                            const SizedBox(width: 158),
                             Padding(
-                              padding: EdgeInsets.only(top: 10),
+                              padding: const EdgeInsets.only(top: 10),
                               child: Image.asset("assets/arrow.png"),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
@@ -357,7 +357,7 @@ class Payment extends StatelessWidget {
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
@@ -374,7 +374,7 @@ class Payment extends StatelessWidget {
                           Container(
                             height: 70,
                             width: 70,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               boxShadow: [
                                 BoxShadow(
                                     color: Color.fromARGB(255, 229, 229, 229),
@@ -393,6 +393,9 @@ class Payment extends StatelessWidget {
                     ],
                   ),
                 ),
+                const SizedBox(
+                  height: 90,
+                )
               ],
             ),
           ),

@@ -21,7 +21,7 @@ class SavedAddresses extends StatelessWidget {
                   ),
                   Text("Saved Addresses",style: GoogleFonts.inter(fontSize: 18,fontWeight: FontWeight.w400),),
                   const SizedBox(
-                    width: 40,
+                    width: 75,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(),

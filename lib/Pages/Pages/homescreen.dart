@@ -23,8 +23,8 @@ class Homescreen extends StatelessWidget {
               height: 70,
               width: 70,
             ),
-            SizedBox(
-              width: 210,
+            const SizedBox(
+              width: 160,
             ),
             Image.asset(
               "assets/shopping_cart.png",
@@ -34,6 +34,98 @@ class Homescreen extends StatelessWidget {
           ],
         ),
       ),
+      drawer: Drawer(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const CircleAvatar(
+            backgroundImage: AssetImage(
+              "assets/Logo.JPG",
+            ),
+            radius: 40,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Text("Rajveersinh Chauhan",
+            style: TextStyle(fontSize: 18, color: Colors.green.shade500),
+          ),
+          Text(
+            "rajveerchauhan936@gmail.com",
+            style: TextStyle(fontSize: 16, color: Colors.green.shade500),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const ListTile(
+            leading: Icon(
+              Icons.person,
+              color: Colors.green,
+            ),
+            title: Text(
+              "Profile",
+              style: TextStyle(fontSize: 19, color: Colors.black),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          const ListTile(
+            leading: Icon(
+              Icons.category,
+              color: Colors.green,
+            ),
+            title: Text(
+              "Categories",
+              style: TextStyle(fontSize: 19, color: Colors.black),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          const ListTile(
+            leading: Icon(
+              Icons.dining_sharp,
+              color: Colors.green,
+            ),
+            title: Text(
+              "Search Product",
+              style: TextStyle(fontSize: 19, color: Colors.black),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          const ListTile(
+            leading: Icon(
+              Icons.local_grocery_store,
+              color: Colors.green,
+            ),
+            title: Text(
+              "My Cart",
+              style: TextStyle(fontSize: 19, color: Colors.black),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          const ListTile(
+            leading: Icon(
+              Icons.shopping_bag,
+              color: Colors.green,
+            ),
+            title: Text(
+              "Support",
+              style: TextStyle(fontSize: 19, color: Colors.black),
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          const SizedBox(
+            height: 55,
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80)),
+            ),
+            child: const Icon(Icons.logout,color: Colors.white,),
+          ),],)),
       backgroundColor: const Color.fromARGB(255, 246, 244, 244),
       body: SingleChildScrollView(
         child: Center(
@@ -214,7 +306,7 @@ class Homescreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
 
@@ -242,12 +334,6 @@ class Homescreen extends StatelessWidget {
                                         children: [
                                           Container(
                                               alignment: Alignment.center,
-                                              child: const Text(
-                                                "50 % off",
-                                                style: TextStyle(
-                                                    color: Color.fromARGB(
-                                                        255, 30, 75, 32)),
-                                              ),
                                               height: 30,
                                               width: 80,
                                               decoration: const BoxDecoration(
@@ -255,17 +341,23 @@ class Homescreen extends StatelessWidget {
                                                     255, 177, 255, 181),
                                                 borderRadius: BorderRadius.all(
                                                     Radius.circular(12)),
+                                              ),
+                                              child: const Text(
+                                                "50 % off",
+                                                style: TextStyle(
+                                                    color: Color.fromARGB(
+                                                        255, 30, 75, 32)),
                                               )),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 5,
                                           ),
-                                          Image(
+                                          const Image(
                                               image:
                                                   AssetImage("assets/Veg.png")),
                                         ],
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
+                                      const Padding(
+                                        padding: EdgeInsets.only(
                                             right: 5, top: 15, left: 28),
                                         child: Icon(
                                           Icons.favorite_outline_sharp,
@@ -275,9 +367,9 @@ class Homescreen extends StatelessWidget {
                                       )
                                     ],
                                   ),
-                                  Image(image: AssetImage("assets/Apple.png")),
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 100),
+                                  const Image(image: AssetImage("assets/Apple.png")),
+                                  const Padding(
+                                    padding: EdgeInsets.only(right: 100),
                                     child: Column(
                                       children: [
                                         Text(
@@ -290,7 +382,7 @@ class Homescreen extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsets.only(left: 7),
+                                              EdgeInsets.only(left: 7),
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceAround,
@@ -315,7 +407,7 @@ class Homescreen extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Padding(
@@ -328,7 +420,7 @@ class Homescreen extends StatelessWidget {
                                               height: 48,
                                               width: 60,
                                               decoration: BoxDecoration(
-                                                  color: Color.fromARGB(
+                                                  color: const Color.fromARGB(
                                                       255, 50, 227, 56),
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -340,27 +432,27 @@ class Homescreen extends StatelessWidget {
                                                       horizontal: 7),
                                               child: IconButton(
                                                   onPressed: () {},
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.shopping_cart,
                                                     color: Colors.white,
                                                   )),
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 2.7,
                                         ),
                                         ElevatedButton(
                                           onPressed: () {},
-                                          child: Text(
+                                          style: ElevatedButton.styleFrom(
+                                              backgroundColor: Colors.white),
+                                          child: const Text(
                                             "BUY NOW",
                                             style: TextStyle(
                                               color: Color.fromARGB(
                                                   255, 50, 227, 56),
                                             ),
                                           ),
-                                          style: ElevatedButton.styleFrom(
-                                              backgroundColor: Colors.white),
                                         )
                                       ],
                                     ),
@@ -375,21 +467,21 @@ class Homescreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
 
-              Align(
+              const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 27),
+                  padding: EdgeInsets.only(left: 27),
                   child: Text(
                     "Popular categories",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
 
@@ -399,7 +491,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -420,16 +512,6 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 23),
-                                child: Text(
-                                  "    fruits & vegetables",
-                                  style: TextStyle(
-                                      fontSize: 11,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
                               width: double.infinity,
                               height:
                                   MediaQuery.of(context).size.height * 0.036,
@@ -438,6 +520,16 @@ class Homescreen extends StatelessWidget {
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20),
+                                ),
+                              ),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 23),
+                                child: Text(
+                                  "    fruits & vegetables",
+                                  style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
@@ -449,7 +541,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -470,25 +562,25 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
+                              width: double.infinity,
+                              height:
+                                  MediaQuery.of(context).size.height * 0.036,
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(255, 50, 227, 56),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                ),
+                              ),
+                              child: const Padding(
                                 padding:
-                                    const EdgeInsets.only(left: 23, top: 8),
+                                    EdgeInsets.only(left: 23, top: 8),
                                 child: Text(
                                   "grocery stuff",
                                   style: TextStyle(
                                       fontSize: 12,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
-                                ),
-                              ),
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
-                              decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
                                 ),
                               ),
                             ),
@@ -500,7 +592,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -521,16 +613,6 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 17),
-                                child: Text(
-                                  "cold drinks & juices",
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
                               width: double.infinity,
                               height:
                                   MediaQuery.of(context).size.height * 0.036,
@@ -541,6 +623,16 @@ class Homescreen extends StatelessWidget {
                                   topRight: Radius.circular(20),
                                 ),
                               ),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 17),
+                                child: Text(
+                                  "cold drinks & juices",
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ),
                             ),
                           ],
                         ),
@@ -549,7 +641,7 @@ class Homescreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -558,7 +650,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -579,9 +671,19 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
+                              width: double.infinity,
+                              height:
+                                  MediaQuery.of(context).size.height * 0.036,
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(255, 50, 227, 56),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                ),
+                              ),
+                              child: const Padding(
                                 padding:
-                                    const EdgeInsets.only(left: 23, top: 10),
+                                    EdgeInsets.only(left: 23, top: 10),
                                 child: Text(
                                   "Edible oils",
                                   style: TextStyle(
@@ -590,16 +692,6 @@ class Homescreen extends StatelessWidget {
                                       fontWeight: FontWeight.w600),
                                 ),
                               ),
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
                             ),
                           ],
                         ),
@@ -609,7 +701,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -630,16 +722,6 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 23),
-                                child: Text(
-                                  "    fruits & vegetables",
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
                               width: double.infinity,
                               height:
                                   MediaQuery.of(context).size.height * 0.036,
@@ -648,6 +730,16 @@ class Homescreen extends StatelessWidget {
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20),
+                                ),
+                              ),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 23),
+                                child: Text(
+                                  "    fruits & vegetables",
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
@@ -659,7 +751,7 @@ class Homescreen extends StatelessWidget {
                   Container(
                     height: 129.5,
                     width: 120,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
@@ -680,16 +772,6 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 23),
-                                child: Text(
-                                  "    fruits & vegetables",
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
                               width: double.infinity,
                               height:
                                   MediaQuery.of(context).size.height * 0.036,
@@ -698,6 +780,16 @@ class Homescreen extends StatelessWidget {
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20),
+                                ),
+                              ),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 23),
+                                child: Text(
+                                  "    fruits & vegetables",
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
@@ -709,7 +801,7 @@ class Homescreen extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 200,
               ),
             ],
