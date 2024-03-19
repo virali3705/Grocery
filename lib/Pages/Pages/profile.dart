@@ -26,145 +26,144 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          child: SafeArea(
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(top: 20, left: 20),
-                      child: IconButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, Routes.homescreen);
-                        },
-                        icon: Icon(Icons.arrow_back_ios_new_outlined),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 25,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 19,
-                      ),
-                      child: Text(
-                        "Profile",
-                        style: GoogleFonts.inter(
-                            fontSize: 18, fontWeight: FontWeight.w400),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 35,
-                ),
-                const Stack(
-                  children: [
-                    CircleAvatar(
-                      maxRadius: 80,
-                      minRadius: 80,
-                      backgroundColor: Color.fromARGB(255, 50, 227, 56),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 53, top: 45),
-                      child: Image(image: AssetImage("assets/Profile.png")),
-                    )
-                  ],
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 25, right: 25),
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Name',
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 20, left: 20),
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.homescreen);
+                      },
+                      icon: Icon(Icons.arrow_back_ios_new_outlined),
                     ),
                   ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 25, right: 25),
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Email',
+                  const SizedBox(
+                    width: 25,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 19,
+                    ),
+                    child: Text(
+                      "Profile",
+                      style: GoogleFonts.inter(
+                          fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 25, right: 25),
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Mobile Number',
-                    ),
+                ],
+              ),
+              const SizedBox(
+                height: 35,
+              ),
+              const Stack(
+                children: [
+                  CircleAvatar(
+                    maxRadius: 80,
+                    minRadius: 80,
+                    backgroundColor: Color.fromARGB(255, 50, 227, 56),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 53, top: 45),
+                    child: Image(image: AssetImage("assets/Profile.png")),
+                  )
+                ],
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 25, right: 25),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Name',
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 25, right: 25),
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Gender',
-                    ),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 25, right: 25),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Email',
                   ),
                 ),
-                const SizedBox(
-                  height: 25,
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 25, right: 25),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Mobile Number',
+                  ),
                 ),
-                SizedBox(
-                  height: 280,
-                  width: 280,
-                  child: GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio: 1.2,
-                      mainAxisSpacing: 8,
-                    ),
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    itemCount: sourceIcon.length,
-                    itemBuilder: (context, index) {
-                      return InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, Routes.myorders);
-                        },
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(
-                              vertical: 8, horizontal: 20),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  color: Color.fromARGB(255, 229, 229, 229),
-                                  spreadRadius: 0.2,
-                                  blurRadius: 10)
-                            ],
-                            color: Colors.white,
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child:
-                                    Image.asset(sourceIcon[index].toString()),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 15),
-                                child: Text(titles[index]),
-                              )
-                            ],
-                          ),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 25, right: 25),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Gender',
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              SizedBox(
+                height: 280,
+                width: 280,
+                child: GridView.builder(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 1.2,
+                    mainAxisSpacing: 8,
+                  ),
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: sourceIcon.length,
+                  itemBuilder: (context, index) {
+                    return InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, Routes.myorders);
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 8, horizontal: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: const [
+                            BoxShadow(
+                                color: Color.fromARGB(255, 229, 229, 229),
+                                spreadRadius: 0.2,
+                                blurRadius: 10)
+                          ],
+                          color: Colors.white,
                         ),
-                      );
-                    },
-                  ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Image.asset(sourceIcon[index].toString()),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 15),
+                              child: Text(titles[index]),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -320,19 +322,23 @@ class Homescreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                  child: Text(
-                    "view all>>",
-                    style: GoogleFonts.montserrat(
-                      textStyle: const TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 13,
-                        color: Color.fromARGB(255, 84, 82, 82),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.categoriesscreen);
+                      },
+                      child: Text(
+                        "view all>>",
+                        style: GoogleFonts.montserrat(
+                          textStyle: const TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 13,
+                            color: Color.fromARGB(255, 84, 82, 82),
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ),
+                    )),
               ),
               Align(
                 alignment: Alignment.centerLeft,
