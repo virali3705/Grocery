@@ -14,12 +14,7 @@ class ProfileScreen extends StatelessWidget {
     "assets/Review.png",
   ];
 
-  List titles = [
-    "My Orders",
-    "Favourites",
-    "Addresses",
-    "My Reviews",
-  ];
+  List titles = [];
 
   ProfileScreen({super.key});
 
