@@ -1,4 +1,4 @@
-import 'dart:js';
+// ignore_for_file: unnecessary_import, unused_import, unused_field, use_super_parameters
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -71,59 +71,59 @@ class Homescreen extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, Routes.profile);
             },
-            leading: Icon(
+            leading: const Icon(
               Icons.person,
               color: Colors.green,
             ),
-            title: Text(
+            title: const Text(
               "Profile",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           ListTile(
             onTap: () {
               Navigator.pushNamed(context, Routes.categoriesscreen);
             },
-            leading: Icon(
+            leading: const Icon(
               Icons.category,
               color: Colors.green,
             ),
-            title: Text(
+            title: const Text(
               "Categories",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           ListTile(
             onTap: () {
               Navigator.pushNamed(context, Routes.productlist);
             },
-            leading: Icon(
+            leading: const Icon(
               Icons.dining_sharp,
               color: Colors.green,
             ),
-            title: Text(
+            title: const Text(
               "Search Product",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.local_grocery_store,
               color: Colors.green,
             ),
-            title: Text(
+            title: const Text(
               "My Cart",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
@@ -131,24 +131,24 @@ class Homescreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, Routes.cartpage);
               },
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           ListTile(
             onTap: () {
               Navigator.pushNamed(context, Routes.supportpage);
             },
-            leading: Icon(
+            leading: const Icon(
               Icons.shopping_bag,
               color: Colors.green,
             ),
-            title: Text(
+            title: const Text(
               "Support",
               style: TextStyle(fontSize: 19, color: Colors.black),
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_forward_ios),
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ),
           const SizedBox(

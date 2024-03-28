@@ -11,7 +11,7 @@ class MyOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     RangeLabels labels =
-        RangeLabels(values.start.toString(), values.end.toString());
+    RangeLabels(values.start.toString(), values.end.toString());
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
