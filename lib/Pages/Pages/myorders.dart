@@ -1,4 +1,4 @@
-// ignore_for_file: use_super_parameters
+// ignore_for_file: use_super_parameters, must_be_immutable, unused_local_variable
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +11,7 @@ class MyOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     RangeLabels labels =
-        RangeLabels(values.start.toString(), values.end.toString());
+    RangeLabels(values.start.toString(), values.end.toString());
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -118,7 +118,7 @@ class MyOrders extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       const Padding(
@@ -189,7 +189,7 @@ class MyOrders extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       const Padding(
@@ -228,7 +228,7 @@ class MyOrders extends StatelessWidget {
           //here
           Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Container(
@@ -247,7 +247,7 @@ class MyOrders extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 35,
                     ),
                     const Image(
@@ -266,7 +266,7 @@ class MyOrders extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               const Padding(
@@ -300,7 +300,7 @@ class MyOrders extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         Container(
@@ -336,7 +336,7 @@ class MyOrders extends StatelessWidget {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     const Padding(
@@ -664,7 +664,7 @@ class MyOrders extends StatelessWidget {
                                   ],
                                 ),
                               ), //to here */
-                              SizedBox(
+                              const SizedBox(
                                 height: 25,
                               ),
                             ],

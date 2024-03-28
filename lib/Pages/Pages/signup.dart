@@ -6,6 +6,8 @@ class SignUp extends StatelessWidget {
   const SignUp({super.key});
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       // resizeToAvoidBottomInset: true,
       body: SafeArea(
@@ -14,11 +16,11 @@ class SignUp extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  Image(image: AssetImage("assets/Ellipse2.png")),
-                  Image(image: AssetImage("assets/Ellipse3.png")),
+                  const Image(image: AssetImage("assets/Ellipse2.png")),
+                  const Image(image: AssetImage("assets/Ellipse3.png")),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 80.0),
+                        const EdgeInsets.symmetric(horizontal: 20.0, vertical: 80.0),
                     child: Text(
                       "Sign up",
                       style: GoogleFonts.montserrat(
@@ -32,7 +34,7 @@ class SignUp extends StatelessWidget {
                   ),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 130.0),
+                        const EdgeInsets.symmetric(horizontal: 20.0, vertical: 130.0),
                     child: Text(
                       "Welcome,Good to see you here",
                       style: GoogleFonts.montserrat(
@@ -44,13 +46,13 @@ class SignUp extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 180.0),
+                        const EdgeInsets.symmetric(horizontal: 20.0, vertical: 180.0),
                     child: Card(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(20)),
                       elevation: 6,
                       color: const Color.fromARGB(223, 255, 255, 255),
                       child: Padding(
@@ -77,16 +79,16 @@ class SignUp extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const SizedBox(
-                              height: 20,
+                            SizedBox(
+                              height: screenHeight *0.03 ,
                             ),
                             SizedBox(
-                              height: 50,
-                              width: 330,
+                              height: screenHeight * 0.06,
+                              width: screenWidth * 0.8,
                               child: TextFormField(
-                                cursorColor: Color.fromARGB(255, 50, 227, 56),
+                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
                                 decoration: InputDecoration(
-                                  focusedBorder: UnderlineInputBorder(
+                                  focusedBorder: const UnderlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color.fromARGB(255, 50, 227, 56),
                                     ),
@@ -98,16 +100,16 @@ class SignUp extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const SizedBox(
-                              height: 15,
+                             SizedBox(
+                              height: screenHeight * 0.03
                             ),
                             SizedBox(
-                              height: 50,
-                              width: 330,
+                              height: screenHeight * 0.06,
+                              width: screenWidth * 0.8,
                               child: TextFormField(
-                                cursorColor: Color.fromARGB(255, 50, 227, 56),
+                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
                                 decoration: InputDecoration(
-                                  focusedBorder: UnderlineInputBorder(
+                                  focusedBorder: const UnderlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color.fromARGB(255, 50, 227, 56),
                                     ),
@@ -115,22 +117,22 @@ class SignUp extends StatelessWidget {
                                   hintText: "Password",
                                   suffixIcon: const Icon(Icons.remove_red_eye),
                                   border: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.black),
+                                    borderSide: const BorderSide(color: Colors.black),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                 ),
                               ),
                             ),
                             SizedBox(
-                              height: 15,
+                              height: screenHeight * 0.03,
                             ),
                             SizedBox(
-                              height: 50,
-                              width: 330,
+                              height: screenHeight * 0.06,
+                              width: screenWidth * 0.8,
                               child: TextFormField(
-                                cursorColor: Color.fromARGB(255, 50, 227, 56),
+                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
                                 decoration: InputDecoration(
-                                  focusedBorder: UnderlineInputBorder(
+                                  focusedBorder: const UnderlineInputBorder(
                                     borderSide: BorderSide(
                                       color: Color.fromARGB(255, 50, 227, 56),
                                     ),
@@ -152,7 +154,7 @@ class SignUp extends StatelessWidget {
                                     "Already have an account?",
                                     style: GoogleFonts.montserrat(
                                       textStyle: const TextStyle(
-                                        fontWeight: FontWeight.bold,
+                                        fontWeight: FontWeight.w600,
                                         fontSize: 15,
                                         color: Color.fromARGB(255, 50, 227, 56),
                                       ),
@@ -160,11 +162,11 @@ class SignUp extends StatelessWidget {
                                   )),
                             ),
                             SizedBox(
-                              height: 40,
+                              height: screenHeight * 0.03,
                             ),
                             SizedBox(
-                              height: 50,
-                              width: 250,
+                              height: screenHeight * 0.06,
+                              width: screenWidth * 0.5,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                     shape: MaterialStateProperty.all(
@@ -172,7 +174,7 @@ class SignUp extends StatelessWidget {
                                             borderRadius:
                                                 BorderRadius.circular(30))),
                                     backgroundColor: MaterialStateProperty.all(
-                                      Color.fromARGB(255, 50, 227, 56),
+                                      const Color.fromARGB(255, 50, 227, 56),
                                     )),
                                 onPressed: () {
                                   Navigator.pushNamed(
@@ -185,6 +187,9 @@ class SignUp extends StatelessWidget {
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
+                            ),
+                            SizedBox(
+                              height: screenHeight * 0.03,
                             ),
                           ],
                         ),
