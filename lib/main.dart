@@ -41,10 +41,14 @@ class FlutterApp extends StatelessWidget {
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
       routes: {
+<<<<<<< HEAD
+        "/": (context) => SplashScreen(),
+=======
         "/": (context) =>  const SplashScreen(),
+>>>>>>> 62de5adf226f489fc33186dbab35de0f0c00bc13
         Routes.signup: (context) => const SignUp(),
         Routes.signin: (context) => const Signin(),
-        Routes.homescreen: (context) => Homescreen(),
+        Routes.Homescreen: (context) => Homescreen(),
         Routes.productdetails: (context) => ProductDetailsScreen(),
         Routes.productlist: (context) => const ProductList(),
         Routes.profile: (context) => ProfileScreen(),

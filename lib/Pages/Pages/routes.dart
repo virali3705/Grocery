@@ -2,7 +2,7 @@ class Routes {
   static String splashscreen = "/splashscreen";
   static String signup = "/signup";
   static String signin = "/signin";
-  static String homescreen = "/homescreen";
+  static String Homescreen = "/Homescreen";
   static String productdetails = "/productdetails";
   static String productlist = "/productlist";
   static String profile = "/profile";

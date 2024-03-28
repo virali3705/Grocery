@@ -28,7 +28,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, Routes.homescreen);
+                      Navigator.pushNamed(context, Routes.Homescreen);
                     },
                     icon: const Icon(Icons.arrow_back_ios_new),
                     color: Colors.grey.shade700,
