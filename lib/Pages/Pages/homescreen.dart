@@ -233,6 +233,8 @@ class Homescreen extends StatelessWidget {
                   SizedBox(
                     height: screenHeight * 0.11,
                     width: screenWidth * 0.24,
+<<<<<<< HEAD
+=======
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -245,7 +247,7 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: screenHeight * 0.11,
+                   height: screenHeight * 0.11,
                     width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
@@ -274,6 +276,86 @@ class Homescreen extends StatelessWidget {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
+                    child: Card(
+                      elevation: 20,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Image.asset("assets/colddrinks.png")),
+                    ),
+                  ),
+                  SizedBox(
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
+                    child: Card(
+                      elevation: 20,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Image.asset("assets/fruits.png")),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 100,
+                    width: 100,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
+                    child: Card(
+                      elevation: 20,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Align(
+                          alignment: Alignment.center,
+<<<<<<< HEAD
+                          child: Image.asset("assets/colddrinks.png")),
+                    ),
+                  ),
+                  SizedBox(
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
+                    child: Card(
+                      elevation: 20,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Image.asset("assets/fruits.png")),
+                    ),
+                  ),
+                  SizedBox(
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
+                    child: Card(
+                      elevation: 20,
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Align(
+                          alignment: Alignment.center,
+=======
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
+                          child: Image.asset("assets/grocery1.png")),
+                    ),
+                  ),
+                ],
+              ),
+<<<<<<< HEAD
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -356,6 +438,43 @@ class Homescreen extends StatelessWidget {
                       ),
                     ),
                   ),
+=======
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.categoriesscreen);
+                      },
+                      child: Text(
+                        "view all>>",
+                        style: GoogleFonts.montserrat(
+                          textStyle: const TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 13,
+                            color: Color.fromARGB(255, 84, 82, 82),
+                          ),
+                        ),
+                      ),
+                    )),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Text(
+                    "Products for you",
+                    style: GoogleFonts.montserrat(
+                      textStyle: const TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                 ),
               ),
               SizedBox(
@@ -552,7 +671,11 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -576,7 +699,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -601,7 +728,11 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -625,7 +756,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -650,7 +785,11 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -674,7 +813,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -707,7 +850,11 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -731,7 +878,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -756,7 +907,11 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -780,7 +935,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -805,7 +964,11 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
+<<<<<<< HEAD
                     height: screenHeight * 0.15,
+=======
+                    height: screenHeight * 0.15 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                     width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -829,7 +992,11 @@ class Homescreen extends StatelessWidget {
                                 )),
                             Container(
                               width: screenWidth * 0.3,
+<<<<<<< HEAD
                               height: screenWidth * 0.07,
+=======
+                              height: screenWidth * 0.07 ,
+>>>>>>> 8c80849ad2aff3f3500819e6e0caf3f38409e7f9
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(

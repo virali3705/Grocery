@@ -5,6 +5,8 @@ class ProductList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -16,8 +18,8 @@ class ProductList extends StatelessWidget {
               ),
               Center(
                 child: Container(
-                  height: 55,
-                  width: 350,
+                  height: screenHeight * 0.07,
+                  width: screenWidth * 0.85,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(15),
