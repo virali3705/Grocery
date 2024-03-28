@@ -1,4 +1,6 @@
 // import 'package:flutter/cupertino.dart';
+// ignore_for_file: must_be_immutable, unnecessary_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 // import 'package:flutter/widgets.dart';
@@ -14,6 +16,8 @@ class ProductDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 213, 204, 204),
       body: SafeArea(
@@ -70,7 +74,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   )),
               Container(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.56,
+                height: screenHeight * 0.6,
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -133,12 +137,13 @@ class ProductDetailsScreen extends StatelessWidget {
                                                 color: Color.fromARGB(
                                                     255, 177, 255, 181),
                                                 borderRadius: BorderRadius.all(
-                                                    Radius.circular(12)),
+                                                    Radius.circular(5)),
                                               ),
-                                              child: Text(
+                                              child: const Text(
                                                 "50 % off",
-                                                style: GoogleFonts.montserrat(
-                                                  color: const Color.fromARGB(
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w600,
+                                                  color: Color.fromARGB(
                                                       255, 30, 75, 32),
                                                 ),
                                               )),
@@ -152,7 +157,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.only(left: 25 ,top: 10,right: 35),
                               child: ReadMoreText(
                                 content,
                                 trimLines: 3,
@@ -258,7 +263,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           "Rate product",
@@ -272,10 +277,10 @@ class ProductDetailsScreen extends StatelessWidget {
                         thickness: 2,
                         color: Colors.grey,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
@@ -305,15 +310,15 @@ class ProductDetailsScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
-                      Text(
+                      const Text(
                         "Good",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w600),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       Stack(children: [
@@ -339,20 +344,20 @@ class ProductDetailsScreen extends StatelessWidget {
                                   border: InputBorder.none)),
                         ),
                       ]),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Container(
+                        height: 70,
+                        width: 70,
+                        decoration: const BoxDecoration(
+                            color: Color.fromARGB(255, 50, 227, 56),
+                            shape: BoxShape.circle),
                         child: Image.asset(
                           "assets/checkcircle.png",
                           height: 70,
                           width: 70,
                         ),
-                        height: 70,
-                        width: 70,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 50, 227, 56),
-                            shape: BoxShape.circle),
                       ),
                     ],
                   ),

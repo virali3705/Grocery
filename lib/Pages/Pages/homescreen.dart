@@ -15,6 +15,8 @@ class Homescreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(
@@ -222,15 +224,15 @@ class Homescreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: screenHeight * 0.02,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -243,8 +245,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                   height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -257,8 +259,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -276,8 +278,8 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -290,8 +292,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -304,8 +306,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: screenHeight * 0.11,
+                    width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -356,8 +358,8 @@ class Homescreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: screenHeight * 0.02,
               ),
 
               // here starts the list view....
@@ -550,8 +552,8 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -573,9 +575,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -584,11 +585,11 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 23),
+                                padding: EdgeInsets.only(left: 25),
                                 child: Text(
-                                  "    fruits & vegetables",
+                                  "    Fruits & Vegetables",
                                   style: TextStyle(
-                                      fontSize: 11,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -600,8 +601,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -623,9 +624,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -636,9 +636,9 @@ class Homescreen extends StatelessWidget {
                               child: const Padding(
                                 padding: EdgeInsets.only(left: 23, top: 8),
                                 child: Text(
-                                  "grocery stuff",
+                                  "Grocery Stuff",
                                   style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -650,8 +650,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -673,9 +673,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -684,11 +683,11 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 17),
+                                padding: EdgeInsets.only(left: 23),
                                 child: Text(
-                                  "cold drinks & juices",
+                                  "Cold Drinks & \n         Juices",
                                   style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -708,8 +707,8 @@ class Homescreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -731,9 +730,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -742,11 +740,11 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 23, top: 10),
+                                padding: EdgeInsets.only(left: 28, top: 10),
                                 child: Text(
-                                  "Edible oils",
+                                  "Edible Oils",
                                   style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -758,8 +756,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -781,9 +779,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -792,11 +789,11 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 23),
+                                padding: EdgeInsets.only(left: 25),
                                 child: Text(
-                                  "    fruits & vegetables",
+                                  "    Fruits & Vegetables",
                                   style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -808,8 +805,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 129.5,
-                    width: 120,
+                    height: screenHeight * 0.15 ,
+                    width: screenHeight * 0.14,
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -831,9 +828,8 @@ class Homescreen extends StatelessWidget {
                                   ),
                                 )),
                             Container(
-                              width: double.infinity,
-                              height:
-                                  MediaQuery.of(context).size.height * 0.036,
+                              width: screenWidth * 0.3,
+                              height: screenWidth * 0.07 ,
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(255, 50, 227, 56),
                                 borderRadius: BorderRadius.only(
@@ -842,11 +838,11 @@ class Homescreen extends StatelessWidget {
                                 ),
                               ),
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 23),
+                                padding: EdgeInsets.only(left: 25),
                                 child: Text(
-                                  "    fruits & vegetables",
+                                  "    Fruits & Vegetables",
                                   style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
