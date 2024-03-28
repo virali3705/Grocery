@@ -176,7 +176,7 @@ class SignUp extends StatelessWidget {
                                     )),
                                 onPressed: () {
                                   Navigator.pushNamed(
-                                      context, Routes.homescreen);
+                                      context, Routes.Homescreen);
                                 },
                                 child: const Text(
                                   "S U B M I T",

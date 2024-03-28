@@ -37,13 +37,16 @@ class ProductList extends StatelessWidget {
                         color: Color.fromARGB(255, 50, 227, 56),
                       ),
                       TextButton(
-                          onPressed: () {},
-                          child: const Text("Search Here",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 17,
-                                color: Colors.black,
-                              )))
+                        onPressed: () {},
+                        child: const Text(
+                          "Search Here",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 17,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),

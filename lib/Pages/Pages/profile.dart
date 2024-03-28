@@ -32,7 +32,7 @@ class ProfileScreen extends StatelessWidget {
                     padding: EdgeInsets.only(top: 20, left: 20),
                     child: IconButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, Routes.homescreen);
+                        Navigator.pushNamed(context, Routes.Homescreen);
                       },
                       icon: Icon(Icons.arrow_back_ios_new_outlined),
                     ),

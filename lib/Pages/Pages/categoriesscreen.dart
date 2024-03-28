@@ -31,7 +31,7 @@ class CategoryScreen extends StatelessWidget {
                 children: [
                   IconButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, Routes.homescreen);
+                        Navigator.pushNamed(context, Routes.Homescreen);
                       },
                       icon: Icon(Icons.arrow_back_ios_new_outlined)),
                   const SizedBox(
