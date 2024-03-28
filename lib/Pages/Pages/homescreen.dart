@@ -1,61 +1,44 @@
-<<<<<<< HEAD
-=======
 // ignore_for_file: unnecessary_import, unused_import, unused_field, use_super_parameters
 
->>>>>>> 62de5adf226f489fc33186dbab35de0f0c00bc13
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/Card.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class Homescreen extends StatelessWidget {
   Homescreen({Key? key}) : super(key: key);
-  RangeValues values = const RangeValues(0, 1);
+
+  final List _cards = ['card_1', 'card_2', 'card_3'];
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-=======
-    RangeLabels labels =
-        RangeLabels(values.start.toString(), values.end.toString());
->>>>>>> 657a0261486b0b32c9e87a65a0072bd2b86791ba
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          child: Column(children: [
-            Row(
-              children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 20, left: 20),
-                  child: Icon(Icons.arrow_back_ios_new_outlined),
-                ),
-                const SizedBox(
-                  width: 25,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 19,
-                  ),
-                  child: Text(
-                    "My Orders",
-                    style: GoogleFonts.inter(
-                        fontSize: 18, fontWeight: FontWeight.w400),
-                  ),
-                ),
-              ],
+      appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        title: Row(
+          children: [
+            Image.asset(
+              "assets/G_logo.png",
+              height: 70,
+              width: 70,
             ),
             const SizedBox(
-              height: 50,
+              width: 160,
             ),
-<<<<<<< HEAD
-            Row(
-              children: [
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.filter_list_sharp,
-=======
+            Image.asset(
+              "assets/shopping_cart.png",
+              height: 50,
+              width: 50,
+            ),
           ],
         ),
       ),
@@ -252,9 +235,7 @@ class Homescreen extends StatelessWidget {
                     width: screenWidth * 0.24,
                     child: Card(
                       elevation: 20,
->>>>>>> 62de5adf226f489fc33186dbab35de0f0c00bc13
                       color: Colors.white,
-<<<<<<< HEAD
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0),
                       ),
@@ -290,32 +271,12 @@ class Homescreen extends StatelessWidget {
                           alignment: Alignment.center,
                           child: Image.asset("assets/grocery1.png")),
                     ),
-=======
-                    ))
-              ],
-            ),
-            const SizedBox(
-              height: 35,
-            ),
-            //here
-            Container(
-              height: screenHeight * 0.19,
-              width: screenWidth * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 229, 229, 229),
-                    spreadRadius: 0.5,
-                    blurRadius: 8,
->>>>>>> 657a0261486b0b32c9e87a65a0072bd2b86791ba
                   ),
                 ],
               ),
-              child: Row(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-<<<<<<< HEAD
                   SizedBox(
                     height: screenHeight * 0.11,
                     width: screenWidth * 0.24,
@@ -345,8 +306,8 @@ class Homescreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
+                    height: 100,
+                    width: 100,
                     child: Card(
                       elevation: 20,
                       color: Colors.white,
@@ -733,80 +694,18 @@ class Homescreen extends StatelessWidget {
                               ),
                             ),
                           ],
-=======
-                  const SizedBox(
-                    width: 35,
-                  ),
-                  const Image(
-                    image: AssetImage("assets/Apple.png"),
-                    height: 100,
-                    width: 100,
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Delivered by 09th July",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Lorem Ipsum is simply dummy text of \nthe printing and typesetting industry...",
-                            style: TextStyle(fontSize: 8),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 45, bottom: 10),
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "Rate Product >>",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
->>>>>>> 657a0261486b0b32c9e87a65a0072bd2b86791ba
                         ),
                       ],
                     ),
                   ),
                 ],
               ),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: screenHeight * 0.19,
-              width: screenWidth * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 229, 229, 229),
-                    spreadRadius: 0.5,
-                    blurRadius: 8,
-                  ),
-                ],
+              const SizedBox(
+                height: 20,
               ),
-              child: Row(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-<<<<<<< HEAD
                   Container(
                     height: screenHeight * 0.15 ,
                     width: screenHeight * 0.14,
@@ -947,274 +846,29 @@ class Homescreen extends StatelessWidget {
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
-=======
-                  const SizedBox(
-                    width: 35,
-                  ),
-                  const Image(
-                    image: AssetImage("assets/Apple.png"),
-                    height: 100,
-                    width: 100,
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Delivered by 09th July",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Lorem Ipsum is simply dummy text of \nthe printing and typesetting industry...",
-                            style: TextStyle(fontSize: 8),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 45, bottom: 10),
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "Rate Product >>",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                fontWeight: FontWeight.w600,
->>>>>>> 657a0261486b0b32c9e87a65a0072bd2b86791ba
                               ),
                             ),
-                          ),
+                          ],
                         ),
                       ],
                     ),
                   ),
                 ],
               ),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: screenHeight * 0.19,
-              width: screenWidth * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 229, 229, 229),
-                    spreadRadius: 0.5,
-                    blurRadius: 8,
-                  ),
-                ],
+
+              const SizedBox(
+                height: 200,
               ),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 35,
-                  ),
-                  const Image(
-                    image: AssetImage("assets/Apple.png"),
-                    height: 100,
-                    width: 100,
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Delivered by 09th July",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Lorem Ipsum is simply dummy text of \nthe printing and typesetting industry...",
-                            style: TextStyle(fontSize: 8),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 45, bottom: 10),
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "Rate Product >>",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: screenHeight * 0.19,
-              width: screenWidth * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 229, 229, 229),
-                    spreadRadius: 0.5,
-                    blurRadius: 8,
-                  ),
-                ],
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 35,
-                  ),
-                  const Image(
-                    image: AssetImage("assets/Apple.png"),
-                    height: 100,
-                    width: 100,
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Delivered by 09th July",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Lorem Ipsum is simply dummy text of \nthe printing and typesetting industry...",
-                            style: TextStyle(fontSize: 8),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 45, bottom: 10),
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "Rate Product >>",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Container(
-              height: screenHeight * 0.19,
-              width: screenWidth * 1,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 229, 229, 229),
-                    spreadRadius: 0.5,
-                    blurRadius: 8,
-                  ),
-                ],
-              ),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 35,
-                  ),
-                  const Image(
-                    image: AssetImage("assets/Apple.png"),
-                    height: 100,
-                    width: 100,
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Delivered by 09th July",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(right: 0),
-                          child: Text(
-                            "Lorem Ipsum is simply dummy text of \nthe printing and typesetting industry...",
-                            style: TextStyle(fontSize: 8),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 45, bottom: 10),
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text(
-                              "Rate Product >>",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ]),
-        ));
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
+
+final List<String> _source = [
+  'assets/Mc.d.png',
+  'assets/Mc.d.png',
+  'assets/Mc.d.png',
+];

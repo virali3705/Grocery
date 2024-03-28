@@ -4,7 +4,6 @@ import 'package:grocery_app/Pages/Pages/Iphone13&14.dart';
 import 'package:grocery_app/Pages/Pages/Addaddresses.dart';
 import 'package:grocery_app/Pages/Pages/CartPage.dart';
 import 'package:grocery_app/Pages/Pages/Homescreen.dart';
-
 import 'package:grocery_app/Pages/Pages/Productlist.dart';
 import 'package:grocery_app/Pages/Pages/Profile.dart';
 import 'package:grocery_app/Pages/Pages/Savedaddresses.dart';
@@ -41,11 +40,7 @@ class FlutterApp extends StatelessWidget {
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
       routes: {
-<<<<<<< HEAD
-        "/": (context) => SplashScreen(),
-=======
         "/": (context) =>  const SplashScreen(),
->>>>>>> 62de5adf226f489fc33186dbab35de0f0c00bc13
         Routes.signup: (context) => const SignUp(),
         Routes.signin: (context) => const Signin(),
         Routes.Homescreen: (context) => Homescreen(),
