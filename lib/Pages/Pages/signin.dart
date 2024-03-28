@@ -7,8 +7,6 @@ class Signin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
         // resizeToAvoidBottomInset: true,
         body: SafeArea(
@@ -17,11 +15,11 @@ class Signin extends StatelessWidget {
           children: [
             Stack(
               children: [
-                const Image(image: AssetImage("assets/Ellipse2.png")),
-                const Image(image: AssetImage("assets/Ellipse3.png")),
+                Image(image: AssetImage("assets/Ellipse2.png")),
+                Image(image: AssetImage("assets/Ellipse3.png")),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 20.0, vertical: 80.0),
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 80.0),
                   child: Text(
                     "Sign In",
                     style: GoogleFonts.montserrat(
@@ -35,7 +33,7 @@ class Signin extends StatelessWidget {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 20.0, vertical: 130.0),
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 130.0),
                   child: Text(
                     "Sign in and experience the shameless\nshopping.",
                     style: GoogleFonts.montserrat(
@@ -47,10 +45,10 @@ class Signin extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Spacer(),
+                Spacer(),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 20.0, vertical: 180.0),
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 180.0),
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -80,16 +78,16 @@ class Signin extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: screenHeight * 0.03,
+                          const SizedBox(
+                            height: 20,
                           ),
                           SizedBox(
-                            height: screenHeight * 0.06,
-                            width: screenWidth * 0.8,
+                            height: 50,
+                            width: 330,
                             child: TextFormField(
-                              cursorColor: const Color.fromARGB(255, 50, 227, 56),
+                              cursorColor: Color.fromARGB(255, 50, 227, 56),
                               decoration: InputDecoration(
-                                focusedBorder: const UnderlineInputBorder(
+                                focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color.fromARGB(255, 50, 227, 56),
                                   ),
@@ -105,12 +103,12 @@ class Signin extends StatelessWidget {
                             height: 15,
                           ),
                           SizedBox(
-                           height: screenHeight * 0.06,
-                            width: screenWidth * 0.8,
+                            height: 50,
+                            width: 330,
                             child: TextFormField(
-                              cursorColor: const Color.fromARGB(255, 50, 227, 56),
+                              cursorColor: Color.fromARGB(255, 50, 227, 56),
                               decoration: InputDecoration(
-                                focusedBorder: const UnderlineInputBorder(
+                                focusedBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color.fromARGB(255, 50, 227, 56),
                                   ),
@@ -156,7 +154,7 @@ class Signin extends StatelessWidget {
                                   "New user?",
                                   style: GoogleFonts.montserrat(
                                     textStyle: const TextStyle(
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.bold,
                                       fontSize: 12,
                                       color: Color.fromARGB(255, 50, 227, 56),
                                     ),
@@ -166,11 +164,11 @@ class Signin extends StatelessWidget {
                             ],
                           ),
                           SizedBox(
-                            height: screenHeight * 0.03,
+                            height: 40,
                           ),
                           SizedBox(
-                            height: screenHeight * 0.06,
-                            width: screenWidth * 0.5,
+                            height: 50,
+                            width: 250,
                             child: ElevatedButton(
                               style: ButtonStyle(
                                   shape: MaterialStateProperty.all(
@@ -178,7 +176,7 @@ class Signin extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(30))),
                                   backgroundColor: MaterialStateProperty.all(
-                                    const Color.fromARGB(255, 50, 227, 56),
+                                    Color.fromARGB(255, 50, 227, 56),
                                   )),
                               onPressed: () {
                                 Navigator.pushNamed(context, Routes.myorders);
@@ -186,12 +184,9 @@ class Signin extends StatelessWidget {
                               child: const Text(
                                 "S U B M I T",
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w600),
+                                    fontSize: 20, fontWeight: FontWeight.bold),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: screenHeight * 0.03,
                           ),
                         ],
                       ),
@@ -199,7 +194,7 @@ class Signin extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
