@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Widgets/AddressTextField.dart';
 
 class AddAddresses extends StatelessWidget {
   const AddAddresses({super.key});
@@ -35,128 +36,80 @@ class AddAddresses extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Full Name',
-                ),
-              ),
+            const AddressTextField(
+              text2: 'Full Name',
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Your Email',
-                ),
-              ),
+            const AddressTextField(
+              text2: 'Your Email',
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 0, right: 0),
               child: Row(
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: const TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'Contact Number',
-                      ),
-                    ),
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: const AddressTextField(
+              text2: 'Contact Number',
+            ),
                   ),
                   const SizedBox(
-                    width: 10,
+                    width: 1,
                   ),
                   const Expanded(
-                    child: TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'Alternate Number',
-                      ),
-                    ),
+                    child: AddressTextField(
+              text2: 'Alternate Number',
+            ),
                   ),
                 ],
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'House No',
-                ),
-              ),
+            const AddressTextField(
+              text2: 'House No',
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Address line 1',
-                ),
-              ),
+            const AddressTextField(
+              text2: 'Address Line 1',
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Address line 2',
-                ),
-              ),
+            const AddressTextField(
+              text2: 'Address Line 2',
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 0, right: 0),
               child: Row(
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: const TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'State',
-                      ),
-                    ),
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: const AddressTextField(
+              text2: 'State',
+            ),
                   ),
                   const SizedBox(
-                    width: 10,
+                    width: 1,
                   ),
                   const Expanded(
-                    child: TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'District',
-                      ),
-                    ),
+                    child: AddressTextField(
+              text2: 'District',
+            ),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 0, right: 0),
               child: Row(
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: const TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'City',
-                      ),
-                    ),
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: const AddressTextField(
+              text2: 'City',
+            ),
                   ),
                   const SizedBox(
-                    width: 10,
+                    width: 1,
                   ),
                   const Expanded(
-                    child: TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'Pincode',
-                      ),
-                    ),
+                    child: AddressTextField(
+              text2: 'Pincode',
+            ),
                   ),
                 ],
               ),
