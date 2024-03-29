@@ -11,7 +11,7 @@ class MyOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     RangeLabels labels =
-    RangeLabels(values.start.toString(), values.end.toString());
+        RangeLabels(values.start.toString(), values.end.toString());
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -45,8 +45,8 @@ class MyOrders extends StatelessWidget {
           Row(
             children: [
               Container(
-                height: 55,
-                width: 350,
+                height: 52,
+                width: 320,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
@@ -77,6 +77,303 @@ class MyOrders extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ),
+              SizedBox(
+                width: screenWidth * 0.04,
+              ),
+              InkWell(
+                onTap: () {
+                  showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return Container(
+                          width: double.infinity,
+                          height: MediaQuery.of(context).size.height * 0.56,
+                          decoration: const BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20),
+                            ),
+                          ),
+                          //from here stack
+                          child: Stack(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 40, left: 30),
+                                child: Text(
+                                  "By order status",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  top: 80,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "Pending",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "Shipped",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                    ElevatedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                          Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "out for delivery",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 130, left: 15),
+                                child: OutlinedButton(
+                                  style: ButtonStyle(
+                                    shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                    ),
+                                    side: MaterialStateProperty.all(
+                                      BorderSide(
+                                        width: 1,
+                                        color: Color.fromARGB(255, 50, 227, 56),
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Delivered",
+                                    style: TextStyle(
+                                      color: Color.fromARGB(255, 50, 227, 56),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 220, left: 15),
+                                child: Text(
+                                  "By order ratings",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 250),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "5.0",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                    ElevatedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                          Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "4.0",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "3.0",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "2.0",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                    OutlinedButton(
+                                      style: ButtonStyle(
+                                        shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(20),
+                                          ),
+                                        ),
+                                        side: MaterialStateProperty.all(
+                                          BorderSide(
+                                            width: 1,
+                                            color: Color.fromARGB(
+                                                255, 50, 227, 56),
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text(
+                                        "1.0",
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 50, 227, 56),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 330, left: 15),
+                                child: Text(
+                                  "By price range",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      });
+                },
+                child: Image.asset(
+                  "assets/Filter box.png",
                 ),
               ),
             ],
@@ -373,7 +670,7 @@ class MyOrders extends StatelessWidget {
                                 ),
                               ), // Padding
                               //container for filter
-                              /*    Container(
+                              /* Container(
                                 width: double.infinity,
                                 height:
                                     MediaQuery.of(context).size.height * 0.56,
@@ -663,7 +960,7 @@ class MyOrders extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                              ), //to here */
+                              ),*/ //to here
                               const SizedBox(
                                 height: 25,
                               ),
@@ -682,3 +979,289 @@ class MyOrders extends StatelessWidget {
     );
   }
 }
+
+
+
+// return Container(
+//                           width: double.infinity,
+//                           height: MediaQuery.of(context).size.height * 0.56,
+//                           decoration: const BoxDecoration(
+//                             color: Colors.white,
+//                             borderRadius: BorderRadius.only(
+//                               topLeft: Radius.circular(20),
+//                               topRight: Radius.circular(20),
+//                             ),
+//                           ),
+//                           //from here stack
+//                           child: Stack(
+//                             children: [
+//                               Padding(
+//                                 padding:
+//                                     const EdgeInsets.only(top: 40, left: 30),
+//                                 child: Text(
+//                                   "By order status",
+//                                   style: TextStyle(
+//                                     fontSize: 18,
+//                                     fontWeight: FontWeight.w600,
+//                                   ),
+//                                 ),
+//                               ),
+//                               Padding(
+//                                 padding: const EdgeInsets.only(
+//                                   top: 80,
+//                                 ),
+//                                 child: Row(
+//                                   mainAxisAlignment:
+//                                       MainAxisAlignment.spaceEvenly,
+//                                   children: [
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "Pending",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "Shipped",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     ElevatedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         backgroundColor:
+//                                             MaterialStateProperty.all(
+//                                           Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "out for delivery",
+//                                         style: TextStyle(color: Colors.white),
+//                                       ),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                               Padding(
+//                                 padding:
+//                                     const EdgeInsets.only(top: 130, left: 15),
+//                                 child: OutlinedButton(
+//                                   style: ButtonStyle(
+//                                     shape: MaterialStateProperty.all(
+//                                       RoundedRectangleBorder(
+//                                         borderRadius: BorderRadius.circular(20),
+//                                       ),
+//                                     ),
+//                                     side: MaterialStateProperty.all(
+//                                       BorderSide(
+//                                         width: 1,
+//                                         color: Color.fromARGB(255, 50, 227, 56),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                   onPressed: () {},
+//                                   child: Text(
+//                                     "Delivered",
+//                                     style: TextStyle(
+//                                       color: Color.fromARGB(255, 50, 227, 56),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                               Padding(
+//                                 padding:
+//                                     const EdgeInsets.only(top: 220, left: 15),
+//                                 child: Text(
+//                                   "By order ratings",
+//                                   style: TextStyle(
+//                                     fontSize: 18,
+//                                     fontWeight: FontWeight.w600,
+//                                   ),
+//                                 ),
+//                               ),
+//                               Padding(
+//                                 padding: const EdgeInsets.only(top: 250),
+//                                 child: Row(
+//                                   mainAxisAlignment:
+//                                       MainAxisAlignment.spaceEvenly,
+//                                   children: [
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "5.0",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     ElevatedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         backgroundColor:
+//                                             MaterialStateProperty.all(
+//                                           Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "4.0",
+//                                         style: TextStyle(color: Colors.white),
+//                                       ),
+//                                     ),
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "3.0",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "2.0",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     OutlinedButton(
+//                                       style: ButtonStyle(
+//                                         shape: MaterialStateProperty.all(
+//                                           RoundedRectangleBorder(
+//                                             borderRadius:
+//                                                 BorderRadius.circular(20),
+//                                           ),
+//                                         ),
+//                                         side: MaterialStateProperty.all(
+//                                           BorderSide(
+//                                             width: 1,
+//                                             color: Color.fromARGB(
+//                                                 255, 50, 227, 56),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       onPressed: () {},
+//                                       child: Text(
+//                                         "1.0",
+//                                         style: TextStyle(
+//                                           color:
+//                                               Color.fromARGB(255, 50, 227, 56),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                               Padding(
+//                                 padding:
+//                                     const EdgeInsets.only(top: 330, left: 15),
+//                                 child: Text(
+//                                   "By price range",
+//                                   style: TextStyle(
+//                                     fontSize: 18,
+//                                     fontWeight: FontWeight.w600,
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         );

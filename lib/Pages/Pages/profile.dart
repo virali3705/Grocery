@@ -29,7 +29,7 @@ class ProfileScreen extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 20, left: 20),
+                    padding: EdgeInsets.only(top: 12, left: 10),
                     child: IconButton(
                       onPressed: () {
                         Navigator.pushNamed(context, Routes.Homescreen);
@@ -38,7 +38,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 25,
+                    width: 10,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -48,6 +48,24 @@ class ProfileScreen extends StatelessWidget {
                       "Profile",
                       style: GoogleFonts.inter(
                           fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 130,
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.editprofile);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 19),
+                      child: Text(
+                        "+Edit profile",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color.fromARGB(255, 50, 227, 56),
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
                   ),
                 ],
@@ -74,6 +92,11 @@ class ProfileScreen extends StatelessWidget {
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: 'Name',
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 50, 227, 56),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -122,7 +145,16 @@ class ProfileScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, Routes.myorders);
+                        if (index == 0) {
+                          Navigator.pushNamed(context, Routes.myorders);
+                        } else if (index == 1) {
+                          Navigator.pushNamed(
+                              context, Routes.favouriteproducts);
+                        } else if (index == 2) {
+                          Navigator.pushNamed(context, Routes.savedaddresses);
+                        } else if (index == 3) {
+                          Navigator.pushNamed(context, Routes.myreviews);
+                        }
                       },
                       child: Container(
                         margin: const EdgeInsets.symmetric(
@@ -146,7 +178,7 @@ class ProfileScreen extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.only(bottom: 15),
-                              child: Text(titles[index]),
+                              child: Text(""),
                             ),
                           ],
                         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class Iphone13 extends StatelessWidget {
   const Iphone13({super.key});
@@ -12,9 +13,14 @@ class Iphone13 extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.arrow_back_ios_sharp),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.profile);
+                    },
+                    icon: Icon(Icons.arrow_back_ios_sharp),
+                  ),
                   const SizedBox(
                     width: 20,
                   ),
