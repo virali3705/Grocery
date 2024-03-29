@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
+import 'package:grocery_app/Widgets/loginText.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -82,68 +83,15 @@ class SignUp extends StatelessWidget {
                             SizedBox(
                               height: screenHeight *0.03 ,
                             ),
-                            SizedBox(
-                              height: screenHeight * 0.06,
-                              width: screenWidth * 0.8,
-                              child: TextFormField(
-                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
-                                decoration: InputDecoration(
-                                  focusedBorder: const UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromARGB(255, 50, 227, 56),
-                                    ),
-                                  ),
-                                  hintText: "Email",
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                ),
-                              ),
-                            ),
+                            loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Email',),
                              SizedBox(
                               height: screenHeight * 0.03
                             ),
-                            SizedBox(
-                              height: screenHeight * 0.06,
-                              width: screenWidth * 0.8,
-                              child: TextFormField(
-                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
-                                decoration: InputDecoration(
-                                  focusedBorder: const UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromARGB(255, 50, 227, 56),
-                                    ),
-                                  ),
-                                  hintText: "Password",
-                                  suffixIcon: const Icon(Icons.remove_red_eye),
-                                  border: OutlineInputBorder(
-                                    borderSide: const BorderSide(color: Colors.black),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                ),
-                              ),
-                            ),
+                            loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Password',suffixIcon: const Icon(Icons.remove_red_eye),),
                             SizedBox(
                               height: screenHeight * 0.03,
                             ),
-                            SizedBox(
-                              height: screenHeight * 0.06,
-                              width: screenWidth * 0.8,
-                              child: TextFormField(
-                                cursorColor: const Color.fromARGB(255, 50, 227, 56),
-                                decoration: InputDecoration(
-                                  focusedBorder: const UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Color.fromARGB(255, 50, 227, 56),
-                                    ),
-                                  ),
-                                  hintText: "Confirm password",
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                ),
-                              ),
-                            ),
+                            loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Confirm Password',),
                             Align(
                               alignment: Alignment.centerLeft,
                               child: TextButton(

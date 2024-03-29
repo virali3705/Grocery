@@ -7,6 +7,9 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/Card.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
+import 'package:grocery_app/Widgets/CategoriesScreen.dart';
+import 'package:grocery_app/Widgets/CategoryCard.dart';
+import 'package:grocery_app/Widgets/Productcard.dart';
 
 class Homescreen extends StatelessWidget {
   Homescreen({Key? key}) : super(key: key);
@@ -51,7 +54,7 @@ class Homescreen extends StatelessWidget {
         children: [
           const CircleAvatar(
             backgroundImage: AssetImage(
-              "assets/Logo.JPG",
+              "assets/Car.jpg",
             ),
             radius: 40,
           ),
@@ -230,95 +233,20 @@ class Homescreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SizedBox(
-                    height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/colddrinks.png")),
-                    ),
-                  ),
-                  SizedBox(
-                   height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/fruits.png")),
-                    ),
-                  ),
-                  SizedBox(
-                    height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/grocery1.png")),
-                    ),
-                  ),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/colddrinks.png")),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/fruits.png")),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/grocery1.png")),
                 ],
+              ),
+              const SizedBox(
+                height: 12,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SizedBox(
-                    height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/colddrinks.png")),
-                    ),
-                  ),
-                  SizedBox(
-                    height: screenHeight * 0.11,
-                    width: screenWidth * 0.24,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/fruits.png")),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 100,
-                    width: 100,
-                    child: Card(
-                      elevation: 20,
-                      color: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset("assets/grocery1.png")),
-                    ),
-                  ),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/colddrinks.png")),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/fruits.png")),
+                  CategoriesScreen(screenHeight: screenHeight, screenWidth: screenWidth,categoryicon: Image.asset("assets/grocery1.png")),
                 ],
               ),
               Align(
@@ -367,161 +295,11 @@ class Homescreen extends StatelessWidget {
                 height: 270,
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Row(
+                    return const Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(right: 10),
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15)),
-                              child: InkWell(
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                      context, Routes.productdetails);
-                                },
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                                alignment: Alignment.center,
-                                                height: 30,
-                                                width: 80,
-                                                decoration: const BoxDecoration(
-                                                  color: Color.fromARGB(
-                                                      255, 177, 255, 181),
-                                                  borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(12)),
-                                                ),
-                                                child: const Text(
-                                                  "50 % off",
-                                                  style: TextStyle(
-                                                      color: Color.fromARGB(
-                                                          255, 30, 75, 32)),
-                                                )),
-                                            const SizedBox(
-                                              width: 5,
-                                            ),
-                                            const Image(
-                                                image: AssetImage(
-                                                    "assets/Veg.png")),
-                                          ],
-                                        ),
-                                        const Padding(
-                                          padding: EdgeInsets.only(
-                                              right: 5, top: 15, left: 28),
-                                          child: Icon(
-                                            Icons.favorite_outline_sharp,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                    const Image(
-                                        image: AssetImage("assets/Apple.png")),
-                                    const Padding(
-                                      padding: EdgeInsets.only(right: 100),
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            "Apples",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.w700),
-                                          ),
-                                          SizedBox(
-                                            height: 2,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 7),
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
-                                              children: [
-                                                Text(
-                                                  "₹70.00",
-                                                  style: TextStyle(
-                                                      color: Color.fromARGB(
-                                                          255, 50, 227, 56),
-                                                      fontWeight:
-                                                          FontWeight.w700),
-                                                ),
-                                                Text(
-                                                  "140",
-                                                  style: TextStyle(
-                                                      decoration: TextDecoration
-                                                          .lineThrough),
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        children: [
-                                          Stack(
-                                            children: [
-                                              Container(
-                                                height: 48,
-                                                width: 60,
-                                                decoration: BoxDecoration(
-                                                    color: const Color.fromARGB(
-                                                        255, 50, 227, 56),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10)),
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.symmetric(
-                                                        horizontal: 7),
-                                                child: IconButton(
-                                                    onPressed: () {
-                                                      Navigator.pushNamed(
-                                                          context,
-                                                          Routes.cartpage);
-                                                    },
-                                                    icon: const Icon(
-                                                      Icons.shopping_cart,
-                                                      color: Colors.white,
-                                                    )),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            width: 2.7,
-                                          ),
-                                          ElevatedButton(
-                                            onPressed: () {},
-                                            style: ElevatedButton.styleFrom(
-                                                backgroundColor: Colors.white),
-                                            child: const Text(
-                                              "BUY NOW",
-                                              style: TextStyle(
-                                                color: Color.fromARGB(
-                                                    255, 50, 227, 56),
-                                              ),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )),
+                          padding: EdgeInsets.only(right: 10),
+                          child: ProductCard(),
                         ),
                       ],
                     );
@@ -551,90 +329,25 @@ class Homescreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                  CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/fruits.png",
+                      height: 70,
+                      width: 70,
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/fruits.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 25),
-                                child: Text(
-                                  "    Fruits & Vegetables",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                    text: const Text(  "    Fruits & Vegetables",
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  )
                     ),
-                  ),
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                  CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/grocery1.png",
+                      height: 70,
+                      width: 70,
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/grocery1.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 23, top: 8),
+                    text: const Padding(
+                                padding: EdgeInsets.only(left: 0, top: 10),
                                 child: Text(
                                   "Grocery Stuff",
                                   style: TextStyle(
@@ -643,61 +356,19 @@ class Homescreen extends StatelessWidget {
                                       fontWeight: FontWeight.w600),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
                     ),
-                  ),
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                  CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/colddrinks.png",
+                      height: 70,
+                      width: 70,
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/colddrinks.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 23),
-                                child: Text(
-                                  "Cold Drinks & \n         Juices",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                    text: const Text(  "Cold Drinks &\n       Juices",
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  )
                     ),
-                  ),
                 ],
               ),
               const SizedBox(
@@ -706,153 +377,45 @@ class Homescreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                  CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/oil.png",
+                      height: 70,
+                      width: 70,
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/oil.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 28, top: 10),
+                    text: const Padding(
+                                padding: EdgeInsets.only(left: 5, top: 10),
                                 child: Text(
-                                  "Edible Oils",
+                                  "Edbile Oils",
                                   style: TextStyle(
                                       fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
                     ),
-                  ),
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                  CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/colddrinks.png",
+                      height: 70,
+                      width: 70,
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/fruits.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 25),
-                                child: Text(
-                                  "    Fruits & Vegetables",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                    text: const Text(  "Cold Drinks &\n       Juices",
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  )
+                    ),CategoryCard(screenHeight: screenHeight, screenWidth: screenWidth,photo: Image.asset(
+                      "assets/fruits.png",
+                      height: 70,
+                      width: 70,
                     ),
-                  ),
-                  Container(
-                    height: screenHeight * 0.15 ,
-                    width: screenHeight * 0.14,
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15)),
+                    text: const Text(  "    Fruits & Vegetables",
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  )
                     ),
-                    child: Stack(
-                      children: [
-                        Column(
-                          children: [
-                            Align(
-                                alignment: Alignment.center,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 30),
-                                  child: Image.asset(
-                                    "assets/fruits.png",
-                                    height: 70,
-                                    width: 70,
-                                  ),
-                                )),
-                            Container(
-                              width: screenWidth * 0.3,
-                              height: screenWidth * 0.07 ,
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(255, 50, 227, 56),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(20),
-                                  topRight: Radius.circular(20),
-                                ),
-                              ),
-                              child: const Padding(
-                                padding: EdgeInsets.only(left: 25),
-                                child: Text(
-                                  "    Fruits & Vegetables",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
                 ],
               ),
 

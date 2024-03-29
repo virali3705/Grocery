@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
+import 'package:grocery_app/Widgets/loginText.dart';
 
 class Signin extends StatelessWidget {
   const Signin({super.key});
@@ -83,47 +84,11 @@ class Signin extends StatelessWidget {
                           SizedBox(
                             height: screenHeight * 0.03,
                           ),
-                          SizedBox(
-                            height: screenHeight * 0.06,
-                            width: screenWidth * 0.8,
-                            child: TextFormField(
-                              cursorColor: const Color.fromARGB(255, 50, 227, 56),
-                              decoration: InputDecoration(
-                                focusedBorder: const UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Color.fromARGB(255, 50, 227, 56),
-                                  ),
-                                ),
-                                hintText: "Email",
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                              ),
-                            ),
-                          ),
+                          loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Email',),
                           const SizedBox(
                             height: 15,
                           ),
-                          SizedBox(
-                           height: screenHeight * 0.06,
-                            width: screenWidth * 0.8,
-                            child: TextFormField(
-                              cursorColor: const Color.fromARGB(255, 50, 227, 56),
-                              decoration: InputDecoration(
-                                focusedBorder: const UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Color.fromARGB(255, 50, 227, 56),
-                                  ),
-                                ),
-                                hintText: "********",
-                                border: OutlineInputBorder(
-                                  borderSide:
-                                      const BorderSide(color: Colors.black),
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                              ),
-                            ),
-                          ),
+                          loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Password',suffixIcon: Icon(Icons.remove_red_eye),),
                           const SizedBox(
                             height: 3,
                           ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
+import 'package:grocery_app/Widgets/TextFieldButton.dart';
 
 class ProfileScreen extends StatelessWidget {
   List sourceIcon = [
@@ -29,12 +30,12 @@ class ProfileScreen extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 20, left: 20),
+                    padding: const EdgeInsets.only(top: 20, left: 20),
                     child: IconButton(
                       onPressed: () {
                         Navigator.pushNamed(context, Routes.Homescreen);
                       },
-                      icon: Icon(Icons.arrow_back_ios_new_outlined),
+                      icon: const Icon(Icons.arrow_back_ios_new_outlined),
                     ),
                   ),
                   const SizedBox(
@@ -68,42 +69,10 @@ class ProfileScreen extends StatelessWidget {
                   )
                 ],
               ),
-              const Padding(
-                padding: EdgeInsets.only(left: 25, right: 25),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Name',
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 25, right: 25),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 25, right: 25),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Mobile Number',
-                  ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 25, right: 25),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Gender',
-                  ),
-                ),
-              ),
+              const TextFieldButton(text: 'Name',),
+              const TextFieldButton(text: 'Email',),
+              const TextFieldButton(text: 'Mobile Number',),
+              const TextFieldButton(text: 'Gender',),
               const SizedBox(
                 height: 25,
               ),
@@ -144,9 +113,9 @@ class ProfileScreen extends StatelessWidget {
                               padding: const EdgeInsets.only(top: 10),
                               child: Image.asset(sourceIcon[index].toString()),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 15),
-                              child: Text(titles[index]),
+                            const Padding(
+                              padding: EdgeInsets.only(bottom: 15),
+                              child: Text(""),
                             ),
                           ],
                         ),
@@ -162,3 +131,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
