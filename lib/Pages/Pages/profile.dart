@@ -39,7 +39,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 25,
+                    width: 10,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -49,6 +49,24 @@ class ProfileScreen extends StatelessWidget {
                       "Profile",
                       style: GoogleFonts.inter(
                           fontSize: 18, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 130,
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.editprofile);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 19),
+                      child: Text(
+                        "+Edit profile",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color.fromARGB(255, 50, 227, 56),
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
                   ),
                 ],
@@ -91,7 +109,16 @@ class ProfileScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, Routes.myorders);
+                        if (index == 0) {
+                          Navigator.pushNamed(context, Routes.myorders);
+                        } else if (index == 1) {
+                          Navigator.pushNamed(
+                              context, Routes.favouriteproducts);
+                        } else if (index == 2) {
+                          Navigator.pushNamed(context, Routes.savedaddresses);
+                        } else if (index == 3) {
+                          Navigator.pushNamed(context, Routes.myreviews);
+                        }
                       },
                       child: Container(
                         margin: const EdgeInsets.symmetric(

@@ -3,8 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class SplashScreen extends StatelessWidget {
-const SplashScreen({super.key});
-
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ const SplashScreen({super.key});
       body: InkWell(
         onTap: () {
           Navigator.pushNamed(context, Routes.signup);
-        },                                                               
+        },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
@@ -35,11 +34,10 @@ const SplashScreen({super.key});
               ),
             ),
             const Text("solutions for your daily need!"),
-            
             Padding(
               padding: const EdgeInsets.only(left: 45),
               child: SizedBox(
-                height: screenHeight * 0.35,
+                height: screenHeight * 0.15,
               ),
             ),
             const Padding(
