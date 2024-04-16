@@ -21,9 +21,14 @@ class MyTimelineTile extends StatelessWidget {
       child: TimelineTile(
         isFirst: isFirst,
         isLast: isLast,
-        beforeLineStyle: LineStyle(color: Colors.green),
-        indicatorStyle: IndicatorStyle(width: 28, color: Colors.green),
-        endChild:const OrderDetails(),
+        beforeLineStyle: LineStyle(
+          color: Theme.of(context).primaryColor,
+        ),
+        indicatorStyle: IndicatorStyle(
+          width: 28,
+          color: Theme.of(context).primaryColor,
+        ),
+        endChild: const OrderDetails(),
       ),
     );
   }

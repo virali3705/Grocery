@@ -102,23 +102,26 @@ class CartPage extends StatelessWidget {
                                                     ),
                                                   ],
                                                 ),
-                                                child: const Column(
+                                                child: Column(
                                                   children: [
                                                     Padding(
-                                                      padding: EdgeInsets.only(
-                                                          top: 20, right: 160),
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              top: 20,
+                                                              right: 160),
                                                       child: Text(
                                                         "WELCOME50",
                                                         style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          color: Color.fromARGB(
-                                                              255, 50, 227, 56),
+                                                          color:
+                                                              Theme.of(context)
+                                                                  .primaryColor,
                                                         ),
                                                       ),
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "Get 50% off on orders above 100.",
                                                       style: TextStyle(
                                                           fontSize: 18,
@@ -128,13 +131,11 @@ class CartPage extends StatelessWidget {
                                                     Text(
                                                       "----------------------------------------------------------",
                                                       style: TextStyle(
-                                                          color: Color.fromARGB(
-                                                              255,
-                                                              50,
-                                                              227,
-                                                              56)),
+                                                        color: Theme.of(context)
+                                                            .primaryColor,
+                                                      ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -154,7 +155,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -174,7 +175,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -217,23 +218,26 @@ class CartPage extends StatelessWidget {
                                                     ),
                                                   ],
                                                 ),
-                                                child: const Column(
+                                                child: Column(
                                                   children: [
                                                     Padding(
-                                                      padding: EdgeInsets.only(
-                                                          top: 20, right: 160),
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              top: 20,
+                                                              right: 160),
                                                       child: Text(
                                                         "WELCOME50",
                                                         style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          color: Color.fromARGB(
-                                                              255, 50, 227, 56),
+                                                          color:
+                                                              Theme.of(context)
+                                                                  .primaryColor,
                                                         ),
                                                       ),
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "Get 50% off on orders above 100.",
                                                       style: TextStyle(
                                                           fontSize: 18,
@@ -243,13 +247,11 @@ class CartPage extends StatelessWidget {
                                                     Text(
                                                       "----------------------------------------------------------",
                                                       style: TextStyle(
-                                                          color: Color.fromARGB(
-                                                              255,
-                                                              50,
-                                                              227,
-                                                              56)),
+                                                        color: Theme.of(context)
+                                                            .primaryColor,
+                                                      ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -269,7 +271,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -289,7 +291,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -332,23 +334,26 @@ class CartPage extends StatelessWidget {
                                                     ),
                                                   ],
                                                 ),
-                                                child: const Column(
+                                                child: Column(
                                                   children: [
                                                     Padding(
-                                                      padding: EdgeInsets.only(
-                                                          top: 20, right: 160),
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              top: 20,
+                                                              right: 160),
                                                       child: Text(
                                                         "WELCOME50",
                                                         style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          color: Color.fromARGB(
-                                                              255, 50, 227, 56),
+                                                          color:
+                                                              Theme.of(context)
+                                                                  .primaryColor,
                                                         ),
                                                       ),
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "Get 50% off on orders above 100.",
                                                       style: TextStyle(
                                                           fontSize: 18,
@@ -358,13 +363,11 @@ class CartPage extends StatelessWidget {
                                                     Text(
                                                       "----------------------------------------------------------",
                                                       style: TextStyle(
-                                                          color: Color.fromARGB(
-                                                              255,
-                                                              50,
-                                                              227,
-                                                              56)),
+                                                        color: Theme.of(context)
+                                                            .primaryColor,
+                                                      ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -384,7 +387,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -404,7 +407,7 @@ class CartPage extends StatelessWidget {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
+                                                    const Padding(
                                                       padding: EdgeInsets.only(
                                                           top: 5, left: 30),
                                                       child: Row(
@@ -515,11 +518,11 @@ class CartPage extends StatelessWidget {
                                           const SizedBox(height: 10),
                                           Row(
                                             children: [
-                                              const Text(
+                                              Text(
                                                 "₹70.00",
                                                 style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 50, 227, 56),
+                                                  color: Theme.of(context)
+                                                      .primaryColor,
                                                   fontWeight: FontWeight.w700,
                                                 ),
                                               ),
@@ -618,11 +621,11 @@ class CartPage extends StatelessWidget {
                                           const SizedBox(height: 10),
                                           Row(
                                             children: [
-                                              const Text(
+                                              Text(
                                                 "₹70.00",
                                                 style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 50, 227, 56),
+                                                  color: Theme.of(context)
+                                                      .primaryColor,
                                                   fontWeight: FontWeight.w700,
                                                 ),
                                               ),
@@ -733,9 +736,9 @@ class CartPage extends StatelessWidget {
                       const SizedBox(
                         height: 28,
                       ),
-                      const Row(
+                      Row(
                         children: [
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Text(
                               "coupon",
@@ -743,21 +746,20 @@ class CartPage extends StatelessWidget {
                                   fontSize: 14, fontWeight: FontWeight.w600),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             "WELCOME50",
                             style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
-                            ),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Theme.of(context).primaryColor),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
-                          Text(
+                          const Text(
                             "Applied successfully!",
                             style: TextStyle(
                               fontSize: 14,
@@ -865,13 +867,17 @@ class CartPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             TextButton(
-                                onPressed: () {},
-                                child: const Text(
-                                  "change address>>",
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 50, 227, 56),
-                                      fontWeight: FontWeight.w600),
-                                ))
+                              onPressed: () {
+                                Navigator.pushNamed(
+                                    context, Routes.savedaddresses);
+                              },
+                              child: Text(
+                                "change address>>",
+                                style: TextStyle(
+                                    color: Theme.of(context).primaryColor,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -888,9 +894,9 @@ class CartPage extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(18),
                   ),
-                  child: const Column(
+                  child: Column(
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Padding(
                             padding: EdgeInsets.only(top: 17, left: 25),
@@ -902,101 +908,99 @@ class CartPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Divider(
+                      const Divider(
                         height: 25,
                         color: Color.fromARGB(255, 110, 109, 109),
                         indent: 25,
                         endIndent: 25,
                         thickness: 1,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Row(
                         children: [
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Subtotal"),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 200,
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "70.00",
                             style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
-                            ),
+                                fontWeight: FontWeight.w600,
+                                color: Theme.of(context).primaryColor),
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Row(
                         children: [
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Tax(GST)"),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 200,
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "12.00",
                             style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
-                            ),
+                                fontWeight: FontWeight.w600,
+                                color: Theme.of(context).primaryColor),
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Row(
                         children: [
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(left: 25),
                             child: Text("Discount"),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 196,
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "27.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       Divider(
-                        color: Color.fromARGB(255, 50, 227, 56),
+                        color: Theme.of(context).primaryColor,
                         indent: 200,
                         endIndent: 20,
                         thickness: 1,
                       ),
                       Row(
                         children: [
-                          Padding(
+                          const Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Text(
                               "Grand total",
@@ -1004,12 +1008,12 @@ class CartPage extends StatelessWidget {
                                   fontSize: 20, fontWeight: FontWeight.w500),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 122,
                           ),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 20,
                           ),
                           Text(
@@ -1017,7 +1021,7 @@ class CartPage extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         ],
@@ -1033,9 +1037,8 @@ class CartPage extends StatelessWidget {
                   width: 360,
                   child: ElevatedButton(
                     style: ButtonStyle(
-                      backgroundColor: const MaterialStatePropertyAll(
-                        Color.fromARGB(255, 50, 227, 56),
-                      ),
+                      backgroundColor: MaterialStatePropertyAll(
+                          Theme.of(context).primaryColor),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -1071,362 +1074,6 @@ class CartPage extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                /*    Container(
-                  width: double.infinity,
-                  height: MediaQuery.of(context).size.height * 0.56,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20),
-                    ),
-                  ),
-                  child: Stack(
-                    children: [
-                      SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            const Padding(
-                              padding: EdgeInsets.only(top: 30, left: 20),
-                              child: Text(
-                                "Discount Coupons",
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w600),
-                              ),
-                            ),
-                            const Divider(
-                              height: 25,
-                              color: Color.fromARGB(255, 110, 109, 109),
-                              indent: 100,
-                              endIndent: 80,
-                              thickness: 2,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 230),
-                              child: Image.asset(
-                                "assets/tag.png",
-                                height: 80,
-                                width: 80,
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 70),
-                              child: Container(
-                                height: 170,
-                                width: 350,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Color.fromARGB(255, 229, 229, 229),
-                                      spreadRadius: 0.5,
-                                      blurRadius: 8,
-                                    ),
-                                  ],
-                                ),
-                                child: const Column(
-                                  children: [
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 20, right: 160),
-                                      child: Text(
-                                        "WELCOME50",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w600,
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      "Get 50% off on orders above 100.",
-                                      style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w500),
-                                    ),
-                                    Text(
-                                      "----------------------------------------------------------",
-                                      style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56)),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Maximum cart value should be more than 100/-",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 70),
-                              child: Container(
-                                height: 170,
-                                width: 350,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Color.fromARGB(255, 229, 229, 229),
-                                      spreadRadius: 0.5,
-                                      blurRadius: 8,
-                                    ),
-                                  ],
-                                ),
-                                child: const Column(
-                                  children: [
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 20, right: 160),
-                                      child: Text(
-                                        "WELCOME50",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w600,
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      "Get 50% off on orders above 100.",
-                                      style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w500),
-                                    ),
-                                    Text(
-                                      "----------------------------------------------------------",
-                                      style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56)),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Maximum cart value should be more than 100/-",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 70),
-                              child: Container(
-                                height: 170,
-                                width: 350,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Color.fromARGB(255, 229, 229, 229),
-                                      spreadRadius: 0.5,
-                                      blurRadius: 8,
-                                    ),
-                                  ],
-                                ),
-                                child: const Column(
-                                  children: [
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 20, right: 160),
-                                      child: Text(
-                                        "WELCOME50",
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w600,
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      "Get 50% off on orders above 100.",
-                                      style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w500),
-                                    ),
-                                    Text(
-                                      "----------------------------------------------------------",
-                                      style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56)),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Maximum cart value should be more than 100/-",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          EdgeInsets.only(top: 5, left: 30),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.circle,
-                                            size: 10,
-                                          ),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          Text(
-                                            "Valid till 15th august,2023",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),*/
               ],
             ),
           ),

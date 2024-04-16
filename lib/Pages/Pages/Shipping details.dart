@@ -45,11 +45,12 @@ class ShippingDetails extends StatelessWidget {
                           isFirst: true,
                           isLast: false,
                           beforeLineStyle: LineStyle(
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                           ),
                           indicatorStyle: IndicatorStyle(
-                              width: 20,
-                              color: Color.fromARGB(255, 50, 227, 56)),
+                            width: 20,
+                            color: Theme.of(context).primaryColor,
+                          ),
                         ),
                       ],
                     ),

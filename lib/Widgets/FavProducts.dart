@@ -48,8 +48,7 @@ class FavProduct extends StatelessWidget {
                           padding: EdgeInsets.only(right: 130),
                           child: Text(
                             "Apples",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600),
+                            style: TextStyle(fontWeight: FontWeight.w600),
                           ),
                         ),
                         const Padding(
@@ -62,14 +61,12 @@ class FavProduct extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(right: 18),
                           child: Row(
-                            mainAxisAlignment:
-                                MainAxisAlignment.spaceAround,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Text(
                                 "₹70.00",
                                 style: TextStyle(
-                                    color: Color.fromARGB(
-                                        255, 50, 227, 56),
+                                    color: Theme.of(context).primaryColor,
                                     fontWeight: FontWeight.w700),
                               ),
                               const SizedBox(
@@ -78,8 +75,7 @@ class FavProduct extends StatelessWidget {
                               const Text(
                                 "140",
                                 style: TextStyle(
-                                    decoration:
-                                        TextDecoration.lineThrough),
+                                    decoration: TextDecoration.lineThrough),
                               ),
                               const SizedBox(
                                 width: 5,
@@ -89,28 +85,24 @@ class FavProduct extends StatelessWidget {
                                   height: 15,
                                   width: 53,
                                   decoration: const BoxDecoration(
-                                    color: Color.fromARGB(
-                                        255, 177, 255, 181),
-                                    borderRadius: BorderRadius.all(
-                                        Radius.circular(5)),
+                                    color: Color.fromARGB(255, 177, 255, 181),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(5)),
                                   ),
                                   child: const Padding(
-                                    padding:
-                                        EdgeInsets.only(bottom: 3),
+                                    padding: EdgeInsets.only(bottom: 3),
                                     child: Text(
                                       "50 % off",
                                       style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 30, 75, 32),
+                                          color:
+                                              Color.fromARGB(255, 30, 75, 32),
                                           fontSize: 10),
                                     ),
                                   )),
                               const SizedBox(
                                 width: 1,
                               ),
-                              const Image(
-                                  image:
-                                      AssetImage("assets/Veg.png")),
+                              const Image(image: AssetImage("assets/Veg.png")),
                             ],
                           ),
                         ),
@@ -118,8 +110,7 @@ class FavProduct extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
-                          mainAxisAlignment:
-                              MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             SizedBox(
                               height: 25,
@@ -127,17 +118,16 @@ class FavProduct extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
-                                    backgroundColor:
-                                        const Color.fromARGB(
-                                            255, 50, 227, 56)),
+                                  backgroundColor:
+                                      Theme.of(context).primaryColor,
+                                ),
                                 child: const Row(
                                   children: [
                                     Text(
                                       "ADD TO",
                                       style: TextStyle(
                                           fontSize: 8,
-                                          fontWeight:
-                                              FontWeight.w700),
+                                          fontWeight: FontWeight.w700),
                                     ),
                                     SizedBox(
                                       width: 5,
@@ -160,17 +150,15 @@ class FavProduct extends StatelessWidget {
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.white),
-                                child: const Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.center,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "BUY NOW",
                                       style: (TextStyle(
                                         fontWeight: FontWeight.w700,
                                         fontSize: 8,
-                                        color: Color.fromARGB(
-                                            255, 50, 227, 56),
+                                        color: Theme.of(context).primaryColor,
                                       )),
                                     ),
                                   ],
@@ -196,8 +184,7 @@ class FavProduct extends StatelessWidget {
                   width: 35,
                   decoration: const BoxDecoration(
                     color: Colors.white,
-                    borderRadius:
-                        BorderRadius.all(Radius.circular(20)),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
                     boxShadow: [
                       BoxShadow(
                           color: Color.fromARGB(255, 229, 229, 229),
@@ -212,7 +199,7 @@ class FavProduct extends StatelessWidget {
                     onPressed: () {},
                     icon: const Icon(Icons.favorite),
                     iconSize: 26,
-                    color: const Color.fromARGB(255, 50, 227, 56),
+                    color: Theme.of(context).primaryColor,
                   ),
                 ),
               ],

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class SupportPage extends StatefulWidget {
   const SupportPage({Key? key}) : super(key: key);
@@ -20,14 +21,15 @@ class _SupportPageState extends State<SupportPage> {
           child: Center(
             child: Column(
               children: [
-                const Row(
+                Row(
                   children: [
-                    Icon(Icons.arrow_back_ios_sharp),
-                    const SizedBox(
-                      width: 20,
-                    ),
+                    IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.Homescreen);
+                        },
+                        icon: Icon(Icons.arrow_back_ios_sharp)),
                     Padding(
-                      padding: EdgeInsets.only(top: 5, left: 40),
+                      padding: EdgeInsets.only(top: 5, left: 20),
                       child: Text(
                         "Support page",
                         style: TextStyle(
@@ -51,8 +53,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Color.fromARGB(
-                            255, 50, 227, 56), // Change color when selected
+                        activeColor: Theme.of(context)
+                            .primaryColor, // Change color when selected
                       ),
                       const Text(
                         "Report a bug",
@@ -74,8 +76,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Color.fromARGB(
-                            255, 50, 227, 56), // Change color when selected
+                        activeColor: Theme.of(context)
+                            .primaryColor, // Change color when selected
                       ),
                       const Text(
                         "Submit feedback",
@@ -97,7 +99,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Colors.green, // Change color when selected
+                        activeColor: Theme.of(context)
+                            .primaryColor, // Change color when selected
                       ),
                       const Text(
                         "Technical issue",
@@ -119,8 +122,8 @@ class _SupportPageState extends State<SupportPage> {
                             _selectedValue = value;
                           });
                         },
-                        activeColor: Color.fromARGB(
-                            255, 50, 227, 56), // Change color when selected
+                        activeColor: Theme.of(context)
+                            .primaryColor, // Change color when selected
                       ),
                       const Text(
                         "Product or order related issue",
@@ -135,16 +138,16 @@ class _SupportPageState extends State<SupportPage> {
                   child: Row(
                     children: [
                       Radio(
-                          value: 5,
-                          groupValue: _selectedValue,
-                          onChanged: (value) {
-                            setState(() {
-                              _selectedValue = value;
-                            });
-                          },
-                          activeColor: const Color.fromARGB(
-                              255, 50, 227, 56) // Change color when selected
-                          ),
+                        value: 5,
+                        groupValue: _selectedValue,
+                        onChanged: (value) {
+                          setState(() {
+                            _selectedValue = value;
+                          });
+                        },
+                        activeColor: Theme.of(context)
+                            .primaryColor, // Change color when selected
+                      ),
                       const Text(
                         "Payment related problem",
                         style: TextStyle(
@@ -195,7 +198,7 @@ class _SupportPageState extends State<SupportPage> {
                             ),
                           ),
                           backgroundColor: MaterialStateProperty.all(
-                            const Color.fromARGB(255, 50, 227, 56),
+                            Theme.of(context).primaryColor,
                           ),
                         ),
                         onPressed: () {},

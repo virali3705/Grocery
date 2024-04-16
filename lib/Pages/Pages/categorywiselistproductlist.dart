@@ -55,9 +55,9 @@ class CategoryWiseList extends StatelessWidget {
                       const SizedBox(
                         width: 15,
                       ),
-                      const Icon(
+                      Icon(
                         Icons.search,
-                        color: Color.fromARGB(255, 50, 227, 56),
+                        color: Theme.of(context).primaryColor,
                       ),
                       TextButton(
                         onPressed: () {},

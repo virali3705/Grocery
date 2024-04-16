@@ -15,7 +15,12 @@ class ProfileScreen extends StatelessWidget {
     "assets/Review.png",
   ];
 
-  List titles = [];
+  List<String> titles = [
+    "My Orders",
+    "Favorite Products",
+    "Saved Addresses",
+    "My Reviews",
+  ];
 
   ProfileScreen({super.key});
 
@@ -30,7 +35,7 @@ class ProfileScreen extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 20),
+                    padding: const EdgeInsets.only(top: 10, left: 20),
                     child: IconButton(
                       onPressed: () {
                         Navigator.pushNamed(context, Routes.Homescreen);
@@ -43,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 19,
+                      top: 10,
                     ),
                     child: Text(
                       "Profile",
@@ -52,19 +57,19 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 130,
+                    width: 127,
                   ),
                   TextButton(
                     onPressed: () {
                       Navigator.pushNamed(context, Routes.editprofile);
                     },
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 19),
+                      padding: const EdgeInsets.only(top: 10),
                       child: Text(
                         "+Edit profile",
                         style: TextStyle(
                             fontSize: 18,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w500),
                       ),
                     ),
@@ -74,12 +79,12 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(
                 height: 35,
               ),
-              const Stack(
+              Stack(
                 children: [
                   CircleAvatar(
                     maxRadius: 80,
                     minRadius: 80,
-                    backgroundColor: Color.fromARGB(255, 50, 227, 56),
+                    backgroundColor: Theme.of(context).primaryColor,
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 53, top: 45),
@@ -87,10 +92,18 @@ class ProfileScreen extends StatelessWidget {
                   )
                 ],
               ),
-              const TextFieldButton(text: 'Name',),
-              const TextFieldButton(text: 'Email',),
-              const TextFieldButton(text: 'Mobile Number',),
-              const TextFieldButton(text: 'Gender',),
+              const TextFieldButton(
+                text: 'Name',
+              ),
+              const TextFieldButton(
+                text: 'Email',
+              ),
+              const TextFieldButton(
+                text: 'Mobile Number',
+              ),
+              const TextFieldButton(
+                text: 'Gender',
+              ),
               const SizedBox(
                 height: 25,
               ),
@@ -140,9 +153,18 @@ class ProfileScreen extends StatelessWidget {
                               padding: const EdgeInsets.only(top: 10),
                               child: Image.asset(sourceIcon[index].toString()),
                             ),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.only(bottom: 15),
-                              child: Text(""),
+                              child: Text(
+                                textAlign: (index == 1 || index == 2)
+                                    ? TextAlign.center
+                                    : TextAlign.start,
+                                titles[index],
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ],
                         ),
@@ -158,4 +180,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-

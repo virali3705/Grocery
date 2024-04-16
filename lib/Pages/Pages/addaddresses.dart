@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 import 'package:grocery_app/Widgets/AddressTextField.dart';
 
 class AddAddresses extends StatelessWidget {
@@ -15,12 +16,17 @@ class AddAddresses extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 10, left: 13),
               child: Row(
                 children: [
-                  const Icon(Icons.arrow_back_ios_sharp),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.savedaddresses);
+                    },
+                    icon: const Icon(Icons.arrow_back_ios_sharp),
+                  ),
                   const SizedBox(
-                    width: 20,
+                    width: 16,
                   ),
                   Text(
                     "Add Addresses",
@@ -49,16 +55,16 @@ class AddAddresses extends StatelessWidget {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: const AddressTextField(
-              text2: 'Contact Number',
-            ),
+                      text2: 'Contact Number',
+                    ),
                   ),
                   const SizedBox(
                     width: 1,
                   ),
                   const Expanded(
                     child: AddressTextField(
-              text2: 'Alternate Number',
-            ),
+                      text2: 'Alternate Number',
+                    ),
                   ),
                 ],
               ),
@@ -79,16 +85,16 @@ class AddAddresses extends StatelessWidget {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: const AddressTextField(
-              text2: 'State',
-            ),
+                      text2: 'State',
+                    ),
                   ),
                   const SizedBox(
                     width: 1,
                   ),
                   const Expanded(
                     child: AddressTextField(
-              text2: 'District',
-            ),
+                      text2: 'District',
+                    ),
                   ),
                 ],
               ),
@@ -100,16 +106,16 @@ class AddAddresses extends StatelessWidget {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: const AddressTextField(
-              text2: 'City',
-            ),
+                      text2: 'City',
+                    ),
                   ),
                   const SizedBox(
                     width: 1,
                   ),
                   const Expanded(
                     child: AddressTextField(
-              text2: 'Pincode',
-            ),
+                      text2: 'Pincode',
+                    ),
                   ),
                 ],
               ),
@@ -126,8 +132,8 @@ class AddAddresses extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(80)),
-                      backgroundColor: const Color.fromARGB(255, 50, 227, 56),
+                          borderRadius: BorderRadius.circular(80)),
+                      backgroundColor: Theme.of(context).primaryColor,
                     ),
                     child: const Row(
                       children: [
@@ -153,8 +159,8 @@ class AddAddresses extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(80)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(80)),
                         backgroundColor:
                             const Color.fromARGB(255, 255, 255, 255)),
                     child: const Row(
@@ -185,10 +191,12 @@ class AddAddresses extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 35, right: 35),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.savedaddresses);
+                },
                 style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(80)),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(80)),
                     backgroundColor: const Color.fromARGB(255, 255, 255, 255)),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,

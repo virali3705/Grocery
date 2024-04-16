@@ -35,12 +35,13 @@ class FlutterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        primaryColor: Color.fromARGB(255, 50, 227, 56),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: false,
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
       routes: {
-        "/": (context) => const CategoryWiseList(),
+        "/": (context) => const SplashScreen(),
         Routes.signup: (context) => const SignUp(),
         Routes.signin: (context) => const Signin(),
         Routes.Homescreen: (context) => Homescreen(),

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class CustomCard extends StatelessWidget {
-  const CustomCard({Key? key}) : super(key: key);
+  const CustomCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ProductHomeCard();
+    return const ProductHomeCard();
   }
 }
 
@@ -31,43 +31,43 @@ class ProductHomeCard extends StatelessWidget {
                     width: 80,
                     child: Container(
                       alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 177, 255, 181),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
                       child: const Text(
                         "50 % off",
                         style:
                             TextStyle(color: Color.fromARGB(255, 30, 75, 32)),
                       ),
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 177, 255, 181),
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
-                  Image(
+                  const Image(
                     image: AssetImage("assets/Veg.png"),
                   ),
                 ],
               ),
               Icon(
                 Icons.favorite_outline_sharp,
-                color: Color.fromARGB(255, 50, 227, 56),
+                color: Theme.of(context).primaryColor,
               ),
             ],
           ),
-          Image(
+          const Image(
             image: AssetImage("assets/Apple.png"),
           ),
           Padding(
             padding: const EdgeInsets.only(right: 100),
             child: Column(
               children: [
-                Text(
+                const Text(
                   "Apples",
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 2,
                 ),
                 Padding(
@@ -78,10 +78,10 @@ class ProductHomeCard extends StatelessWidget {
                       Text(
                         "₹70.00",
                         style: TextStyle(
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w700),
                       ),
-                      Text(
+                      const Text(
                         "140",
                         style:
                             TextStyle(decoration: TextDecoration.lineThrough),
@@ -92,7 +92,7 @@ class ProductHomeCard extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Padding(
@@ -105,32 +105,32 @@ class ProductHomeCard extends StatelessWidget {
                       height: 48,
                       width: 60,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 50, 227, 56),
+                          color: Theme.of(context).primaryColor,
                           borderRadius: BorderRadius.circular(10)),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 7),
                       child: IconButton(
                         onPressed: () {},
-                        icon:
-                            Icon(Icons.add_shopping_cart, color: Colors.white),
+                        icon: const Icon(Icons.add_shopping_cart,
+                            color: Colors.white),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 2.7,
                 ),
                 ElevatedButton(
                   onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                  ),
                   child: Text(
                     "BUY NOW",
                     style: TextStyle(
-                      color: Color.fromARGB(255, 50, 227, 56),
+                      color: Theme.of(context).primaryColor,
                     ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
                   ),
                 )
               ],

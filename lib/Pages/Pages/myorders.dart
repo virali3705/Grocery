@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 import 'package:grocery_app/Widgets/RateProduct.dart';
 
 class MyOrders extends StatelessWidget {
@@ -12,26 +13,29 @@ class MyOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     RangeLabels labels =
-    RangeLabels(values.start.toString(), values.end.toString());
+        RangeLabels(values.start.toString(), values.end.toString());
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    return Scaffold( 
-      backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
+    return Scaffold(
+        backgroundColor: Colors.white,
+        body: SingleChildScrollView(
+          child: Column(children: [
             Row(
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 20, left: 20),
-                  child: Icon(Icons.arrow_back_ios_new_outlined),
+                Padding(
+                  padding: EdgeInsets.only(top: 10, left: 15),
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.Homescreen);
+                      },
+                      icon: Icon(Icons.arrow_back_ios_new_outlined)),
                 ),
                 const SizedBox(
-                  width: 25,
+                  width: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 19,
+                    top: 10,
                   ),
                   child: Text(
                     "My Orders",
@@ -44,8 +48,7 @@ class MyOrders extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            Row(
-            children: [
+            Row(children: [
               Container(
                 height: 52,
                 width: 320,
@@ -65,7 +68,7 @@ class MyOrders extends StatelessWidget {
                     ),
                     const Icon(
                       Icons.search,
-                      color: Color.fromARGB(255, 50, 227, 56),
+                      // color: Color.fromARGB(255, 50, 227, 56),
                     ),
                     TextButton(
                       onPressed: () {},
@@ -132,8 +135,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            /*    color: Color.fromARGB(
+                                                255, 50, 227, 56),*/
                                           ),
                                         ),
                                       ),
@@ -141,9 +144,9 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "Pending",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
-                                        ),
+                                            /*  color:
+                                              Color.fromARGB(255, 50, 227, 56),*/
+                                            ),
                                       ),
                                     ),
                                     OutlinedButton(
@@ -157,8 +160,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            /*   color: Color.fromARGB(
+                                                255, 50, 227, 56),*/
                                           ),
                                         ),
                                       ),
@@ -166,8 +169,7 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "Shipped",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     ),
@@ -181,7 +183,7 @@ class MyOrders extends StatelessWidget {
                                         ),
                                         backgroundColor:
                                             MaterialStateProperty.all(
-                                          Color.fromARGB(255, 50, 227, 56),
+                                          Theme.of(context).primaryColor,
                                         ),
                                       ),
                                       onPressed: () {},
@@ -206,7 +208,7 @@ class MyOrders extends StatelessWidget {
                                     side: MaterialStateProperty.all(
                                       BorderSide(
                                         width: 1,
-                                        color: Color.fromARGB(255, 50, 227, 56),
+                                        color: Theme.of(context).primaryColor,
                                       ),
                                     ),
                                   ),
@@ -214,7 +216,7 @@ class MyOrders extends StatelessWidget {
                                   child: Text(
                                     "Delivered",
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 50, 227, 56),
+                                      color: Theme.of(context).primaryColor,
                                     ),
                                   ),
                                 ),
@@ -247,8 +249,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            color:
+                                                Theme.of(context).primaryColor,
                                           ),
                                         ),
                                       ),
@@ -256,8 +258,7 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "5.0",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     ),
@@ -271,7 +272,7 @@ class MyOrders extends StatelessWidget {
                                         ),
                                         backgroundColor:
                                             MaterialStateProperty.all(
-                                          Color.fromARGB(255, 50, 227, 56),
+                                          Theme.of(context).primaryColor,
                                         ),
                                       ),
                                       onPressed: () {},
@@ -291,8 +292,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            color:
+                                                Theme.of(context).primaryColor,
                                           ),
                                         ),
                                       ),
@@ -300,8 +301,7 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "3.0",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     ),
@@ -316,8 +316,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            color:
+                                                Theme.of(context).primaryColor,
                                           ),
                                         ),
                                       ),
@@ -325,8 +325,7 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "2.0",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     ),
@@ -341,8 +340,8 @@ class MyOrders extends StatelessWidget {
                                         side: MaterialStateProperty.all(
                                           BorderSide(
                                             width: 1,
-                                            color: Color.fromARGB(
-                                                255, 50, 227, 56),
+                                            color:
+                                                Theme.of(context).primaryColor,
                                           ),
                                         ),
                                       ),
@@ -350,8 +349,7 @@ class MyOrders extends StatelessWidget {
                                       child: Text(
                                         "1.0",
                                         style: TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     ),
@@ -378,9 +376,8 @@ class MyOrders extends StatelessWidget {
                   "assets/Filter box.png",
                 ),
               ),
-            ]
-            ),
-        
+            ]),
+
             const SizedBox(
               height: 35,
             ),
@@ -405,9 +402,7 @@ class MyOrders extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-          ]
-          ),
-      )
-    );
+          ]),
+        ));
   }
 }

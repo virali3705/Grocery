@@ -64,10 +64,10 @@ class Signin extends StatelessWidget {
                           Text(
                             "Grocery",
                             style: GoogleFonts.montserrat(
-                              textStyle: const TextStyle(
+                              textStyle: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30,
-                                color: Color.fromARGB(255, 50, 227, 56),
+                                color: Theme.of(context).primaryColor,
                               ),
                             ),
                           ),
@@ -84,11 +84,20 @@ class Signin extends StatelessWidget {
                           const SizedBox(
                             height: 20,
                           ),
-                          loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Email',),
+                          loginText(
+                            screenHeight: screenHeight,
+                            screenWidth: screenWidth,
+                            text: 'Email',
+                          ),
                           const SizedBox(
                             height: 15,
                           ),
-                          loginText(screenHeight: screenHeight, screenWidth: screenWidth,text: 'Password',suffixIcon: Icon(Icons.remove_red_eye),),
+                          loginText(
+                            screenHeight: screenHeight,
+                            screenWidth: screenWidth,
+                            text: 'Password',
+                            suffixIcon: Icon(Icons.remove_red_eye),
+                          ),
                           const SizedBox(
                             height: 3,
                           ),
@@ -101,11 +110,10 @@ class Signin extends StatelessWidget {
                                     child: Text(
                                       "Forgot password ?",
                                       style: GoogleFonts.montserrat(
-                                        textStyle: const TextStyle(
+                                        textStyle: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 12,
-                                          color:
-                                              Color.fromARGB(255, 50, 227, 56),
+                                          color: Theme.of(context).primaryColor,
                                         ),
                                       ),
                                     )),
@@ -120,10 +128,10 @@ class Signin extends StatelessWidget {
                                 child: Text(
                                   "New user?",
                                   style: GoogleFonts.montserrat(
-                                    textStyle: const TextStyle(
+                                    textStyle: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12,
-                                      color: Color.fromARGB(255, 50, 227, 56),
+                                      color: Theme.of(context).primaryColor,
                                     ),
                                   ),
                                 ),
@@ -143,7 +151,7 @@ class Signin extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(30))),
                                   backgroundColor: MaterialStateProperty.all(
-                                    Color.fromARGB(255, 50, 227, 56),
+                                    Theme.of(context).primaryColor,
                                   )),
                               onPressed: () {
                                 Navigator.pushNamed(context, Routes.Homescreen);

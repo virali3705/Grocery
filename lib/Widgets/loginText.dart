@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 class loginText extends StatelessWidget {
-  const loginText({
-    super.key,
-    required this.screenHeight,
-    required this.screenWidth,
-    this.text,
-    this.suffixIcon
-  });
-  final Icon ?suffixIcon;
+  const loginText(
+      {super.key,
+      required this.screenHeight,
+      required this.screenWidth,
+      this.text,
+      this.suffixIcon});
+  final Icon? suffixIcon;
   final double screenHeight;
   final double screenWidth;
   final String? text;
@@ -19,11 +18,11 @@ class loginText extends StatelessWidget {
       height: screenHeight * 0.06,
       width: screenWidth * 0.8,
       child: TextFormField(
-        cursorColor: const Color.fromARGB(255, 50, 227, 56),
+        cursorColor: Theme.of(context).primaryColor,
         decoration: InputDecoration(
-          focusedBorder: const UnderlineInputBorder(
+          focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(
-              color: Color.fromARGB(255, 50, 227, 56),
+              color: Theme.of(context).primaryColor,
             ),
           ),
           suffixIcon: suffixIcon,

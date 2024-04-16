@@ -55,7 +55,7 @@ class ProductDetailsScreen extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(Icons.favorite_outline_sharp),
                             iconSize: 30,
-                            color: const Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                           ),
                         ),
                       ],
@@ -92,18 +92,229 @@ class ProductDetailsScreen extends StatelessWidget {
                               children: [
                                 Column(
                                   children: [
-                                    Padding(
-                                      padding:
-                                          const EdgeInsets.only(right: 140),
-                                      child: Text(
-                                        "Apples",
-                                        style: GoogleFonts.montserrat(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(right: 25),
+                                          child: Text(
+                                            "Apples",
+                                            style: GoogleFonts.montserrat(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
+                                        TextButton(
+                                          onPressed: () {
+                                            showModalBottomSheet(
+                                              isDismissible: true,
+                                              shape:
+                                                  const RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.only(
+                                                              topLeft: Radius
+                                                                  .circular(15),
+                                                              topRight:
+                                                                  Radius
+                                                                      .circular(
+                                                                          15))),
+                                              context: context,
+                                              builder: (context) {
+                                                return Container(
+                                                  width: double.infinity,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height *
+                                                      0.56,
+                                                  decoration:
+                                                      const BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(20),
+                                                      topRight:
+                                                          Radius.circular(20),
+                                                    ),
+                                                  ),
+                                                  child: SingleChildScrollView(
+                                                    child: Column(
+                                                      children: [
+                                                        const Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  top: 15),
+                                                          child: Text(
+                                                            "Rate product",
+                                                            style: TextStyle(
+                                                                fontSize: 18,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600),
+                                                          ),
+                                                        ),
+                                                        const Divider(
+                                                          indent: 140,
+                                                          endIndent: 140,
+                                                          thickness: 2,
+                                                          color: Colors.grey,
+                                                        ),
+                                                        const SizedBox(
+                                                          height: 30,
+                                                        ),
+                                                        const Row(
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Icon(
+                                                              Icons
+                                                                  .star_rounded,
+                                                              size: 45,
+                                                              color: Color
+                                                                  .fromARGB(
+                                                                      246,
+                                                                      255,
+                                                                      200,
+                                                                      0),
+                                                            ),
+                                                            Icon(
+                                                              Icons
+                                                                  .star_rounded,
+                                                              size: 45,
+                                                              color: Color
+                                                                  .fromARGB(
+                                                                      246,
+                                                                      255,
+                                                                      200,
+                                                                      0),
+                                                            ),
+                                                            Icon(
+                                                              Icons
+                                                                  .star_rounded,
+                                                              size: 45,
+                                                              color: Color
+                                                                  .fromARGB(
+                                                                      246,
+                                                                      255,
+                                                                      200,
+                                                                      0),
+                                                            ),
+                                                            Icon(
+                                                              Icons
+                                                                  .star_rounded,
+                                                              size: 45,
+                                                              color: Color
+                                                                  .fromARGB(
+                                                                      246,
+                                                                      255,
+                                                                      200,
+                                                                      0),
+                                                            ),
+                                                            Icon(
+                                                              Icons
+                                                                  .star_outline_rounded,
+                                                              size: 45,
+                                                              color: Color
+                                                                  .fromARGB(
+                                                                      246,
+                                                                      255,
+                                                                      200,
+                                                                      0),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                        const SizedBox(
+                                                          height: 40,
+                                                        ),
+                                                        const Text(
+                                                          "Good",
+                                                          style: TextStyle(
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w600),
+                                                        ),
+                                                        const SizedBox(
+                                                          height: 40,
+                                                        ),
+                                                        Stack(children: [
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsets
+                                                                    .only(
+                                                              left: 18,
+                                                            ),
+                                                            child: Container(
+                                                              height: 150,
+                                                              width: 355,
+                                                              decoration: BoxDecoration(
+                                                                  color: const Color
+                                                                      .fromARGB(
+                                                                      255,
+                                                                      255,
+                                                                      255,
+                                                                      255),
+                                                                  border: Border.all(
+                                                                      color: Colors
+                                                                          .black),
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              20)),
+                                                            ),
+                                                          ),
+                                                          const Padding(
+                                                            padding:
+                                                                EdgeInsets.only(
+                                                                    left: 32,
+                                                                    right: 32),
+                                                            child: TextField(
+                                                                decoration: InputDecoration(
+                                                                    hintText:
+                                                                        " ",
+                                                                    prefixIcon:
+                                                                        MultiLineHintTextWidget(),
+                                                                    border: InputBorder
+                                                                        .none)),
+                                                          ),
+                                                        ]),
+                                                        const SizedBox(
+                                                          height: 25,
+                                                        ),
+                                                        Container(
+                                                          height: 70,
+                                                          width: 70,
+                                                          decoration: BoxDecoration(
+                                                              color: Theme.of(
+                                                                      context)
+                                                                  .primaryColor,
+                                                              shape: BoxShape
+                                                                  .circle),
+                                                          child: Image.asset(
+                                                            "assets/checkcircle.png",
+                                                            height: 70,
+                                                            width: 70,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                );
+                                              },
+                                            );
+                                          },
+                                          child: Text(
+                                            "Rate product",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w500,
+                                              color: Theme.of(context)
+                                                  .primaryColor,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(right: 0),
@@ -112,8 +323,8 @@ class ProductDetailsScreen extends StatelessWidget {
                                           Text(
                                             "₹70.00",
                                             style: GoogleFonts.montserrat(
-                                                color: const Color.fromARGB(
-                                                    255, 50, 227, 56),
+                                                color: Theme.of(context)
+                                                    .primaryColor,
                                                 fontWeight: FontWeight.w700,
                                                 fontSize: 20),
                                           ),
@@ -157,7 +368,8 @@ class ProductDetailsScreen extends StatelessWidget {
                         Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 25 ,top: 10,right: 35),
+                              padding: const EdgeInsets.only(
+                                  left: 25, top: 10, right: 35),
                               child: ReadMoreText(
                                 content,
                                 trimLines: 3,
@@ -165,18 +377,20 @@ class ProductDetailsScreen extends StatelessWidget {
                                 trimMode: TrimMode.Line,
                                 trimCollapsedText: "Read More",
                                 trimExpandedText: "Show Less",
-                                lessStyle: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 50, 227, 56)),
-                                moreStyle: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 50, 227, 56)),
+                                lessStyle: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).primaryColor,
+                                ),
+                                moreStyle: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).primaryColor,
+                                ),
                                 style: const TextStyle(
                                   fontSize: 12,
                                   height: 2,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         const Spacer(),
@@ -185,10 +399,13 @@ class ProductDetailsScreen extends StatelessWidget {
                           child: Row(
                             children: [
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, Routes.cartpage);
+                                },
                                 style: ElevatedButton.styleFrom(
-                                    backgroundColor:
-                                        const Color.fromARGB(255, 50, 227, 56)),
+                                  backgroundColor:
+                                      Theme.of(context).primaryColor,
+                                ),
                                 child: Row(
                                   children: [
                                     const SizedBox(
@@ -212,7 +429,10 @@ class ProductDetailsScreen extends StatelessWidget {
                                 width: 20,
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(
+                                      context, Routes.paymentpage);
+                                },
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.white),
                                 child: Row(
@@ -223,15 +443,15 @@ class ProductDetailsScreen extends StatelessWidget {
                                     Text(
                                       "BUY NOW",
                                       style: GoogleFonts.montserrat(
-                                          color: const Color.fromARGB(
-                                              255, 50, 227, 56)),
+                                        color: Theme.of(context).primaryColor,
+                                      ),
                                     ),
                                     const SizedBox(
                                       width: 5,
                                     ),
-                                    const Icon(
+                                    Icon(
                                       Icons.shopping_bag_outlined,
-                                      color: Color.fromARGB(255, 50, 227, 56),
+                                      color: Theme.of(context).primaryColor,
                                     ),
                                     const SizedBox(
                                       width: 25,
@@ -245,122 +465,6 @@ class ProductDetailsScreen extends StatelessWidget {
                       ],
                     ),
                   ],
-                ),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Container(
-                width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.56,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                  ),
-                ),
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      const Padding(
-                        padding: EdgeInsets.only(top: 15),
-                        child: Text(
-                          "Rate product",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      const Divider(
-                        indent: 140,
-                        endIndent: 140,
-                        thickness: 2,
-                        color: Colors.grey,
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.star_rounded,
-                            size: 45,
-                            color: Color.fromARGB(246, 255, 200, 0),
-                          ),
-                          Icon(
-                            Icons.star_rounded,
-                            size: 45,
-                            color: Color.fromARGB(246, 255, 200, 0),
-                          ),
-                          Icon(
-                            Icons.star_rounded,
-                            size: 45,
-                            color: Color.fromARGB(246, 255, 200, 0),
-                          ),
-                          Icon(
-                            Icons.star_rounded,
-                            size: 45,
-                            color: Color.fromARGB(246, 255, 200, 0),
-                          ),
-                          Icon(
-                            Icons.star_outline_rounded,
-                            size: 45,
-                            color: Color.fromARGB(246, 255, 200, 0),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 40,
-                      ),
-                      const Text(
-                        "Good",
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w600),
-                      ),
-                      const SizedBox(
-                        height: 40,
-                      ),
-                      Stack(children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 18,
-                          ),
-                          child: Container(
-                            height: 150,
-                            width: 355,
-                            decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 255, 255, 255),
-                                border: Border.all(color: Colors.black),
-                                borderRadius: BorderRadius.circular(20)),
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.only(left: 32, right: 32),
-                          child: TextField(
-                              decoration: InputDecoration(
-                                  hintText: " ",
-                                  prefixIcon: MultiLineHintTextWidget(),
-                                  border: InputBorder.none)),
-                        ),
-                      ]),
-                      const SizedBox(
-                        height: 25,
-                      ),
-                      Container(
-                        height: 70,
-                        width: 70,
-                        decoration: const BoxDecoration(
-                            color: Color.fromARGB(255, 50, 227, 56),
-                            shape: BoxShape.circle),
-                        child: Image.asset(
-                          "assets/checkcircle.png",
-                          height: 70,
-                          width: 70,
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
               ),
             ],

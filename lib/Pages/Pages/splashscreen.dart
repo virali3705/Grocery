@@ -26,10 +26,10 @@ class SplashScreen extends StatelessWidget {
             Text(
               "Grocery",
               style: GoogleFonts.montserrat(
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 50,
-                  color: Color.fromARGB(255, 50, 227, 56),
+                  color: Theme.of(context).primaryColor,
                 ),
               ),
             ),

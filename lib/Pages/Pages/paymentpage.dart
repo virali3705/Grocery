@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 
 class Payment extends StatelessWidget {
   const Payment({Key? key}) : super(key: key);
@@ -11,13 +12,16 @@ class Payment extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                const SizedBox(height: 20),
-                const Row(
+                SizedBox(height: 20),
+                Row(
                   children: [
-                    Icon(Icons.arrow_back_ios_sharp),
-                    SizedBox(width: 20),
+                    IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, Routes.cartpage);
+                        },
+                        icon: Icon(Icons.arrow_back_ios_sharp)),
                     Padding(
-                      padding: EdgeInsets.only(top: 5, left: 40),
+                      padding: EdgeInsets.only(top: 3, left: 20),
                       child: Text(
                         "Payment Page",
                         style: TextStyle(
@@ -26,7 +30,7 @@ class Payment extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 70),
+                const SizedBox(height: 30),
                 Container(
                   height: 215,
                   width: 360,
@@ -39,7 +43,7 @@ class Payment extends StatelessWidget {
                             spreadRadius: 0.5,
                             blurRadius: 8),
                       ]),
-                  child: const Column(
+                  child: Column(
                     children: [
                       Row(
                         children: [
@@ -70,14 +74,14 @@ class Payment extends StatelessWidget {
                           SizedBox(width: 200),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "70.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           )
                         ],
@@ -92,14 +96,14 @@ class Payment extends StatelessWidget {
                           SizedBox(width: 200),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "12.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           )
                         ],
@@ -114,21 +118,21 @@ class Payment extends StatelessWidget {
                           SizedBox(width: 196),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 17,
                           ),
                           Text(
                             "27.00",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         ],
                       ),
                       SizedBox(height: 15),
                       Divider(
-                        color: Color.fromARGB(255, 50, 227, 56),
+                        color: Theme.of(context).primaryColor,
                         indent: 200,
                         endIndent: 20,
                         thickness: 1,
@@ -146,7 +150,7 @@ class Payment extends StatelessWidget {
                           SizedBox(width: 122),
                           Icon(
                             Icons.currency_rupee,
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             size: 20,
                           ),
                           Text(
@@ -154,7 +158,7 @@ class Payment extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         ],
@@ -391,7 +395,7 @@ class Payment extends StatelessWidget {
                         ],
                       )
                     ],
-                  ),
+                  ), // till here
                 ),
                 const SizedBox(
                   height: 90,

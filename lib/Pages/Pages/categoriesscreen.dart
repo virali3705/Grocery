@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app/Pages/Pages/routes.dart';
 
+// ignore: must_be_immutable
 class CategoryScreen extends StatelessWidget {
   CategoryScreen({super.key});
 
@@ -26,14 +27,14 @@ class CategoryScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 10, left: 15),
               child: Row(
                 children: [
                   IconButton(
                       onPressed: () {
                         Navigator.pushNamed(context, Routes.Homescreen);
                       },
-                      icon: Icon(Icons.arrow_back_ios_new_outlined)),
+                      icon: const Icon(Icons.arrow_back_ios_new_outlined)),
                   const SizedBox(
                     width: 20,
                   ),
@@ -68,9 +69,9 @@ class CategoryScreen extends StatelessWidget {
                     const SizedBox(
                       width: 15,
                     ),
-                    const Icon(
+                    Icon(
                       Icons.search,
-                      color: Color.fromARGB(255, 50, 227, 56),
+                      color: Theme.of(context).primaryColor,
                     ),
                     TextButton(
                         onPressed: () {},

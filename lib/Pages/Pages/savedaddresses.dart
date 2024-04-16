@@ -13,12 +13,17 @@ class SavedAddresses extends StatelessWidget {
           child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 20, left: 20),
+            padding: const EdgeInsets.only(top: 10, left: 12),
             child: Row(
               children: [
-                const Icon(Icons.arrow_back_ios_sharp),
+                IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, Routes.cartpage);
+                  },
+                  icon: const Icon(Icons.arrow_back_ios_sharp),
+                ),
                 const SizedBox(
-                  width: 20,
+                  width: 10,
                 ),
                 Text(
                   "Saved Addresses",
@@ -26,7 +31,7 @@ class SavedAddresses extends StatelessWidget {
                       fontSize: 18, fontWeight: FontWeight.w400),
                 ),
                 const SizedBox(
-                  width: 75,
+                  width: 66,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(),
@@ -34,10 +39,10 @@ class SavedAddresses extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushNamed(context, Routes.addaddresses);
                       },
-                      child: const Text(
+                      child: Text(
                         "+ Add New",
                         style: TextStyle(
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             fontSize: 15,
                             fontWeight: FontWeight.w700),
                       )),
@@ -152,7 +157,7 @@ class SavedAddresses extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.only(left: 25, top: 30),
             child: Row(
               children: [
@@ -169,7 +174,7 @@ class SavedAddresses extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 50, 227, 56),
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                     ),
@@ -181,7 +186,7 @@ class SavedAddresses extends StatelessWidget {
                             "B - 330 , Pramukh Mastana, Near TCS, Relience Circle Beside Orbit mall, Kudasan, Gandhinagar",
                             style: TextStyle(
                               fontSize: 10,
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         )
@@ -192,7 +197,7 @@ class SavedAddresses extends StatelessWidget {
                       child: Text(
                         "Gandhinagar - 382421, Gujarat",
                         style: TextStyle(
-                          color: Color.fromARGB(255, 50, 227, 56),
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                     ),
@@ -202,7 +207,7 @@ class SavedAddresses extends StatelessWidget {
                         "+91 63542 12716",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 50, 227, 56),
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                     )

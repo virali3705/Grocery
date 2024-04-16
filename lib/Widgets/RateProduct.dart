@@ -60,10 +60,10 @@ class RateProduct extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 45, bottom: 10),
                   child: TextButton(
                     onPressed: () {},
-                    child: const Text(
+                    child: Text(
                       "Rate Product >>",
                       style: TextStyle(
-                        color: Color.fromARGB(255, 50, 227, 56),
+                        color: Theme.of(context).primaryColor,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

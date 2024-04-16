@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grocery_app/Pages/Pages/routes.dart';
 import 'package:grocery_app/Widgets/ReviewSheet.dart';
 
 class MyReviews extends StatelessWidget {
@@ -15,16 +16,20 @@ class MyReviews extends StatelessWidget {
           children: [
             Row(
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 20, left: 20),
-                  child: Icon(Icons.arrow_back_ios_new_outlined),
+                Padding(
+                  padding: EdgeInsets.only(top: 10, left: 15),
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.profile);
+                      },
+                      icon: Icon(Icons.arrow_back_ios_new_outlined)),
                 ),
                 const SizedBox(
-                  width: 25,
+                  width: 20,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 19,
+                    top: 10,
                   ),
                   child: Text(
                     "My Reviews",

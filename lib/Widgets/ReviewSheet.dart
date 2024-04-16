@@ -23,7 +23,7 @@ class ReviewSheet extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 0),
         child: Column(
           children: [
-            const Row(
+            Row(
               children: [
                 SizedBox(
                   width: 35,
@@ -59,12 +59,11 @@ class ReviewSheet extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(
-                            right: 115, bottom: 10),
+                        padding: EdgeInsets.only(right: 115, bottom: 10),
                         child: Text(
                           "₹70.00",
                           style: TextStyle(
-                              color: Color.fromARGB(255, 50, 227, 56),
+                              color: Theme.of(context).primaryColor,
                               fontWeight: FontWeight.w600),
                         ),
                       )
@@ -80,7 +79,7 @@ class ReviewSheet extends StatelessWidget {
               height: 103,
               width: 358,
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 42, 196, 48),
+                  color: Theme.of(context).primaryColor,
                   borderRadius: BorderRadius.circular(15)),
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,

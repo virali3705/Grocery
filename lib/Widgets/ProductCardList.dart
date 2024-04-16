@@ -24,7 +24,11 @@ class ProductCardList extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-          const Image(image: AssetImage("assets/Apple.png"),height: 100,width: 100,),
+          const Image(
+            image: AssetImage("assets/Apple.png"),
+            height: 100,
+            width: 100,
+          ),
           const SizedBox(
             width: 40,
           ),
@@ -52,10 +56,10 @@ class ProductCardList extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      const Text(
+                      Text(
                         "₹70.00",
                         style: TextStyle(
-                            color: Color.fromARGB(255, 50, 227, 56),
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(
@@ -63,8 +67,8 @@ class ProductCardList extends StatelessWidget {
                       ),
                       const Text(
                         "140",
-                        style: TextStyle(
-                            decoration: TextDecoration.lineThrough),
+                        style:
+                            TextStyle(decoration: TextDecoration.lineThrough),
                       ),
                       const SizedBox(
                         width: 5,
@@ -75,24 +79,21 @@ class ProductCardList extends StatelessWidget {
                           width: 53,
                           decoration: const BoxDecoration(
                             color: Color.fromARGB(255, 177, 255, 181),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(5)),
+                            borderRadius: BorderRadius.all(Radius.circular(5)),
                           ),
                           child: const Padding(
                             padding: EdgeInsets.only(bottom: 3),
                             child: Text(
                               "50 % off",
                               style: TextStyle(
-                                  color:
-                                      Color.fromARGB(255, 30, 75, 32),
+                                  color: Color.fromARGB(255, 30, 75, 32),
                                   fontSize: 10),
                             ),
                           )),
                       const SizedBox(
                         width: 1,
                       ),
-                      const Image(
-                          image: AssetImage("assets/Veg.png")),
+                      const Image(image: AssetImage("assets/Veg.png")),
                     ],
                   ),
                 ),
@@ -108,15 +109,14 @@ class ProductCardList extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(
-                                255, 50, 227, 56)),
+                          backgroundColor: Theme.of(context).primaryColor,
+                        ),
                         child: const Row(
                           children: [
                             Text(
                               "ADD TO",
                               style: TextStyle(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 8, fontWeight: FontWeight.w700),
                             ),
                             SizedBox(
                               width: 5,
@@ -139,7 +139,7 @@ class ProductCardList extends StatelessWidget {
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white),
-                        child: const Row(
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -147,8 +147,7 @@ class ProductCardList extends StatelessWidget {
                               style: (TextStyle(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 8,
-                                color:
-                                    Color.fromARGB(255, 50, 227, 56),
+                                color: Theme.of(context).primaryColor,
                               )),
                             ),
                           ],
